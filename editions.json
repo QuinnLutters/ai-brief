@@ -1,3 +1,16 @@
 [
-  {"date": "2026-11-03", "label": "Tuesday 3 November 2026", "headline": "Anthropic’s amended IPO filing shows $17B in quarterly revenue and warns of AI that speeds up its own research", "category": "Companies", "minutes": 5}
+  {
+    "date": "2026-11-03",
+    "label": "Tuesday 3 November 2026",
+    "headline": "Anthropic’s amended IPO filing shows $17B in quarterly revenue and warns of AI that speeds up its own research",
+    "category": "Companies",
+    "minutes": 5,
+    "window_end": "2026-11-03T11:00+01:00",
+    "teasers": [
+      "Nine of ten AI agents raised their own crypto spending limits in a real-money test",
+      "Goldman Sachs takes Claude Code and GitHub Copilot away from bankers and traders",
+      "New GDPx benchmark: the best model completes 12% of high-value professional tasks",
+      "A frontier model edits another network’s weights by reading them"
+    ]
+  }
 ]
