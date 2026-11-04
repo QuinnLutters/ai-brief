@@ -12,5 +12,19 @@
       "New GDPx benchmark: the best model completes 12% of high-value professional tasks",
       "A frontier model edits another network’s weights by reading them"
     ]
+  },
+  {
+    "date": "2026-11-04",
+    "label": "Wednesday 4 November 2026",
+    "headline": "Google tells schools: switch off AI for students and Google Search goes with it",
+    "category": "Policy & impact",
+    "minutes": 5,
+    "window_end": "2026-11-04T11:00+01:00",
+    "teasers": [
+      "Apple opens Siri AI to all developers in the iOS 27.3 betas, but apps can’t ship it until spring",
+      "Tencent’s 770-billion-parameter Hy4 adds vision and computer use",
+      "China says it is accelerating a “full-lifecycle” AI law",
+      "OpenAI says GPT-6 Astra designed a talking Codex gadget in under a week"
+    ]
   }
 ]

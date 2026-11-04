@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 4 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Wednesday 4 November 2026 · Window: Tue 3 Nov 11:00 – Wed 4 Nov 11:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Policy &amp; impact</span>
+  <h1>Google tells schools: switch off AI for students and Google Search goes with it</h1>
+  <p class="stand">Under new Workspace for Education controls, schools can no longer keep plain Search while blocking Google’s AI. They get both or neither.</p>
+
+  <p>Google announced on Tuesday that it is reworking how AI is managed for student accounts in Google Workspace for Education. That is the suite of email, documents and Classroom tools that many US schools run on. Gemini, Gemini Notebook, Gemini in Classroom and Google Search will be <em>off by default</em> for students, and administrators can switch each one on separately. The catch is that Search cannot be switched on while AI is kept off. A school that keeps AI disabled also loses Search, and students see a message saying Search is unavailable.</p>
+
+  <figure class="num" aria-label="What the new student controls mean">
+    <div><strong>4</strong><em>Student services that start switched off: Gemini, Gemini Notebook, Gemini in Classroom, Search</em></div>
+    <div><strong>0</strong><em>Ways to keep standard Search while blocking AI features such as AI Overviews</em></div>
+    <figcaption>As described in reporting by <a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch</a> and <a href="https://www.nbcnews.com/tech/tech-news/google-shut-search-schools-opt-ai-rcna607280">NBC News</a>, 3 Nov 2026</figcaption>
+  </figure>
+
+  <p>Google’s education VP, Chris Phillips, explained the decision by saying Search and AI are now too closely intertwined to separate. That is a product claim, and an important one: it treats AI Overviews as part of Search itself, not an optional layer on top. Some outlets describe a “Guided Learning” mode as the student-facing alternative to AI Overviews. None of the reporting describes a way to keep standard Search with the AI removed. Reports point to early 2027 for the switch, but at least one outlet says Google has given no firm date.</p>
+
+  <blockquote>Google has “prioritized its business interests over the education of our children.” — Randi Weingarten, American Federation of Teachers, as quoted in coverage of the announcement</blockquote>
+
+  <p><strong>Why it matters:</strong> until now, the debate over AI in classrooms has been about whether schools should allow it. Google has changed the default question: schools now have to justify losing the world’s main search engine if they want to keep AI out. Since the change only covers school-managed accounts, it won’t touch most users directly. But it is a clear sign of where Google is heading. AI is becoming the core interface of Search, not a feature you can disable.</p>
+  <p class="src">Sources: <a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch</a>, 3 Nov · <a href="https://www.forbes.com/sites/maryroeloffs/2026/11/03/google-will-cut-off-search-engine-access-to-schools-banning-generative-ai/">Forbes</a>, 3 Nov · <a href="https://www.nbcnews.com/tech/tech-news/google-shut-search-schools-opt-ai-rcna607280">NBC News</a>, 3 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/">Engadget’s summary of the admin controls</a></li>
+    <li><a href="https://www.techtimes.com/articles/330004/20261104/google-requires-ai-features-schools-risk-losing-search-access-guided-learning-rollout.htm">Tech Times on the Guided Learning rollout</a>, 4 Nov</li>
+    <li><a href="https://services.google.com/fh/files/misc/gfe_guide_to_ai_in_education.pdf">Google for Education’s guide to AI in education (PDF)</a></li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Platforms &amp; agents</span>
+    <h3>Apple opens Siri AI to all developers in the iOS 27.3 betas, but apps can’t ship it until spring</h3>
+    <p>Apple has expanded its Siri AI developer preview to every developer, through the 27.3 betas of iOS, iPadOS, macOS and visionOS. Apps use App Intents, Apple’s framework for describing what an app can do, so Siri can carry out tasks like checking a delivery or booking a table, and can chain several actions together. Xcode gains a Siri Integration Advisor that gives feedback on implementations, and a Siri Evaluations framework lets developers script test requests and score the responses. According to PPC Land, App Store submissions open in the spring, and Apple has not yet published the usage policies that will govern these integrations.</p>
+    <p class="src"><a href="https://www.macrumors.com/2026/11/03/ios-27-3-siri-ai/">MacRumors</a>, 3 Nov · <a href="https://ppc.land/apple-opens-siri-ai-to-all-developers-but-apps-cant-ship-it-until-spring/">PPC Land</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Open models</span>
+    <h3>Tencent’s 770-billion-parameter Hy4 adds vision and computer use</h3>
+    <p>Tencent released the full version of Hy4 on Wednesday. It is the first model in its Hy line that can see images and operate software, both on the command line and through graphical interfaces. TechNode says the training targeted applications such as Blender and CAD, as well as tasks that span several programs. The model is available through Tencent’s products and OpenRouter at about $0.83 per million input tokens. Tencent says weights and a system card will follow “shortly.” The August preview was released under Apache 2.0, but the weights for this version are not yet confirmed as downloadable.</p>
+    <p class="src"><a href="https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/">TechNode</a>, 4 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Policy</span>
+    <h3>China says it is accelerating a “full-lifecycle” AI law</h3>
+    <p>On 3 November, Wang Ruomeng, an official at the National Development and Reform Commission, said China is speeding up AI legislation that would regulate AI from data and computing power through to deployment. According to reports, the measures would require developers to disclose safety risks and report incidents, and would set up a regulatory sandbox for controlled testing. No draft text or timetable has been published. Read this as a statement of intent, not new rules. It builds on non-binding guidance issued earlier this year, including the AI Safety Governance Framework 3.0 in September.</p>
+    <p class="src"><a href="https://www.tokenpost.com/news/regulation/47487">TokenPost</a>, 3 Nov · <a href="https://www.chaincatcher.com/en/article/2301283">ChainCatcher</a>, 3 Nov · background: <a href="https://regulations.ai/regulations/RAI-CN-NA-GOVERNA-2026">Framework 3.0 summary</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Build · company claim</span>
+    <h3>OpenAI says GPT-6 Astra designed a talking Codex gadget in under a week</h3>
+    <p>OpenAI says two people on its hardware team, as a side project, used GPT-6 Astra to design a push-to-talk device for its Codex coding agent. The model handled the enclosure, the circuit-board layout including component choice and trace routing, the firmware and the UI. The stated aim was to test whether the model could produce a device without direct human edits. A contract manufacturer built a small batch of prototypes in under a month. Manufacturing was the hard part: it took several rounds of revisions, because the model didn’t always account for tolerances, manufacturing constraints and assembly details.</p>
+    <p class="src"><a href="https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/">The Decoder</a>, 3 Nov · <a href="https://www.rdworldonline.com/openai-says-gpt-6-astra-designed-a-talking-codex-pet-manufacturing-took-several-rounds/">R&amp;D World</a> · critique: <a href="https://digidai.github.io/2026/11/04/openai-cad-factory-review-gap/">“OpenAI’s One-Week Device Puts AI Engineering Through a Factory Test”</a>, 4 Nov</p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">Today’s biggest AI story wasn’t about what models can do. It was a default setting that schools can’t fully undo.</p>
+  <p><strong>Deserves attention:</strong> Google’s school bundling. Making Search depend on AI is a product decision, not a technical necessity. Expect other platforms to argue the same way, that their AI can no longer be separated from the core product.</p>
+  <p><strong>Overstated:</strong> “AI designed hardware in a week.” The design phase was fast. Getting to physical units still took a month and several manufacturing revisions, and OpenAI has published no comparison with a human team, hours worked or quality bar.</p>
+  <p><strong>Uncertain:</strong> when Google’s change takes effect, whether Tencent’s Hy4 weights actually appear, and whether Moonshot meets its own promise to publish the Kimi K3.1 Pro weights by today, 4 November. That was not confirmed when this brief was written.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Tuesday 3 November 2026, 11:00 CET to Wednesday 4 November 2026, 11:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Google schools and Search: <a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch, 3 Nov</a>; <a href="https://www.forbes.com/sites/maryroeloffs/2026/11/03/google-will-cut-off-search-engine-access-to-schools-banning-generative-ai/">Forbes, 3 Nov</a>; <a href="https://www.nbcnews.com/tech/tech-news/google-shut-search-schools-opt-ai-rcna607280">NBC News, 3 Nov</a>; <a href="https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/">Engadget</a>; <a href="https://www.techtimes.com/articles/330004/20261104/google-requires-ai-features-schools-risk-losing-search-access-guided-learning-rollout.htm">Tech Times, 4 Nov</a></li>
+    <li>Siri AI for developers: <a href="https://www.macrumors.com/2026/11/03/ios-27-3-siri-ai/">MacRumors, 3 Nov</a>; <a href="https://ppc.land/apple-opens-siri-ai-to-all-developers-but-apps-cant-ship-it-until-spring/">PPC Land</a></li>
+    <li>Tencent Hy4: <a href="https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/">TechNode, 4 Nov</a>; <a href="https://www.orcarouter.ai/blog/tencent-hy4-vs-tencent-hy4-preview">OrcaRouter on weight availability</a></li>
+    <li>China AI legislation: <a href="https://www.tokenpost.com/news/regulation/47487">TokenPost, 3 Nov</a>; <a href="https://www.chaincatcher.com/en/article/2301283">ChainCatcher, 3 Nov</a></li>
+    <li>OpenAI Codex device: <a href="https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/">The Decoder, 3 Nov</a>; <a href="https://interestingengineering.com/ai-robotics/openai-gpt-6-hardware-design-prototype">Interesting Engineering</a>; <a href="https://www.rdworldonline.com/openai-says-gpt-6-astra-designed-a-talking-codex-pet-manufacturing-took-several-rounds/">R&amp;D World</a>; <a href="https://digidai.github.io/2026/11/04/openai-cad-factory-review-gap/">digidai, 4 Nov</a></li>
+    <li>Kimi K3.1 Pro weights: <a href="https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks">Artificial Analysis</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>For this edition, source pages could not be opened directly. Web search worked, but page fetching was blocked by the network. All facts come from search-indexed reporting and were cross-checked across several outlets where possible. Quotes are as reported, not verified against originals. Because of this, no source images are embedded.</li>
+    <li>The China story rests on secondary reports of a single official’s remarks, and the Bloomberg coverage could not be accessed. OpenAI’s own post about the device was not found, so that story relies on reporting of OpenAI’s claims.</li>
+    <li>This brief is written by an Anthropic model, so OpenAI and Google stories are covered by a competitor’s system. Treat the framing accordingly.</li>
+    <li>Agents &amp; security was quiet within the window. Two candidates were left out as older than they appeared: the Visual Studio Copilot RCE (CVE-2026-103572, patched and disclosed 13 Oct) and CrowdStrike’s report on four threat actors using AI agents (21 Oct, re-covered on 4 Nov). The Wesleyan Media Project’s $137M figure for AI-made political ads (21 Oct) was left out for the same reason. Follow-ups to yesterday’s Anthropic S-1 lead were not repeated.</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-03/">Tuesday 3 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>
