@@ -26,5 +26,18 @@
       "China says it is accelerating a “full-lifecycle” AI law",
       "OpenAI says GPT-6 Astra designed a talking Codex gadget in under a week"
     ]
+  },
+  {
+    "date": "2026-11-05",
+    "label": "Thursday 5 November 2026",
+    "headline": "OpenAI says an unreleased model found 948 ways to take over Linux machines, at about $1,300 each",
+    "category": "Agents & security",
+    "minutes": 5,
+    "window_end": "2026-11-05T07:00+01:00",
+    "teasers": [
+      "US voters rejected data centres in 40 of 41 local ballot measures, and AI-industry money mostly fell flat",
+      "A day after the backlash, Google says schools can switch on Search without Gemini",
+      "Moonshot meets its deadline: Kimi K3.1 Pro’s 2.8-trillion-parameter weights are public"
+    ]
   }
 ]

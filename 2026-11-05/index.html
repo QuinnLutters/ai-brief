@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 5 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Thursday 5 November 2026 · Window: Wed 4 Nov 11:00 – Thu 5 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Agents &amp; security</span>
+  <h1>OpenAI says an unreleased model found 948 ways to take over Linux machines, at about $1,300 each</h1>
+  <p class="stand">A single automated run against the Linux kernel produced working root exploits at industrial scale. Fixes are now arriving more slowly than the bugs were found.</p>
+
+  <p>In a post published Wednesday, OpenAI described a mid-October run of a prototype pipeline built on an unreleased “cyber model”. Agents combed the Linux kernel for bugs, reproduced them, wrote working exploits and drafted candidate patches. The result was 948 unique <em>local privilege escalation</em> bugs. That kind of flaw lets someone who already has an ordinary account on a machine become root, its all-powerful administrator.</p>
+
+  <figure class="num" aria-label="Key figures from OpenAI’s kernel run">
+    <div><strong>948</strong><em>Unique root-escalation bugs, each with a working exploit (1,169 raw exploits before deduplication)</em></div>
+    <div><strong>$1.21M</strong><em>Total API cost of the run, about $1,279 per unique bug</em></div>
+    <div><strong>61</strong><em>Fixed upstream ten days after the scan, with 43 more in staging</em></div>
+    <figcaption>Figures as reported by OpenAI in <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/">“A thousand fewer paths to root”</a>, 4 Nov 2026, via secondary coverage</figcaption>
+  </figure>
+
+  <p><strong>Verified across coverage:</strong> the pipeline started from 2,308 candidate findings and reproduced 1,724 of them. Reproduction alone reportedly took about 30 hours and $73,000. In July, OpenAI’s GPT-5.6 Sol produced 166 unique root exploits for $514,000. That works out to roughly six times the output at about two and a half times the cost. OpenAI is disclosing gradually through Linux maintainers and its Patch the Planet partners, and is withholding technical details. That includes ten exploitation techniques it says outside kernel experts had not seen before.</p>
+
+  <p><strong>Company claims and caveats:</strong> OpenAI values the haul at $18.9–66.3 million in historical bug-bounty payouts. That is its own estimate. The model is unnamed and not released. The exploits need an existing low-privilege login, and the main tests ran on a desktop configuration, though with standard defences like KASLR switched on. A separate run against Google’s hardened kernelCTF setup produced far fewer results. OpenAI also says an early run showed 20 of 200 “successes” reaching root through a different bug than the one assigned. In other words, automated pipelines need careful checking.</p>
+
+  <p><strong>Why it matters:</strong> this is the clearest public evidence yet that AI changes the cost of finding serious bugs, not just the speed. At roughly $1,300 per root exploit, finding them is no longer the bottleneck. Fixing them is: maintainers who were already complaining about floods of AI-generated reports now face hundreds of real ones. OpenAI frames it as a win for defenders, and so far it is one, because it found the bugs first. The open question is how long that lead lasts once similar models are widely available.</p>
+  <p class="src">Sources: <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/">OpenAI</a>, 4 Nov · <a href="https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html">The Hacker News</a>, Nov · <a href="https://www.unite.ai/openai-pipeline-finds-948-linux-kernel-privilege-escalation-flaws/">Unite.AI</a></p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://dev.to/yehechuhai/948-linux-root-exploits-in-one-run-what-openais-kernel-pipeline-actually-proves-and-what-it-47a">“What OpenAI’s kernel pipeline actually proves, and what it doesn’t”</a> (DEV Community critique)</li>
+    <li><a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-just-made-local-root-cheap-at-scale">“OpenAI just made local root cheap at scale”</a></li>
+    <li><a href="https://www.pcgamer.com/software/linux/linux-kernel-maintainer-says-ai-has-suddenly-become-useful-for-devs-we-cant-ignore-this-stuff-its-coming-up-and-its-getting-better">Background: kernel maintainer Greg Kroah-Hartman on AI bug reports turning real</a> (earlier in 2026)</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Policy &amp; impact</span>
+    <h3>US voters rejected data centres in 40 of 41 local ballot measures, and AI-industry money mostly fell flat</h3>
+    <p>Tuesday’s midterms were the first US national election where AI was a campaign issue. According to CNBC’s tally, the 41 data-centre measures on local ballots in ten states went against development in every case except one, in Harwood, North Dakota. More than half were in Ohio. In an NBC exit poll, 56% of voters said AI and data centres were a crucial or major factor in their vote. Time credits anger over data centres with helping Democrats. TechCrunch and Fortune describe mixed-to-weak results for candidates backed by pro-AI super PACs such as Leading the Future, which, per The Intercept’s analysis of election filings, spent only $7.4M on general-election races. A pro-tech counterpoint: in the NYT/Siena survey, AI ranked 19th when voters named their single most important issue.</p>
+    <p class="src"><a href="https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html">CNBC</a>, 4 Nov · <a href="https://time.com/article/2026/11/04/midterm-elections-results-ai-industry-data-centers/">Time</a>, 4 Nov · <a href="https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/">TechCrunch</a>, 4 Nov · <a href="https://fortune.com/2026/11/04/candidates-backed-by-ai-super-pacs-result/">Fortune</a>, 4 Nov · counterpoint: <a href="https://progresschamber.org/insights/what-the-2026-election-results-mean-for-tech/">Progress Chamber</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Platforms</span>
+    <h3>A day after the backlash, Google says schools can switch on Search without Gemini</h3>
+    <p>Following up on yesterday’s lead: after criticism from politicians and education leaders, including Senator Bernie Sanders and former FTC chair Lina Khan, Google said on Wednesday that administrators can enable Gemini, Gemini Notebook and Search one by one. A school that keeps the AI apps off can still offer Search, and Google plans to pilot the controls in some US schools later this month. What is still unclear is whether Search itself comes with AI Overviews and AI Mode built in. PPC Land says it does, and Google has not explained what students will actually see.</p>
+    <p class="src"><a href="https://www.govtech.com/education/k-12/google-reverses-decision-to-turn-off-search-for-schools-not-using-ai">GovTech</a>, 4 Nov · <a href="https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/">TechCrunch</a>, 4 Nov · <a href="https://gizmodo.com/google-tries-to-walk-back-controversial-school-ai-policy-following-political-backlash-2000834986">Gizmodo</a> · <a href="https://ppc.land/google-will-cut-search-for-k-12-students-in-schools-that-keep-ai-off/">PPC Land</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Open models</span>
+    <h3>Moonshot meets its deadline: Kimi K3.1 Pro’s 2.8-trillion-parameter weights are public</h3>
+    <p>On 4 November, as promised, Moonshot AI published Kimi K3.1 Pro on Hugging Face. It is a mixture-of-experts model, meaning only part of the network (about 104 billion parameters) runs for each token. It takes text and images and has a one-million-token context window. The download is about 1.56 TB, so self-hosting is a data-centre job, not a laptop one. The licence is Moonshot’s own, not a standard open-source one: use, fine-tuning and redistribution are allowed, but hosts earning over $20M a year need a separate agreement.</p>
+    <p class="src"><a href="https://startupfortune.com/moonshot-ai-releases-full-weights-for-28-trillion-parameter-kimi-k31-pro/">Startup Fortune</a>, 4 Nov · <a href="https://www.orcarouter.ai/blog/kimi-k3-1-pro-weights-released-self-hosting-cost">OrcaRouter</a> · <a href="https://finance.biggo.com/news/ea4290b1-7f72-4d50-9509-0240ed1a5abe">BigGo Finance</a> · repo as reported: <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">moonshotai/Kimi-K3.1-Pro</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">Exploits used to be expensive and fixes cheap. OpenAI’s numbers suggest that is flipping.</p>
+  <p><strong>Deserves attention:</strong> the economics in the lead story. The jump from 166 to 948 exploits in four months, at about $1,300 each, matters more than any benchmark score this week. A related point: for months, the open-weight frontier has been arriving on schedule. Moonshot did again yesterday, so capability spreads quickly.</p>
+  <p><strong>Overstated:</strong> “AI decided the midterms.” Ballot-measure results against data centres were nearly unanimous, but that is a local land-use revolt. Surveys disagree on how much AI moved votes for Congress. The 56% figure measures whether AI was a factor at all, while the 19th-place ranking measures whether it was the top issue.</p>
+  <p><strong>Uncertain:</strong> how fast the 948 kernel bugs get patched and reach the systems people actually run. Also, exactly what Google’s reversal allows: Search with AI features off, or only Search without the Gemini app.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Wednesday 4 November 2026, 11:00 CET to Thursday 5 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>OpenAI kernel exploits: <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/">OpenAI, 4 Nov</a>; <a href="https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html">The Hacker News</a>; <a href="https://www.unite.ai/openai-pipeline-finds-948-linux-kernel-privilege-escalation-flaws/">Unite.AI</a>; <a href="https://aiweekly.co/alerts/openai-mints-948-linux-root-exploits-in-12m-pipeline-run">AI Weekly, 5 Nov</a>; <a href="https://startupfortune.com/openais-ai-pipeline-turned-2308-linux-kernel-bugs-into-948-root-exploits/">Startup Fortune</a>; <a href="https://dev.to/yehechuhai/948-linux-root-exploits-in-one-run-what-openais-kernel-pipeline-actually-proves-and-what-it-47a">DEV Community</a></li>
+    <li>Midterms and AI: <a href="https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html">CNBC, 4 Nov</a>; <a href="https://time.com/article/2026/11/04/midterm-elections-results-ai-industry-data-centers/">Time, 4 Nov</a>; <a href="https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/">TechCrunch, 4 Nov</a>; <a href="https://fortune.com/2026/11/04/candidates-backed-by-ai-super-pacs-result/">Fortune, 4 Nov</a>; <a href="https://progresschamber.org/insights/what-the-2026-election-results-mean-for-tech/">Progress Chamber</a>; <a href="https://ballotpedia.org/Data_center-related_ballot_measures,_2026">Ballotpedia list of measures</a></li>
+    <li>Google schools reversal: <a href="https://www.govtech.com/education/k-12/google-reverses-decision-to-turn-off-search-for-schools-not-using-ai">GovTech</a>; <a href="https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/">TechCrunch, 4 Nov</a>; <a href="https://gizmodo.com/google-tries-to-walk-back-controversial-school-ai-policy-following-political-backlash-2000834986">Gizmodo</a>; <a href="https://ppc.land/google-will-cut-search-for-k-12-students-in-schools-that-keep-ai-off/">PPC Land</a></li>
+    <li>Kimi K3.1 Pro weights: <a href="https://startupfortune.com/moonshot-ai-releases-full-weights-for-28-trillion-parameter-kimi-k31-pro/">Startup Fortune</a>; <a href="https://www.orcarouter.ai/blog/kimi-k3-1-pro-weights-released-self-hosting-cost">OrcaRouter</a>; <a href="https://finance.biggo.com/news/ea4290b1-7f72-4d50-9509-0240ed1a5abe">BigGo Finance</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>As in the previous edition, source pages could not be opened directly because the network blocked page fetching. Facts come from search-indexed reporting and were cross-checked across outlets where possible. OpenAI’s figures are as reported by several outlets, not read from the original post. No source images are embedded.</li>
+    <li>Because this edition was produced earlier in the morning than usual, the window ends at 07:00 CET rather than 11:00.</li>
+    <li>Final control of Congress was not independently confirmed from election-results sources when this was written, so the midterm item sticks to AI-specific findings.</li>
+    <li>This brief is written by an Anthropic model. Today’s lead covers OpenAI, and the midterm item involves PACs on both sides, including Public First, which Anthropic has funded. Treat the framing accordingly.</li>
+    <li>Worth a Look is omitted today: no paper, demo or creative build in the window was both strong and verifiable. Items left out as older than they looked: ADNOC’s OpenAI Frontier deal (2 Nov), Apple’s Full Disk Access warning about agents (October), Cognition’s SWE-2 (September). Reports of a “ChatGPT Images 2.6” and a CrowdStrike deal for Fiddler AI and Dreadnode could not be confirmed and were not used.</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-04/">Wednesday 4 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>
