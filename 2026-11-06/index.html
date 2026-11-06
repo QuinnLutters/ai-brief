@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 6 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Friday 6 November 2026 · Window: Thu 5 Nov 07:00 – Fri 6 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Markets &amp; policy</span>
+  <h1>AI stocks lose about $2 trillion in a day as investors bet the midterms will slow the data-centre boom</h1>
+  <p class="stand">The Nasdaq had its worst day since April 2025 and the chip index fell 12%. Asian markets followed this morning. The trigger was political, not a change in the technology.</p>
+
+  <p>On Thursday, two days after Democrats did well in the US midterms, investors sold anything tied to the AI build-out. Chipmakers, the “neoclouds” that rent out GPUs, and data-centre operators fell hardest. Yesterday’s edition covered the cause: voters rejected data centres in 40 of 41 local ballot measures. Markets are now pricing in the risk of tougher rules from Congress and the states, and of slower permits for new sites.</p>
+
+  <figure class="num" aria-label="Key market moves on Thursday 5 November">
+    <div><strong>−5.5%</strong><em>Nasdaq Composite, its worst day in 19 months, now in correction (about 10% below its 6 October record)</em></div>
+    <div><strong>−12.2%</strong><em>Philadelphia Semiconductor Index. Nvidia closed down about 9%, CoreWeave about 10%</em></div>
+    <div><strong>−7%</strong><em>Japan’s Nikkei shortly after Friday’s open. South Korea and Taiwan fell more than 8%</em></div>
+    <figcaption>Closing figures as reported by <a href="https://www.marketscreener.com/news/nasdaq-posts-biggest-daily-drop-in-19-months-on-fears-of-ai-regulations-ce785fdddd8cff26">Reuters via MarketScreener</a>, <a href="https://nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650">NBC News</a> and <a href="https://abc.net.au/news/2026-11-06/asx-markets-business-live-news/107353758">ABC Australia</a>, 5–6 Nov 2026. Outlets differ slightly; see notes.</figcaption>
+  </figure>
+
+  <p><strong>Verified across coverage:</strong> the Dow fell about 3.4% and the S&amp;P 500 about 4.4%. Reuters had the Nasdaq 100 on course to lose roughly $1.8 trillion in value, and NPR put the wider tech rout at $2 trillion. Memory makers were hit especially hard: Micron fell nearly 14% intraday, and SK Hynix and Kioxia fell 12–14% in Asia. Qualcomm’s weak outlook added to the chip sell-off. The day before, markets had rallied on the election result. Stocks in Asia steadied later in Friday’s session, and Nasdaq futures were up about 1.4% at last report.</p>
+
+  <p><strong>Interpretation, not fact:</strong> analysts give two explanations, and both are probably true. One is about regulation: the backlash against data centres has moved from town halls to a national election result. The other is about valuations: after a huge run, investors were looking for a reason to sell. Even after Thursday, the Nasdaq was still up about 5% for 2026. No new law or rule has actually been announced.</p>
+
+  <p><strong>Why it matters:</strong> for two years, the assumption has been that money and electricity, not permission, set the limit on AI. Thursday was the first time markets treated local politics as a real constraint on how fast AI computing can be built. The companies seem to have noticed: on the same day, OpenAI published new promises to the towns that host its data centres (below).</p>
+  <p class="src">Sources: <a href="https://www.npr.org/2026/11/05/nx-s1-6031987/stock-markets-ai-midterm-elections">NPR</a>, 5 Nov · <a href="https://www.marketscreener.com/news/nasdaq-posts-biggest-daily-drop-in-19-months-on-fears-of-ai-regulations-ce785fdddd8cff26">Reuters/MarketScreener</a>, 5 Nov · <a href="https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html">CNBC</a>, 5 Nov · <a href="https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets">Al Jazeera</a>, 5 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html">CNBC live blog: futures and Asia after the correction</a></li>
+    <li><a href="https://finance.yahoo.com/technology/ai/articles/ai-data-center-stocks-slip-112314079.html">Reuters: why data-centre stocks were singled out</a></li>
+    <li><a href="https://www.koreatimes.co.kr/world/20261106/gathering-ai-storm-clouds-doom-tech-stocks-to-darkest-day-in-a-year">Korea Times: the view from Asia’s chip markets</a></li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Policy &amp; impact</span>
+    <h3>OpenAI promises to pay its own data centres’ power costs and stop using NDAs with local officials</h3>
+    <p>OpenAI’s “National Community Compact”, published Thursday, says the company will cover the electricity and grid-upgrade costs of the campuses it owns and runs, so neighbours’ bills don’t rise. It also promises financial guarantees in case a project is cancelled, and will publish water and power use for each site. It will no longer ask public officials to sign non-disclosure agreements, except to protect security details or trade secrets. <strong>The limits:</strong> it covers future campuses that OpenAI owns and operates, not necessarily those built by partners. Reports describe no enforcement mechanism. OpenAI is also asking lawmakers to impose similar rules on the whole industry. Amazon dropped NDAs with officials in October.</p>
+    <p class="src"><a href="https://www.androidheadlines.com/2026/11/openai-data-center-policy-community-compact.html">Android Headlines</a>, Nov · <a href="https://mlq.ai/news/openai-promises-to-pay-campus-power-costs-and-end-public-official-ndas-after-data-center-backlash/">MLQ</a> · <a href="https://www.techbuzz.ai/articles/openai-drops-ndas-for-data-center-talks-after-voter-backlash">TechBuzz</a> · <a href="https://foxnews.com/live-news/ai-news-openai-data-centers-midterms-11-05-26">Fox News live</a>, 5 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Chips &amp; geopolitics</span>
+    <h3>China’s Moonshot AI looked for Nvidia’s newest chips in European data centres, CNBC reports</h3>
+    <p>The day after it released Kimi K3.1 Pro’s weights, CNBC reported that Moonshot held talks about renting capacity on Nvidia Blackwell GPUs in Europe. US rules ban selling these chips to China. The talks reportedly focused on running models (inference) more than training them. One source said a proposal had Moonshot paying 30–50% more upfront than a non-Chinese customer. In July, the White House accused Moonshot of reaching Blackwells through a facility in Thailand. CNBC describes talks, not a signed deal. Renting computing power remotely is a known gap: it doesn’t always break current export rules, which is why Washington is reportedly preparing to close it.</p>
+    <p class="src"><a href="https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html">CNBC</a>, 5 Nov · <a href="https://www.unite.ai/moonshot-ai-discussed-european-blackwell-leases-amid-u-s-chip-curbs/">Unite.AI</a> · background: <a href="https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html">CNBC, 19 Aug</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Products</span>
+    <h3>Claude can now read your bank accounts, though not move money, in a US beta</h3>
+    <p>Anthropic launched Personal Finance for paying Claude users in the US on Thursday. It connects through Plaid, a service that links apps to more than 12,000 banks, and gives Claude read-only access to balances and up to 24 months of transactions. Claude can then answer questions such as where your money went last month. It cannot transfer funds or invest. Anthropic says conversations in this hub are not used for training and that users should check important figures against their bank records. Critics note it has said little about how the financial data is stored. Anthropic calls it “a first step” toward Claude working alongside licensed financial professionals.</p>
+    <p class="src"><a href="https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/">TechCrunch</a>, 5 Nov · <a href="https://thenextweb.com/news/anthropic-claude-personal-finance-plaid-read-only-beta">The Next Web</a> · <a href="https://www.unite.ai/anthropic-introduces-read-only-personal-finance-beta-in-claude/">Unite.AI</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Policy · Europe</span>
+    <h3>The EU’s AI Office hires a Capgemini-led team to test advanced models for cyber risks</h3>
+    <p>The European Commission’s AI Office, which enforces the AI Act’s rules for general-purpose models, picked a consortium led by Capgemini, with Wavestone and France’s national testing lab LNE. The team will build evaluation tools and run technical assessments of how advanced models could be misused in cyberattacks. This is how the Act gets enforced in practice: the rules for large models are already in force, but the EU has needed its own testing capacity to check what providers claim. No AI Act fine had been reported by early November.</p>
+    <p class="src"><a href="https://www.globenewswire.com/news-release/2026/11/05/3396084/0/en/capgemini-selected-to-lead-european-commission-consortium-for-ai-safety-and-cyber-risk-assessment-of-advanced-ai-models.html">Capgemini press release</a>, 5 Nov · <a href="https://www.mlex.com/mlex/artificial-intelligence/articles/2546594">MLex</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Inspirational build · from 31 October</span>
+    <h3>HackerTube: a video site made of 20 years of Hacker News recommendations</h3>
+    <p>Andrej Karpathy got tired of YouTube’s algorithm and had an AI coding agent build an alternative in about two hours. It sifted through Hacker News’s comment archive for comments that recommend a video and kept 6,454 videos from 2007 to 2026, sorted into about 150 topics. There is no account, and viewing history stays in your browser. The interesting part is the design idea: recommendations from what people actually said was worth watching, rather than from what keeps them watching. Coverage notes that the post doesn’t fully explain how 40,000 comments became 6,454 videos.</p>
+    <p class="src"><a href="https://hackertube.org">hackertube.org</a> · coverage: <a href="https://cryptobriefing.com/andrej-karpathy-launches-hackertube/">Crypto Briefing</a>, <a href="https://www.inside.com.tw/article/42797-karpathy-hackertube-claude-opus-hacker-news-videos">Inside</a></p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">Building AI data centres now needs voters’ permission, and Thursday was the first day markets priced that in.</p>
+  <p><strong>Deserves attention:</strong> how the sell-off and OpenAI’s compact fit together. On the same day, investors marked down the companies that build data centres and the biggest AI lab promised to pay for its own power. That suggests the industry sees local consent as a real constraint, not just a PR problem.</p>
+  <p><strong>Overstated:</strong> “the AI bubble has burst.” One day of losses after a long rally, with no new law and Asia already steadier, is a repricing of political risk. It is not evidence that demand for AI is falling. Watch whether data-centre projects are actually cancelled or delayed.</p>
+  <p><strong>Uncertain:</strong> whether OpenAI’s pledges have any enforcement behind them, and whether Moonshot’s European talks led to any GPUs actually being rented.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Thursday 5 November 2026, 07:00 CET to Friday 6 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>AI stock sell-off: <a href="https://www.npr.org/2026/11/05/nx-s1-6031987/stock-markets-ai-midterm-elections">NPR, 5 Nov</a>; <a href="https://www.marketscreener.com/news/nasdaq-posts-biggest-daily-drop-in-19-months-on-fears-of-ai-regulations-ce785fdddd8cff26">Reuters via MarketScreener, 5 Nov</a>; <a href="https://finance.yahoo.com/technology/ai/articles/ai-data-center-stocks-slip-112314079.html">Reuters via Yahoo Finance</a>; <a href="https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html">CNBC, 5 Nov</a>; <a href="https://nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650">NBC News</a>; <a href="https://foxbusiness.com/markets/stocks-nov-5-2026">Fox Business</a>; <a href="https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets">Al Jazeera, 5 Nov</a>; <a href="https://abc.net.au/news/2026-11-06/asx-markets-business-live-news/107353758">ABC Australia, 6 Nov</a>; <a href="https://www.koreatimes.co.kr/world/20261106/gathering-ai-storm-clouds-doom-tech-stocks-to-darkest-day-in-a-year">Korea Times, 6 Nov</a>; <a href="https://ripr.trade/news/deccan-herald/us-stocks-nasdaq-posts-biggest-daily-drop-in-19-months-on-fears-of-ai-regulation">Deccan Herald</a></li>
+    <li>OpenAI Community Compact: <a href="https://www.androidheadlines.com/2026/11/openai-data-center-policy-community-compact.html">Android Headlines</a>; <a href="https://mlq.ai/news/openai-promises-to-pay-campus-power-costs-and-end-public-official-ndas-after-data-center-backlash/">MLQ</a>; <a href="https://www.techbuzz.ai/articles/openai-drops-ndas-for-data-center-talks-after-voter-backlash">TechBuzz</a>; <a href="https://runtimewire.com/article/openai-pay-power-bills-drop-ndas-data-center-compact">RuntimeWire</a></li>
+    <li>Moonshot and Blackwell: <a href="https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html">CNBC, 5 Nov</a>; <a href="https://finance.yahoo.com/technology/ai/articles/china-moonshot-ai-seeks-nvidia-155140723.html">Reuters via Yahoo Finance</a>; <a href="https://www.unite.ai/moonshot-ai-discussed-european-blackwell-leases-amid-u-s-chip-curbs/">Unite.AI</a></li>
+    <li>Claude Personal Finance: <a href="https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/">TechCrunch, 5 Nov</a>; <a href="https://thenextweb.com/news/anthropic-claude-personal-finance-plaid-read-only-beta">The Next Web</a>; <a href="https://www.androidauthority.com/claude-personal-finance-launch-3732213/">Android Authority</a></li>
+    <li>EU AI Office consortium: <a href="https://www.globenewswire.com/news-release/2026/11/05/3396084/0/en/capgemini-selected-to-lead-european-commission-consortium-for-ai-safety-and-cyber-risk-assessment-of-advanced-ai-models.html">Capgemini/GlobeNewswire, 5 Nov</a>; <a href="https://www.mlex.com/mlex/artificial-intelligence/articles/2546594">MLex</a></li>
+    <li>HackerTube: <a href="https://hackertube.org">hackertube.org</a>; <a href="https://cryptobriefing.com/andrej-karpathy-launches-hackertube/">Crypto Briefing</a>; <a href="https://fourweekmba.com/ai-karpathy-has-claude-build-hackertube-from-6454-hn-videos/">FourWeekMBA</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>As in recent editions, source pages could not be opened directly because the network blocked page fetching. Facts come from search-indexed reporting and were cross-checked across outlets where possible. No source images are embedded.</li>
+    <li>Market figures vary between outlets because some quote intraday moves and others closing prices. The Nasdaq Composite’s drop is reported at 5.2–5.5%. The ABC Australia live blog gives about 4.4%, and the Nasdaq 100 is reported at −6.4%. The headline’s $2 trillion is NPR’s figure; Reuters said about $1.8 trillion for the Nasdaq 100 alone. Asian figures are from early in Friday’s session.</li>
+    <li>This brief is written by an Anthropic model. One Quick Scan item is an Anthropic product, Worth a Look was reportedly built with Claude, and the lead and another item concern OpenAI. Treat the framing accordingly.</li>
+    <li>Left out as before the window: Meta’s purchase of Conductor and OpenAI’s planned purchase of Pierre (both 4 Nov), Anthropic’s FlashProve (2 Nov) and Check Point’s Codex “prompt adware” finding (4 Nov). Not used because the dates or details could not be confirmed: a Gemini Omni 1.2 Flash price cut, a $300,000 Meta Muse bug payout, and a reported Anthropic deal for Decart.</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-05/">Thursday 5 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>

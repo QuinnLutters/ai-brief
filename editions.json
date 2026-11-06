@@ -39,5 +39,19 @@
       "A day after the backlash, Google says schools can switch on Search without Gemini",
       "Moonshot meets its deadline: Kimi K3.1 Pro’s 2.8-trillion-parameter weights are public"
     ]
+  },
+  {
+    "date": "2026-11-06",
+    "label": "Friday 6 November 2026",
+    "headline": "AI stocks lose about $2 trillion in a day as investors bet the midterms will slow the data-centre boom",
+    "category": "Markets & policy",
+    "minutes": 5,
+    "window_end": "2026-11-06T07:00+01:00",
+    "teasers": [
+      "OpenAI promises to pay its own data centres’ power costs and stop using NDAs with local officials",
+      "China’s Moonshot AI looked for Nvidia’s newest chips in European data centres, CNBC reports",
+      "Claude can now read your bank accounts, though not move money, in a US beta",
+      "The EU’s AI Office hires a Capgemini-led team to test advanced models for cyber risks"
+    ]
   }
 ]
