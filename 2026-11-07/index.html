@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 7 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Saturday 7 November 2026 · Window: Fri 6 Nov 07:00 – Sat 7 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Research &amp; security</span>
+  <h1>Google DeepMind says AI agents found two new weaknesses in old 1024-bit RSA encryption in a matter of weeks</h1>
+  <p class="stand">Modern 2048-bit keys are not affected. The news is the speed: agents working under two leading cryptographers did work that normally takes years.</p>
+
+  <p>RSA is one of the oldest public-key encryption systems. It protects data and verifies digital signatures, and its security depends on how hard it is to break a large number into its prime factors. 1024-bit keys have been officially deprecated for about a decade, but they still turn up in older hardware, legacy systems and signed archives.</p>
+
+  <p>On Friday, Google DeepMind said AI agents, guided by the cryptanalysts Nadia Heninger and Emmanuel Thomé, had found two improvements to attacks on these keys. DeepMind’s Dj Dvijotham and Abhradeep Thakurta led the project.</p>
+
+  <figure class="num" aria-label="Key figures from DeepMind’s RSA announcement">
+    <div><strong>~1,600×</strong><em>more efficient signature forgery against 1024-bit RSA with short digests. This is a theoretical estimate</em></div>
+    <div><strong>~30×</strong><em>lower average cost to factor each additional 1024-bit key when many are attacked together (“batch factoring”)</em></div>
+    <div><strong>2048-bit</strong><em>and longer keys, today’s standard, remain secure against these methods</em></div>
+    <figcaption>Figures as reported by <a href="https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/">Crypto Briefing</a>, <a href="https://officechai.com/ai/google-deepmind-says-it-has-used-ai-agents-to-break-legacy-rsa-1024-encryption-faster-than-anyone-thought-possible/">OfficeChai</a> and <a href="https://fourweekmba.com/ai-deepmind-ai-agents-find-2-weaknesses-in-legacy-1024-bit-rsa/">FourWeekMBA</a>, 6–7 Nov 2026. DeepMind’s own post could not be retrieved; see notes.</figcaption>
+  </figure>
+
+  <p><strong>Verified across coverage:</strong> the first result makes it cheaper to forge a signature, meaning an attacker could produce a fake “signed by this key” without ever recovering the private key. The 1,600× figure is a projection. When the method was actually run on a benchmark key that had already been broken, it used about 3.5 times less computing time. The second result is a new batch-factoring algorithm that scales better than any previous batch method. It does not make one key much easier to break, but it makes breaking many keys at once cheaper per key.</p>
+
+  <p><strong>Company claim:</strong> DeepMind presents this as evidence that AI agents can compress years of cryptanalysis into weeks. The human experts set the direction and checked the work, so this is AI-assisted research, not an autonomous discovery.</p>
+
+  <p><strong>Why it matters:</strong> this is the second time this week that a frontier lab has shown AI producing real security results, not just benchmark scores. OpenAI released its GPT-6 Cyber model the day before (below). For anyone still relying on 1024-bit keys, the case for replacing them just got stronger. More broadly, the time between a weakness being theoretical and it being practical is getting shorter.</p>
+  <p class="src">Sources: <a href="https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/">Crypto Briefing</a>, 6 Nov · <a href="https://officechai.com/ai/google-deepmind-says-it-has-used-ai-agents-to-break-legacy-rsa-1024-encryption-faster-than-anyone-thought-possible/">OfficeChai</a> · <a href="https://digg.com/ai/4ij1uxax">Digg thread on DeepMind’s announcement</a></p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://eprint.iacr.org/2026/2131.pdf">“Forging 1024-bit RSA signatures in nearly SNFS time” (Heninger, Thomé et al., IACR ePrint, September 2026)</a>: earlier forgery work by the same cryptographers. How it relates to the DeepMind result is not confirmed.</li>
+    <li><a href="https://hwbusters.com/news/rsa-signature-forgery-on-a-1024-bit-hsm-key-took-1380-core-years-and-nobody-had-to-factor-it/">Hardware Busters: a 1024-bit signature forged in 1,380 core-years without factoring the key</a></li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Agents &amp; security · Thursday, missed yesterday</span>
+    <h3>OpenAI releases GPT-6 Cyber, the model behind the 948 Linux exploits, to vetted defenders only</h3>
+    <p>Thursday’s edition covered OpenAI’s test of an unreleased “cyber model”. Later that day, OpenAI released it as GPT-6 Cyber: a version of GPT-6 Astra trained to find vulnerabilities, write proof-of-concept exploits and draft fixes. It is available through the API and Codex, but only to approved customers in OpenAI’s Daybreak programme. <strong>Company claims:</strong> it scores 48.5% on the ExploitGym benchmark (up from 32.1% for GPT-5.6 Cyber), and it stayed within authorised targets in 99.93% of tests, or 100% with deployment safety prompts. Researchers used it to find 81 previously unknown high-severity Firefox bugs. Mozilla praised it, but none of these figures has been independently checked yet.</p>
+    <p class="src"><a href="https://openai.com/index/introducing-gpt-6-cyber/">OpenAI</a>, 5 Nov · <a href="https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/">Help Net Security</a>, 6 Nov · <a href="https://cyberscoop.com/openai-gpt-6-cyber-security-model/">CyberScoop</a> · <a href="https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html">The Hacker News</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Research · Thursday, missed yesterday</span>
+    <h3>Outside evaluator METR finds Anthropic’s progress has roughly doubled, mostly because of its own AI, but much of the evidence is redacted</h3>
+    <p>METR, a non-profit that tests AI systems, had staff inside Anthropic from 12 August to 29 October with access to internal training and benchmark data. It estimates that Anthropic’s scores on its internal capability index are rising about 1.9 times faster than before October 2025 (range 1.5–2.8×). METR credits about 80% of that speed-up to AI helping with Anthropic’s own research. It found “no convincing bottlenecks” to fast progress continuing over the next year. <strong>The caveats are METR’s own:</strong> it calls the headline number “only very loose evidence”, and Anthropic used its right to redact “a majority of the evidence we found most informative”. Anthropic says it removed details that could help competitors, and it plans to publish its own analysis. This independently supports the warning in Anthropic’s IPO filing (our 3 November lead).</p>
+    <p class="src"><a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/">METR assessment</a>, 5 Nov · <a href="https://metr.org/blog/2026-11-05-rd-section-anthropic-risk-report-august-2026-review/">METR review of Anthropic’s risk report</a>, 5 Nov · <a href="https://www.techrepublic.com/article/news-anthropic-ai-progress-metr-it-buyers/">TechRepublic</a> · <a href="https://dataconomy.com/2026/11/06/metr-says-anthropics-ai-development-pace-has-doubled/">Dataconomy</a>, 6 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Policy &amp; impact · Netherlands</span>
+    <h3>Protesters break into a Microsoft data-centre construction site in Amsterdam</h3>
+    <p>On Friday, about 100 protesters, by the count of Reuters witnesses, entered Microsoft’s building site at Plimsollweg in Sloterdijk. Some climbed a crane and set off flares, and there were scuffles with police. Dutch reports say people were arrested. The action was led by the climate group Geef Tegengas as part of a “Stop Dirty Data Centres” day of protests in 16 countries. Opponents point to the site’s electricity use and the land it takes from housing. Microsoft said it respects peaceful protest. After this week’s US ballot results, this shows the backlash against data centres is not only an American story.</p>
+    <p class="src"><a href="https://abcnews.com/International/wireStory/protesters-break-microsoft-data-center-site-amsterdam-europes-137915154">ABC News (wire)</a>, 6 Nov · <a href="https://www.yahoo.com/news/world/articles/protesters-storm-microsoft-data-center-174937579.html">Yahoo News</a> · <a href="https://futurism.com/artificial-intelligence/protestors-microsoft-data-center-construction">Futurism</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Policy · US · announced this week</span>
+    <h3>The US Justice Department sets up a “Super Intelligence Task Force” to prosecute AI misuse</h3>
+    <p>Attorney General Todd Blanche announced the DOJ-SITF, co-chaired by Associate Attorney General Stanley Woodward and Associate Deputy Attorney General Stephen Weiss. It brings in the FBI and five DOJ divisions and absorbs the department’s existing AI litigation unit. Its stated targets are foreign governments, criminal groups and fraudsters misusing advanced AI. It will coordinate with the White House’s “Super Intelligence Force”, created in October and led by Jay Clayton. The name follows a September executive order that told agencies to say “super intelligence” instead of “AI”, so it does not mean the government thinks superintelligence exists. The DOJ gave no timeline or budget.</p>
+    <p class="src"><a href="https://www.executivegov.com/articles/doj-super-intelligence-task-force-ai-misuse">ExecutiveGov</a> · <a href="https://www.eurasiareview.com/05112026-department-of-justice-launches-super-intelligence-task-force/">Eurasia Review</a>, 5 Nov · <a href="https://gizmodo.com/doj-launches-super-intelligence-task-force-because-apparently-were-still-doing-this-2000835957">Gizmodo</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">This week, AI security research stopped being mainly a set of benchmark results: models found real bugs, wrote working exploits and weakened real cryptography.</p>
+  <p><strong>Deserves attention:</strong> the RSA work, GPT-6 Cyber and METR’s report all point the same way. AI is speeding up specialist research, including research on AI itself. In each case, humans still set the direction and checked the results.</p>
+  <p><strong>Overstated:</strong> “AI broke RSA.” It didn’t. These are improvements against a key length that should already be retired, and the biggest number is a theoretical estimate. Headlines about METR saying Anthropic’s progress “doubled” also skip the range and METR’s own caution about the number.</p>
+  <p><strong>Uncertain:</strong> nobody outside the companies has checked GPT-6 Cyber’s performance figures. In METR’s case, an independent evaluator was allowed to publish only part of its evidence. Self-reported or partly hidden evidence is still the norm for the most important claims in AI.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Friday 6 November 2026, 07:00 CET to Saturday 7 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>DeepMind and 1024-bit RSA: <a href="https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/">Crypto Briefing</a>; <a href="https://officechai.com/ai/google-deepmind-says-it-has-used-ai-agents-to-break-legacy-rsa-1024-encryption-faster-than-anyone-thought-possible/">OfficeChai</a>; <a href="https://fourweekmba.com/ai-deepmind-ai-agents-find-2-weaknesses-in-legacy-1024-bit-rsa/">FourWeekMBA</a>; <a href="https://digg.com/ai/4ij1uxax">Digg</a>; background: <a href="https://eprint.iacr.org/2026/2131.pdf">IACR ePrint 2026/2131</a></li>
+    <li>GPT-6 Cyber: <a href="https://openai.com/index/introducing-gpt-6-cyber/">OpenAI, 5 Nov</a>; <a href="https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/">Help Net Security, 6 Nov</a>; <a href="https://cyberscoop.com/openai-gpt-6-cyber-security-model/">CyberScoop</a>; <a href="https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html">The Hacker News</a></li>
+    <li>METR on Anthropic: <a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/">METR, 5 Nov</a>; <a href="https://metr.org/blog/2026-11-05-rd-section-anthropic-risk-report-august-2026-review/">METR risk-report review, 5 Nov</a>; <a href="https://www.techrepublic.com/article/news-anthropic-ai-progress-metr-it-buyers/">TechRepublic</a>; <a href="https://dataconomy.com/2026/11/06/metr-says-anthropics-ai-development-pace-has-doubled/">Dataconomy, 6 Nov</a></li>
+    <li>Amsterdam protest: <a href="https://abcnews.com/International/wireStory/protesters-break-microsoft-data-center-site-amsterdam-europes-137915154">ABC News, 6 Nov</a>; <a href="https://www.yahoo.com/news/world/articles/protesters-storm-microsoft-data-center-174937579.html">Yahoo News</a>; <a href="https://futurism.com/artificial-intelligence/protestors-microsoft-data-center-construction">Futurism</a></li>
+    <li>DOJ task force: <a href="https://www.executivegov.com/articles/doj-super-intelligence-task-force-ai-misuse">ExecutiveGov</a>; <a href="https://www.eurasiareview.com/05112026-department-of-justice-launches-super-intelligence-task-force/">Eurasia Review, 5 Nov</a>; <a href="https://gizmodo.com/doj-launches-super-intelligence-task-force-because-apparently-were-still-doing-this-2000835957">Gizmodo</a>; background: <a href="https://www.bostonglobe.com/2026/10/04/business/trump-names-national-intelligence-director-jay-clayton-lead-new-federal-ai-task-force/">Boston Globe, 4 Oct</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>As in recent editions, source pages could not be opened directly because the network blocked page fetching. Facts come from search-indexed reporting, cross-checked across outlets where possible. Search did not return DeepMind’s own RSA post, so the lead relies on consistent secondary coverage. No source images are embedded.</li>
+    <li>Three items (GPT-6 Cyber, METR, DOJ) were published on 5 November, technically inside yesterday’s window, but yesterday’s edition did not cover them. They are included and labelled because they matter. A Saturday edition after a quiet Friday is otherwise short, and there is no Worth a Look today because nothing strong enough turned up.</li>
+    <li>Protest numbers vary: Reuters witnesses counted about 100, and other outlets reported several hundred. Reports of tear gas came from a single outlet and are left out.</li>
+    <li>This brief is written by an Anthropic model, and one Quick Scan item assesses Anthropic. Treat the framing accordingly.</li>
+    <li>Left out as before the window or already covered: Meta’s purchase of Conductor (4 Nov), the VAPOR PANDA/ARTEX espionage campaign (CrowdStrike, late October) and the shared robots.txt AI-training opt-out (late October). Not used because the details could not be confirmed: Gemini Omni 1.2 Flash general availability, AWS “Kiro Bots”, and a reported $5–6 billion Thinking Machines round (still described as talks).</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-06/">Friday 6 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>

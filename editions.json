@@ -53,5 +53,19 @@
       "Claude can now read your bank accounts, though not move money, in a US beta",
       "The EU’s AI Office hires a Capgemini-led team to test advanced models for cyber risks"
     ]
+  },
+  {
+    "date": "2026-11-07",
+    "label": "Saturday 7 November 2026",
+    "headline": "Google DeepMind says AI agents found two new weaknesses in old 1024-bit RSA encryption in a matter of weeks",
+    "category": "Research & security",
+    "minutes": 5,
+    "window_end": "2026-11-07T07:00+01:00",
+    "teasers": [
+      "OpenAI releases GPT-6 Cyber, the model behind the 948 Linux exploits, to vetted defenders only",
+      "Outside evaluator METR finds Anthropic’s progress has roughly doubled, mostly because of its own AI, but much of the evidence is redacted",
+      "Protesters break into a Microsoft data-centre construction site in Amsterdam",
+      "The US Justice Department sets up a “Super Intelligence Task Force” to prosecute AI misuse"
+    ]
   }
 ]
