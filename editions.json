@@ -67,5 +67,19 @@
       "Protesters break into a Microsoft data-centre construction site in Amsterdam",
       "The US Justice Department sets up a “Super Intelligence Task Force” to prosecute AI misuse"
     ]
+  },
+  {
+    "date": "2026-11-08",
+    "label": "Sunday 8 November 2026",
+    "headline": "Anthropic’s IPO price talk falls to about $1.2–1.3 trillion after the AI sell-off, but it is reportedly still aiming to list in November",
+    "category": "Companies & markets",
+    "minutes": 5,
+    "window_end": "2026-11-08T07:00+01:00",
+    "teasers": [
+      "OpenAI hires Hacktron, the startup that used AI to break into its employees’ accounts",
+      "A family sues Google after their 13-year-old talked about suicide with Gemini on a school Chromebook",
+      "Perplexity’s “Teammates” are named agents that keep working on a job for weeks, not just one chat",
+      "What makes desktop software easy for an AI agent to use? A study points to three interface properties"
+    ]
   }
 ]
