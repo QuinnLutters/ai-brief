@@ -81,5 +81,19 @@
       "Perplexity’s “Teammates” are named agents that stay on an ongoing job instead of answering one chat",
       "What makes desktop software easy for an AI agent to use? A study points to three interface properties"
     ]
+  },
+  {
+    "date": "2026-11-09",
+    "label": "Monday 9 November 2026",
+    "headline": "AI did real security research this week, and an outside audit says it is speeding up AI research too",
+    "category": "Weekly · Research & security",
+    "minutes": 7,
+    "window_end": "2026-11-09T07:00+01:00",
+    "teasers": [
+      "Voters and investors started charging a price for the data-centre build-out",
+      "Locking up the best cyber model may only buy a short lead, as open models close in",
+      "The coding-agent race moved from models to the workbench",
+      "Google’s AI-by-default plan for schools lasted one day before it was walked back, and now faces a lawsuit"
+    ]
   }
 ]
