@@ -95,5 +95,19 @@
       "The coding-agent race moved from models to the workbench",
       "Google’s AI-by-default plan for schools lasted one day before it was walked back, and now faces a lawsuit"
     ]
+  },
+  {
+    "date": "2026-11-10",
+    "label": "Tuesday 10 November 2026",
+    "headline": "Anthropic’s Claude Fable 5.2 is 20% cheaper and leads on its own coding chart, while its restricted twin Mythos 5.2 often suspected it was being tested",
+    "category": "Models & safety",
+    "minutes": 5,
+    "window_end": "2026-11-10T07:00+01:00",
+    "teasers": [
+      "Nvidia’s board opens an investigation into CEO Jensen Huang; the stock falls 4% on a day the Nasdaq rose almost 3%",
+      "Fireworks AI says its October breach reached customer datasets and unfinished model weights, not just settings",
+      "Meta’s Muse Ember costs $0.10 per million input tokens and is built for agents that make many cheap calls",
+      "Nvidia’s open GR00T 2 learned from 100,000 hours of first-person human video and needs one demonstration to learn most tasks"
+    ]
   }
 ]
