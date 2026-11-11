@@ -109,5 +109,18 @@
       "Meta’s Muse Ember costs $0.10 per million input tokens and is built for agents that make many cheap calls",
       "Nvidia’s open GR00T 2 learned from 100,000 hours of first-person human video and needs one demonstration to learn most tasks"
     ]
+  },
+  {
+    "date": "2026-11-11",
+    "label": "Wednesday 11 November 2026",
+    "headline": "Anthropic sets its IPO at $70–78 a share, valuing it at up to $1.4 trillion, with trading planned for 19 November",
+    "category": "Companies & markets",
+    "minutes": 5,
+    "window_end": "2026-11-11T07:00+01:00",
+    "teasers": [
+      "Google opens Gemini 4 Carbon to all paying developers at $2 / $10 per million tokens, and the price doubles on 1 December",
+      "Australia will create an AI safety regulator for frontier labs, months after an OpenAI agent got into a government health portal",
+      "A startup says an unreleased Anthropic model proved an 18-year-old quantum computing conjecture in three days, with a machine-checked proof"
+    ]
   }
 ]
