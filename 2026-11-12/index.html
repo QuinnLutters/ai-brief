@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 12 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Thursday 12 November 2026 · Window: Wed 11 Nov 07:00 – Thu 12 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Companies &amp; markets</span>
+  <h1>OpenAI made $10 billion last quarter and lost $10.9 billion, according to documents seen by the Wall Street Journal</h1>
+  <p class="stand">Revenue grew about 50% in three months and business customers are now its biggest source of income. But it still spends more than a dollar for every dollar it earns, a week before Anthropic, which publishes its numbers, goes public.</p>
+
+  <p>On Wednesday morning the Wall Street Journal reported figures from internal OpenAI documents for July to September. Revenue reached about $10 billion, up roughly 50% from the previous quarter. That is the company’s first $10 billion quarter. Over the same period its adjusted operating loss grew from $10.1 billion to about $10.9 billion. (“Adjusted” means some costs, such as stock pay, are left out.)</p>
+
+  <figure class="num" aria-label="Key figures from OpenAI's reported third quarter">
+    <div><strong>~$10B</strong><em>Revenue, July–September, up about 50% on the previous quarter</em></div>
+    <div><strong>$10.9B</strong><em>Adjusted operating loss, up from $10.1B. It excludes $2.6B of stock-based pay to staff.</em></div>
+    <div><strong>$1.09</strong><em>Lost per dollar of revenue, down from $1.50 the quarter before</em></div>
+    <figcaption>Source: internal documents reported by the <a href="https://x.com/WSJ/status/2120447636008300953">Wall Street Journal</a>, 11 Nov, via <a href="https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353">Reuters</a> and <a href="https://www.forbes.com/sites/jonmarkman/2026/11/11/openai-revenue-hits-10-billion-in-q3-as-loss-per-dollar-falls-to-109/">Forbes</a>. OpenAI has not published these figures.</figcaption>
+  </figure>
+
+  <p><strong>Reported:</strong> CFO Sarah Friar said enterprise revenue doubled in the quarter and now matches consumer revenue, and that the Microsoft Azure contract had held sales back. <strong>Not confirmed:</strong> OpenAI has not commented or published a cost breakdown.</p>
+
+  <p><strong>The comparison everyone is making:</strong> Anthropic’s amended IPO filing shows $16.96 billion in revenue for the same quarter and an operating loss of $567 million. The comparison is rough: one is an SEC filing, the other adjusted figures from investor documents. But the gap is large.</p>
+
+  <p><strong>Why it matters:</strong> OpenAI’s losses per dollar fell by about a quarter in three months, yet it still burns roughly $11 billion a quarter while preparing its own listing. Once Anthropic trades next week, OpenAI will be measured against a rival whose accounts are public.</p>
+  <p class="src">Sources: <a href="https://x.com/WSJ/status/2120447636008300953">WSJ (post linking the exclusive)</a>, 11 Nov · <a href="https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353">Reuters via Investing.com</a>, 11 Nov · <a href="https://www.forbes.com/sites/jonmarkman/2026/11/11/openai-revenue-hits-10-billion-in-q3-as-loss-per-dollar-falls-to-109/">Forbes (Markman)</a>, 11 Nov · <a href="https://www.forbes.com/sites/gabrielalinzainescu/2026/11/11/openai-revenue-hits-10-billion-as-losses-reach-109-billion/">Forbes (Inzainescu)</a>, 11 Nov · Anthropic comparison: <a href="https://fourweekmba.com/ai-anthropic-files-q3-17b-revenue-567m-operating-loss/">FourWeekMBA</a>, <a href="https://letsdatascience.com/news/anthropic-reports-17-billion-q3-revenue-in-amended-s-1-9b752413">Let’s Data Science</a> (S-1/A of 2 Nov)</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://www.tokenpost.com/news/business/54720">TokenPost on the enterprise doubling and the Azure remarks</a></li>
+    <li><a href="https://letsdatascience.com/blog/anthropic-made-17-billion-short-term-compute-put-it-in-red">Why Anthropic swung to an operating loss: short-term compute deals</a></li>
+    <li>To watch: Nvidia’s earnings on 17 November, Anthropic’s IPO pricing on 18 November, and whether OpenAI confirms or explains its numbers.</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Models &amp; APIs</span>
+    <h3>Google’s Gemini Decision 1 answers up to 1,000 questions at once with probabilities instead of text, for $0.10 per million input tokens</h3>
+    <p>Most AI models answer by writing text. Google’s new Gemini Decisions API skips that step. You send it some material (text, images, audio, video or PDFs) and a list of yes/no questions, multiple-choice questions or scoring rubrics, and it returns an answer to each with a probability attached. With no text written, output is free. <strong>Google’s claims:</strong> it is calibrated, meaning a 70% answer should be right about 70% of the time, and it beats rivals on five of seven benchmarks. No independent tests yet. <strong>Why it’s interesting:</strong> a large share of what developers ask models to do is really classification: checking content, sorting tickets or grading agent output. Honest confidence scores would make that cheaper and easier to audit.</p>
+    <p class="src"><a href="https://aistudio.google.com/docs/models/gemini-decision-1">Gemini API docs</a> · <a href="https://x.com/GoogleAIStudio/status/2120581284690801060">Google AI Studio on X</a>, 11 Nov · <a href="https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/">MarkTechPost</a>, 11 Nov · <a href="https://interestingengineering.com/ai-robotics/google-gemini-decisions-api-fast-ai-agents">Interesting Engineering</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Agents &amp; security</span>
+    <h3>NEAR AI says attackers got in through a flaw in a popular open-source AI server and reached 18 agents and about 100 user accounts</h3>
+    <p>NEAR AI, which hosts AI agents, said on 9 November that an intrusion began the day before through a remote code execution flaw in <strong>SGLang</strong>, a widely used open-source engine for running models. According to the company, the attackers reached about 100 user accounts and 18 older agents that ran outside its protected “confidential computing” environment. Chat histories, settings and logs were exposed; two customers’ API keys found in logs were revoked. <strong>Status:</strong> confirmed breach, per the company. NEAR did not say which SGLang vulnerability was used, and SGLang has had several this year, some still unpatched. <strong>What the sources support:</strong> anyone running SGLang should update to the latest version and keep its control endpoints off the open internet.</p>
+    <p class="src"><a href="https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents">Decrypt</a> · <a href="https://www.cryptotimes.io/2026/11/10/near-ai-confirms-breach-exposed-user-data-and-access-to-18-ai-agents/">The Crypto Times</a>, 10 Nov · <a href="https://en.cryptonomist.ch/2026/11/10/near-ai-security-breach/">The Cryptonomist</a>, 10 Nov · SGLang background: <a href="https://github.com/advisories/GHSA-rgq9-fqf5-fv58">GitHub advisory CVE-2026-3059</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Products</span>
+    <h3>Anthropic launches Claude Sheets, a basic spreadsheet tool, and Microsoft shares slip about 2%</h3>
+    <p>Unconfirmed in yesterday’s edition, now widely reported: on 10 November Anthropic released <strong>Claude Sheets</strong> in beta for all paid plans. It builds spreadsheets with tabs, formulas and formatting from a written request. Alongside it came <strong>Claude Whiteboards</strong>, and <strong>Claude Data</strong> became generally available. An Anthropic product lead reportedly called Sheets “fairly basic” for now. Microsoft shares closed down 2.2% that day. Some coverage ties the drop to the launch, but higher-than-expected US inflation figures pushed tech stocks down at the same time. One detail: Anthropic’s amended IPO filing lists Microsoft as a buyer of about $1 billion in shares at the IPO price.</p>
+    <p class="src"><a href="https://finance.yahoo.com/technology/ai/articles/microsoft-stock-falls-anthropic-takes-111433184.html">Yahoo Finance</a> · <a href="https://www.investing.com/news/stock-market-news/microsoft-stock-falls--as-anthropic-takes-aim-at-excel-and-workplace-software-5016411">Investing.com</a> · <a href="https://www.ibtimes.com/microsoft-shares-fall-anthropic-office-ai-tools-3809631">IBTimes</a> · <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262299276-microsoft-stock-drops-anthropic-claude-office-tools-microsoft-365-competition-tradingkey">TradingKey</a>, 10–11 Nov</p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Research · announced 10 November</span>
+    <h3>DeepMind’s AI agents proved that Signal’s encryption works as designed, checking the actual compiled code rather than a description of it</h3>
+    <p>Mathematically proving that code does what it should is called <strong>formal verification</strong>, and it normally takes expert teams years. Google DeepMind says its multi-agent system, <strong>AlphaProof Code</strong>, did it in four weeks. The system checked the key exchange (PQXDH, which is designed to resist future quantum computers) and the “Triple Ratchet”, which keeps changing the keys during a conversation. It did not check the source code but the compiled 64-bit Arm machine code of libsignal 0.105.4, the instructions a phone actually runs, closing the gap where a compiler could slip in a flaw. The proofs are written in Lean, a language in which a computer checks every step. Older versions with known, fixed bugs failed to verify, as they should. <strong>Limits:</strong> this is not the whole Signal app. Timing and power side-channel attacks were out of scope, and no new bugs were found. Reports of the proof’s size range from 3 million to 6.5 million lines. DeepMind has published the proofs on GitHub for anyone to check.</p>
+    <p class="src"><a href="https://deepmind.google/blog/introducing-alphaproof-code/">Google DeepMind blog</a>, 10 Nov · <a href="https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/">The Decoder</a> · <a href="https://cyberinsider.com/google-deepmind-signal-encryption-machine-code-verification/">CyberInsider</a> · <a href="https://hwbusters.com/news/google-deepminds-alphaproof-code-verifies-signals-encryption-all-the-way-down-to-arm-machine-code/">Hardware Busters</a></p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">The same week AI showed it can prove software is correct, an AI company was breached through the software that runs its models.</p>
+  <p><strong>Deserves attention:</strong> the AlphaProof Code result. Checking compiled machine code, with proofs anyone can re-run, is a sturdier kind of claim than a benchmark score. The NEAR breach is the other side. Agent platforms rest on young open-source model servers, and these are now a real way in.</p>
+  <p><strong>Overstated:</strong> “Claude Sheets sank Microsoft”. A 2% drop on a day of hot inflation figures, caused by a product its own maker calls basic, is not a verdict on Excel. The OpenAI–Anthropic comparison also deserves care: adjusted figures from leaked documents are not the same as a filing with the SEC.</p>
+  <p><strong>Uncertain:</strong> whether Gemini Decision’s confidence scores hold up in independent tests. That calibration is the main reason to use it. Also uncertain: whether OpenAI really cuts Cursor off today. 12 November was its proposed date, and nothing confirmed it by this morning.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Wednesday 11 November 2026, 07:00 CET to Thursday 12 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>OpenAI Q3 figures: <a href="https://x.com/WSJ/status/2120447636008300953">WSJ on X, 11 Nov</a>; <a href="https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353">Reuters via Investing.com</a>; <a href="https://www.forbes.com/sites/jonmarkman/2026/11/11/openai-revenue-hits-10-billion-in-q3-as-loss-per-dollar-falls-to-109/">Forbes, 11 Nov</a>; <a href="https://www.forbes.com/sites/gabrielalinzainescu/2026/11/11/openai-revenue-hits-10-billion-as-losses-reach-109-billion/">Forbes, 11 Nov</a>; <a href="https://www.tokenpost.com/news/business/54720">TokenPost</a>; <a href="https://fourweekmba.com/ai-openai-lost-1-09-per-revenue-dollar-in-q3-down-from-1-50/">FourWeekMBA</a>; Anthropic Q3: <a href="https://fourweekmba.com/ai-anthropic-files-q3-17b-revenue-567m-operating-loss/">FourWeekMBA</a>, <a href="https://letsdatascience.com/news/anthropic-reports-17-billion-q3-revenue-in-amended-s-1-9b752413">Let’s Data Science</a>, <a href="https://www.exchange4media.com/digital-news/anthropic-q3-revenue-jumps-47-to-1696-billion-as-net-loss-narrows-ahead-of-ipo-159768.html">Exchange4media</a></li>
+    <li>Gemini Decision 1: <a href="https://aistudio.google.com/docs/models/gemini-decision-1">Gemini API docs</a>; <a href="https://x.com/GoogleAIStudio/status/2120581284690801060">Google AI Studio on X, 11 Nov</a>; <a href="https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/">MarkTechPost, 11 Nov</a>; <a href="https://interestingengineering.com/ai-robotics/google-gemini-decisions-api-fast-ai-agents">Interesting Engineering</a>; <a href="https://www.datastudios.org/post/google-gemini-decisions-api-gemini-decision-1-0-10-input-free-output">DataStudios</a>; <a href="https://cellcog.ai/blog/gemini-decision-1/">CellCog</a></li>
+    <li>NEAR AI breach: <a href="https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents">Decrypt</a>; <a href="https://news.bitcoin.com/security/near-ai-confirms-security-breach-affecting-100-users-18-agents/">Bitcoin.com News</a>; <a href="https://www.cryptotimes.io/2026/11/10/near-ai-confirms-breach-exposed-user-data-and-access-to-18-ai-agents/">The Crypto Times, 10 Nov</a>; <a href="https://en.cryptonomist.ch/2026/11/10/near-ai-security-breach/">The Cryptonomist, 10 Nov</a>; <a href="https://github.com/advisories/GHSA-rgq9-fqf5-fv58">GitHub advisory (SGLang background)</a></li>
+    <li>Claude Sheets: <a href="https://finance.yahoo.com/technology/ai/articles/microsoft-stock-falls-anthropic-takes-111433184.html">Yahoo Finance</a>; <a href="https://www.investing.com/news/stock-market-news/microsoft-stock-falls--as-anthropic-takes-aim-at-excel-and-workplace-software-5016411">Investing.com</a>; <a href="https://www.ibtimes.com/microsoft-shares-fall-anthropic-office-ai-tools-3809631">IBTimes</a>; <a href="https://mlq.ai/news/anthropic-launches-claude-sheets-and-meetings-in-a-push-into-office-software-as-microsoft-shares-fall/">MLQ.ai</a>; <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262299276-microsoft-stock-drops-anthropic-claude-office-tools-microsoft-365-competition-tradingkey">TradingKey</a></li>
+    <li>Worth a Look: <a href="https://deepmind.google/blog/introducing-alphaproof-code/">Google DeepMind blog, 10 Nov</a>; <a href="https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/">The Decoder</a>; <a href="https://cyberinsider.com/google-deepmind-signal-encryption-machine-code-verification/">CyberInsider</a>; <a href="https://hwbusters.com/news/google-deepminds-alphaproof-code-verifies-signals-encryption-all-the-way-down-to-arm-machine-code/">Hardware Busters</a></li>
+    <li>Cursor cutoff (Signal Check): <a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/">OpenAI, August</a>; <a href="https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html">CNBC, 29 Aug</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>This brief is written by an Anthropic model. Anthropic appears in the lead as the comparison point and in the Claude Sheets item. Its figures come from its SEC filing as reported, and the Sheets item notes the other explanation for Microsoft’s share move.</li>
+    <li>As in recent editions, the network blocked direct page fetching. Facts come from search-indexed reporting, cross-checked across outlets where possible. The WSJ article itself (paywalled), DeepMind’s blog and NEAR AI’s incident report were cited through coverage. The timing of the WSJ and Google posts was checked from their X post timestamps (11 Nov, 10:24 and 19:15 CET). No source images are embedded.</li>
+    <li>Timing: DeepMind’s Signal work (10 November), NEAR AI’s disclosure (9 November) and Claude Sheets (10 November) came before this window but were not covered in earlier editions.</li>
+    <li>Left out: the IBM and Microsoft “Imagine” agent platform (thin details); reports that Apple is testing a local AI app for Mac clusters (single-source); New York’s RAISE Act registration (opening in November, but no confirmation that it has started). Not used because they could not be confirmed: a $740,000 bill from stolen AI keys linked to Railway, a $750 million Mercor round, an OpenAI purchase of Odessia, and whether Jensen Huang answered the House request for a briefing by the 11 November deadline.</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-11/">Wednesday 11 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>
