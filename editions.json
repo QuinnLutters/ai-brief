@@ -136,5 +136,19 @@
       "Anthropic launches Claude Sheets, a basic spreadsheet tool, and Microsoft shares slip about 2%",
       "DeepMind’s AI agents proved that Signal’s encryption works as designed, checking the actual compiled code rather than a description of it"
     ]
+  },
+  {
+    "date": "2026-11-13",
+    "label": "Friday 13 November 2026",
+    "headline": "Jensen Huang resigns as Nvidia’s CEO, five days before the earnings report the whole AI trade is waiting for",
+    "category": "Companies & markets",
+    "minutes": 5,
+    "window_end": "2026-11-13T07:00+01:00",
+    "teasers": [
+      "OpenAI tells lawmakers it backs bills to tighten US controls on AI chips going to China, breaking a long silence",
+      "Researchers say a jailbroken DeepSeek agent spent two weeks inside a European telecom, mostly using old, already-patched flaws",
+      "Anthropic’s IPO has drawn orders for about six times the shares on offer, Bloomberg reports, with pricing set for Wednesday",
+      "DeepMind’s Gemini Robotics 2.5 is reported to hit 96% on a Mercedes-Benz parts task, and comes with an open test of whether robots can be talked into unsafe acts"
+    ]
   }
 ]
