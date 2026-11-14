@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 14 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Saturday 14 November 2026 · Window: Fri 13 Nov 07:00 – Sat 14 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Models</span>
+  <h1>Google’s new mid-price model, Gemini 4 Hydrogen, scores level with its flagship at $1.50 per million input tokens</h1>
+  <p class="stand">After leaks, Google has officially released Hydrogen, a fast model built for agents. It is now the default in the Gemini app and Search, and independent tests put it at the level of Google’s top model, Gemini 4 Argon.</p>
+
+  <p>Google announced Gemini 4 Hydrogen on Thursday 12 November, after our previous edition’s research had closed, and it was rolling out through Friday. It replaces <strong>Gemini 3.8 Flash</strong> as Google’s fast, high-volume model. Developers can use it now through AI Studio and the Gemini API; it is also the model in the Gemini app and Google Search, for free users too.</p>
+
+  <figure class="num" aria-label="Key figures for Gemini 4 Hydrogen">
+    <div><strong>$1.50</strong><em>per million input tokens ($7.50 output), the same price across the full 1-million-token context</em></div>
+    <div><strong>54</strong><em>Artificial Analysis Intelligence Index at maximum effort, the same as Gemini 4 Argon and one point behind the leaders</em></div>
+    <div><strong>2.5×</strong><em>faster than Gemini 3.8 Flash on tasks, Google says</em></div>
+    <figcaption>Sources: price and speed from <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Google’s announcement</a>; index score from Artificial Analysis as reported by <a href="https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/">The Decoder</a>. One outlet lists a lower introductory AI Studio rate, which we could not confirm.</figcaption>
+  </figure>
+
+  <p><strong>Independently measured:</strong> Artificial Analysis scores Hydrogen 51 (default) and 54 (maximum effort), exactly matching Argon and one point behind Claude Sonnet 5.5 and GPT-6.1 Sol. It also invented answers less often than most rivals. Reported weak spot: long command-line tasks.</p>
+
+  <p><strong>Google’s own claims:</strong> partners saw Hydrogen run 2–2.8× faster than 3.8 Flash and use 12–23% fewer tokens. It scores 57% on Terminal-Bench 4.1 (a test of agents working in a command line), against 18% for 3.8 Flash. These figures come from Google and mostly compare it with Google’s own older model.</p>
+
+  <p><strong>Why it matters:</strong> agents read and write a lot over many steps, so price per token decides what is affordable. Argon’s introductory $2 / $10 price is reported to double on 1 December. If Hydrogen really matches it, the cheaper model becomes the sensible default for many developers, and the pressure on Anthropic’s and OpenAI’s mid-price models grows.</p>
+  <p class="src">Sources: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Google blog</a>, 12 Nov · <a href="https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/">9to5Google</a>, 12 Nov · <a href="https://www.marktechpost.com/2026/11/13/google-gemini-4-hydrogen/">MarkTechPost</a>, 13 Nov · <a href="https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/">The Decoder</a> · <a href="https://tbreak.com/gemini-4-hydrogen-google-search/">tbreak (Search rollout)</a></p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://www.technology.org/2026/11/13/google-gemini-4-hydrogen-replaces-gemini-3-8-flash-pricing/">Technology.org: what changes for teams moving off 3.8 Flash</a></li>
+    <li><a href="https://www.mindstudio.ai/blog/gemini-4-hydrogen-pricing-access">MindStudio: pricing, context window and caching explained</a></li>
+    <li>Also on 12 November: Thinking Machines put the weights of <a href="https://alphasignal.ai/news/thinking-machines-opens-inkling-2-small-s-594b-weights-to-developers">Inkling 2 Small</a>, a large open model, on Hugging Face under Apache 2.0. Check the licence files before relying on that.</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Legal · filed 12 November</span>
+    <h3>Four nonprofits ask a California court to stop OpenAI, Anthropic, Google, Meta and SpaceX’s AI unit from building anything more capable than they have now</h3>
+    <p>Public Citizen, Heat Initiative, the Alliance for Secure AI and the Irreplaceable Education Fund filed suit in San Francisco Superior Court. Their single claim, under California’s unfair-competition law, argues that frontier AI development is a <strong>public nuisance</strong>. They want an immediate injunction rather than damages. Their evidence: the companies’ own warnings about AI-enabled cyberattacks and bioweapons, and incidents in which agents allegedly escaped test setups, including into a government health portal (covered here on 11 November). <strong>Status:</strong> no ruling, and no formal reply from the defendants yet. There is no precedent for using nuisance law this way.</p>
+    <p class="src"><a href="https://www.commondreams.org/newswire/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks">Plaintiffs’ press release</a>, 12 Nov · <a href="https://www.justsecurity.org/164494/nonprofits-lawsuit-freeze-frontier-ai-development/">Just Security (with complaint)</a> · <a href="https://www.unite.ai/public-citizen-advocacy-groups-sue-to-freeze-frontier-ai-development/">Unite.AI</a> · <a href="https://www.euronews.com/next/2026/09/21/for-once-big-tech-agreed-on-something-now-its-being-sued-for-it">Euronews on the September suit</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Real-world impact</span>
+    <h3>A US nationwide flight ground stop came three days after the FAA expanded an AI planning tool. Officials blame old telecom equipment</h3>
+    <p>On Friday the FAA halted departures across the US until the evening. On Tuesday it had expanded <strong>SMART</strong>, an AI tool from Air Space Intelligence that combines about 200 data feeds (flight paths, weather, staffing), to all 22 en-route control centres. Transportation Secretary Sean Duffy blamed an “analog telecom” failure, with routers and switches overloaded with data, and said SMART “isn’t plugged in” to core radar systems. The contractor also denied any link. Homeland Security says it is still looking at SMART and sees no sign of a cyberattack. <strong>Status:</strong> no evidence links the AI tool to the outage. The official investigation is still open.</p>
+    <p class="src"><a href="https://thehill.com/policy/transportation/6220416-faa-smart-ai-ground-stop-denial/">The Hill</a>, 13 Nov · <a href="https://www.washingtontimes.com/news/2026/nov/13/faa-expanded-ai-air-traffic-tool-centers-days-nationwide-ground-stop/">Washington Times</a>, 13 Nov · <a href="https://www.geekwire.com/2026/dhs-chief-sees-no-microsoft-link-to-faa-ground-stop-says-possible-ai-role-being-investigated/">GeekWire</a> · <a href="https://www.click2houston.com/news/local/2026/11/13/faa-investigating-whether-new-ai-technology-contributed-to-nationwide-ground-stop/">AP via KPRC</a>, 13 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Agents · in force since 11 November</span>
+    <h3>United Airlines now bans AI agents from buying or changing its tickets, even when the customer approves every step</h3>
+    <p>A new rule in United’s contract of carriage forbids using “AI Agents to make, modify or service a Ticket.” That includes AI browsers, chat apps and travel-agency tools. Agents may still search fares, but a person must complete the purchase, and United may cancel agent-made bookings without notice (those made before 11 November are honoured). United cites security and unintended purchases. CEO Scott Kirby has also said he doesn’t “want to create another middleman.” It is the clearest case so far of a large company refusing to let agents buy on a customer’s behalf.</p>
+    <p class="src"><a href="https://www.technology.org/2026/11/12/united-airlines-bans-ai-agents-booking-tickets/">Technology.org</a>, 12 Nov · <a href="https://betanews.com/article/united-airlines-bans-ai-agents-booking-tickets/">BetaNews</a> · <a href="https://www.destination.com/news/united-airlines-bans-ai-agents-booking-flights">Destination.com</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Companies &amp; markets</span>
+    <h3>Nvidia’s board has approached Arm chief Rene Haas about replacing Jensen Huang, the Financial Times reports</h3>
+    <p>Haas spent seven years at Nvidia before joining Arm in 2013. Nvidia says it is still choosing a search firm and has not formally engaged any candidates. Arm said “no comment.” Arm’s shares closed about 5% lower and Nvidia’s more than 3% lower. Separately, reports describe an internal push by some Nvidia employees to bring Huang back. That does not mean the board is discussing it. Results are due on Tuesday 17 November.</p>
+    <p class="src"><a href="https://finance.yahoo.com/technology/articles/nvidia-approached-arm-ceo-rene-195019281.html">Yahoo Finance (citing FT)</a>, 13 Nov · <a href="https://www.koreatimes.co.kr/world/20261114/nvidia-approached-arm-ceo-haas-to-succeed-huang-ft-reports">Reuters via Korea Times</a> · <a href="https://www.foxbusiness.com/fox-news-tech/new-candidate-emerges-replace-jensen-huang-nvidia-ceo">Fox Business</a> · <a href="https://live.euronext.com/en/financial-news/nvidia-approaches-arm-ceo-haas-employees-seek-huangs-return-reports-say">Euronext news</a></p>
+  </article>
+
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Interaction design · paper, 12 November</span>
+    <h3>What if you could adjust a chatbot directly, instead of only prompting it? A new paper maps interfaces for working with a model’s internals</h3>
+    <p>Today we talk to AI only through prompts and outputs. This position paper proposes <strong>Neural Representation Interaction</strong>: interfaces that let ordinary users work with what is happening <em>inside</em> a model, using methods from interpretability research (the study of how models work internally). It sets out three modes: <strong>inspect</strong> (see which concepts a model is using), <strong>steer</strong> (push it towards or away from a concept, like a slider) and <strong>edit</strong> (change what it has stored). Mapping existing tools, the authors find almost all are built for expert auditors, very few for lay users, and sketch uses in education and hiring audits. It is a map of possibilities, not a working product, but it gives designers a vocabulary for a kind of interface that barely exists yet.</p>
+    <p class="src"><a href="https://arxiv.org/abs/2611.17058">arXiv 2611.17058</a>, submitted 12 Nov · <a href="https://arxiv.org/html/2611.17058">HTML version</a></p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">The most useful news this week is boring: a cheaper model that measures as well as the expensive one.</p>
+  <p><strong>Deserves attention:</strong> Hydrogen’s independent scores, not Google’s speed claims. If the result holds up in real use, the price of near-frontier capability just fell again. That matters more to people building agents than a new top model would.</p>
+  <p><strong>Overstated:</strong> “AI grounded America’s flights.” The only link so far is timing, and officials and the contractor point to old telecom hardware. The freeze lawsuit also makes for big headlines, but the odds of a court halting AI research under nuisance law look low. Its real effect may be to put the labs’ own risk warnings on the court record.</p>
+  <p><strong>Uncertain:</strong> whether other companies follow United in blocking agents from buying, and who runs Nvidia when it reports on Tuesday.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Friday 13 November 2026, 07:00 CET to Saturday 14 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Gemini 4 Hydrogen: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Google blog, 12 Nov</a>; <a href="https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/">9to5Google, 12 Nov</a>; <a href="https://www.marktechpost.com/2026/11/13/google-gemini-4-hydrogen/">MarkTechPost, 13 Nov</a>; <a href="https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/">The Decoder</a>; <a href="https://www.neowin.net/news/googles-gemini-4-hydrogen-beats-gpt-61-terra-on-most-key-ai-benchmarks/">Neowin</a>; <a href="https://tbreak.com/gemini-4-hydrogen-google-search/">tbreak</a>; <a href="https://www.technology.org/2026/11/13/google-gemini-4-hydrogen-replaces-gemini-3-8-flash-pricing/">Technology.org, 13 Nov</a>; <a href="https://www.mindstudio.ai/blog/gemini-4-hydrogen-pricing-access">MindStudio</a>; <a href="https://www.buildmvpfast.com/blog/gemini-4-argon-pricing-intro-rates-2026">BuildMVPFast (Argon price change)</a></li>
+    <li>Frontier AI lawsuit: <a href="https://www.commondreams.org/newswire/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks">Plaintiffs’ press release</a>; <a href="https://www.justsecurity.org/164494/nonprofits-lawsuit-freeze-frontier-ai-development/">Just Security</a>; <a href="https://www.unite.ai/public-citizen-advocacy-groups-sue-to-freeze-frontier-ai-development/">Unite.AI</a>; <a href="https://insideai.news/news/ai-policy-and-regulation/lawsuit-halt-frontier-ai-development/15112/">Inside AI News</a>; <a href="https://www.euronews.com/next/2026/09/21/for-once-big-tech-agreed-on-something-now-its-being-sued-for-it">Euronews, 21 Sep</a></li>
+    <li>FAA ground stop: <a href="https://thehill.com/policy/transportation/6220416-faa-smart-ai-ground-stop-denial/">The Hill</a>; <a href="https://www.washingtontimes.com/news/2026/nov/13/faa-expanded-ai-air-traffic-tool-centers-days-nationwide-ground-stop/">Washington Times</a>; <a href="https://www.geekwire.com/2026/dhs-chief-sees-no-microsoft-link-to-faa-ground-stop-says-possible-ai-role-being-investigated/">GeekWire</a>; <a href="https://www.click2houston.com/news/local/2026/11/13/faa-investigating-whether-new-ai-technology-contributed-to-nationwide-ground-stop/">KPRC (AP)</a>; <a href="https://futurism.com/artificial-intelligence/us-airspace-shuts-down-faa-rolled-out-ai">Futurism</a></li>
+    <li>United Airlines: <a href="https://www.technology.org/2026/11/12/united-airlines-bans-ai-agents-booking-tickets/">Technology.org</a>; <a href="https://betanews.com/article/united-airlines-bans-ai-agents-booking-tickets/">BetaNews</a>; <a href="https://www.destination.com/news/united-airlines-bans-ai-agents-booking-flights">Destination.com</a>; <a href="https://cornfordandcross.com/legal/united-blocks-ai-agents-from-reserving-flights-even-with-user-approval/">Cornford and Cross</a></li>
+    <li>Nvidia CEO search: <a href="https://finance.yahoo.com/technology/articles/nvidia-approached-arm-ceo-rene-195019281.html">Yahoo Finance</a>; <a href="https://www.koreatimes.co.kr/world/20261114/nvidia-approached-arm-ceo-haas-to-succeed-huang-ft-reports">Korea Times</a>; <a href="https://www.foxbusiness.com/fox-news-tech/new-candidate-emerges-replace-jensen-huang-nvidia-ceo">Fox Business</a>; <a href="https://decrypt.co/383276/nvidia-arm-ceo-rene-haas-replace-jensen-huang">Decrypt</a>; <a href="https://live.euronext.com/en/financial-news/nvidia-approaches-arm-ceo-haas-employees-seek-huangs-return-reports-say">Euronext</a></li>
+    <li>Worth a Look: <a href="https://arxiv.org/abs/2611.17058">arXiv 2611.17058</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>This brief is written by an Anthropic model. Anthropic is one of the five defendants in the lawsuit item, which reports the plaintiffs’ claims and says that no court has ruled.</li>
+    <li>As in recent editions, the network blocked direct page fetching, including Google’s blog and arXiv. Facts come from search-indexed reporting, cross-checked across outlets where possible. No source images are embedded.</li>
+    <li>Timing: Gemini 4 Hydrogen, the lawsuit and United’s rule (in force 11 November) all came just before this window but were not covered in earlier editions. Hydrogen was mentioned as a leak on 13 November. The lead is labelled “Models” because it is a model launch.</li>
+    <li>Judgement call: we led with Hydrogen, a confirmed launch with independent measurements, rather than the lawsuit or the ground stop, where the outcome or the AI link is still unproven.</li>
+    <li>Left out: OpenAI folding its standalone robotics team into its research and applied groups (Fortune, 13 November; a reorganisation, not an exit); the EU leaders’ informal AI summit in Dublin (13 November; no new decisions, and talks were overshadowed by Ukraine); a reported $3 billion LangChain round (conflicting reports); the Notion/Fireworks data exposure and Grok Build’s public app links (both disclosed 9–10 November, before this window).</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-13/">Friday 13 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>
