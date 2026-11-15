@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 15 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Sunday 15 November 2026 · Window: Sat 14 Nov 07:00 – Sun 15 Nov 07:00 CET · 4 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Agents &amp; security</span>
+  <h1>The FBI warns that criminals and state hackers are using ARTEX, an open-source AI attack tool, sometimes reaching admin access in under three hours</h1>
+  <p class="stand">An FBI flash alert says a multi-agent hacking framework, built for authorised security testing, is now used in real attacks across at least ten sectors. It mostly exploits old weaknesses, just very fast.</p>
+
+  <p>The FBI published alert FLASH-20261113-001 on Friday 13 November, after our previous edition’s research had closed. It describes <strong>ARTEX</strong>, an open-source penetration-testing framework (software that security testers use to attack systems with permission). You give it a goal in plain language, and a team of AI agents turns that goal into commands: finding targets, breaking in, gaining higher privileges and copying data out. ARTEX does not include its own model. It plugs into outside models, including Claude, GPT, DeepSeek, GLM, Grok and Kimi.</p>
+
+  <figure class="num" aria-label="Key figures from the FBI alert on ARTEX">
+    <div><strong>&lt;3 h</strong><em>from first targeting to privileged access in some intrusions, the FBI says</em></div>
+    <div><strong>1,600+</strong><em>ARTEX control consoles found exposed on the public internet in early November</em></div>
+    <div><strong>Aug 2026</strong><em>malicious use observed since at least this month</em></div>
+    <figcaption>Sources: FBI alert as reported by <a href="https://therecord.media/artex-ai-tool-fbi-flash-alert">The Record</a>, <a href="https://gbhackers.com/fbi-warns-artex-ai-framework/">GBHackers</a> and <a href="https://www.secnews.gr/en/751262/fbi-flash-artex-1600-consoles/">SecNews</a>. The console count comes from Censys research cited in the alert; it counts visible consoles, not victims.</figcaption>
+  </figure>
+
+  <p><strong>What the FBI says:</strong> this is confirmed misuse, not a lab demonstration. Targets include finance, government, defence, semiconductors, energy, healthcare, manufacturing, telecoms and law firms. Reported techniques are familiar ones: attacking public-facing apps, abusing trusted logins and powerful cloud permissions, and stealing the keys that control a Windows domain. Attackers mostly plug in Chinese models, especially DeepSeek Flash, which the FBI links to cost and weak guardrails. The developer took the GitHub repository down on 8 October, but forks, archived copies and a paid “ARTEX PRO” version still circulate.</p>
+
+  <p><strong>The detail that matters:</strong> the FBI writes that ARTEX “generates high volumes of forensically noisy traffic that may trigger alerts, but attack speed provides limited time for coordinated defender response.” In other words, security tools notice it, but by the time a person reacts, the attacker may be done.</p>
+
+  <p><strong>Mitigation:</strong> reported summaries say the alert cites no zero-days (unknown, unpatched flaws). The raw material is exposed admin panels, hard-coded passwords and keys that are never rotated. The first recommendation reported is to stop putting management interfaces on the internet without an architecture review. We could not read the full FBI list, so check the alert itself before acting on it.</p>
+
+  <p><strong>Why it matters:</strong> “AI-powered hacking” has mostly meant research demos or single campaigns. This is a US law-enforcement warning that a free, agent-based tool has gone mainstream among attackers. Old security debt now gets found and used in hours, not weeks.</p>
+  <p class="src">Sources: <a href="https://therecord.media/artex-ai-tool-fbi-flash-alert">The Record</a>, 13 Nov · <a href="https://gbhackers.com/fbi-warns-artex-ai-framework/">GBHackers</a> · <a href="https://cyberpress.org/fbi-artex-ai-agents-breach-networks/">Cyberpress</a> · <a href="https://www.secnews.gr/en/751262/fbi-flash-artex-1600-consoles/">SecNews</a> · <a href="https://oodaloop.com/analysis/ooda-original/fbi-flash-on-artex-agentic-ai-hacking-frameworks-move-from-pen-testing-tool-to-mainstream-threat/">OODA Loop</a></p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://securityboulevard.com/2026/11/artex-ai-attack-framework-safebreach-coverage-for-fbi-flash-alert-flash-20261113-001/">SafeBreach (vendor view): ARTEX introduces no new exploits</a></li>
+    <li><a href="https://www.redtigersecurity.com/advisory/fbi-flash-artex-ai-attack-framework">Red Tiger Security: what it means for energy and manufacturing</a></li>
+    <li>Background: our 7 November edition noted CrowdStrike’s late-October report on a spying campaign that used ARTEX. The FBI alert is the first official warning about its wider use.</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Agents · launched 13 November</span>
+    <h3>OpenAI’s ChatGPT Wallet lets its agents check out for you, with a Face ID or fingerprint check on every purchase</h3>
+    <p>Wallet works inside conversations with “dots”, OpenAI’s agents, not in ordinary ChatGPT chats. At launch it is limited to US Pro subscribers aged 18+ with an American Express, Mastercard or Visa credit card. The agent pays with a <strong>payment token</strong> (a stand-in number) and never sees the real card number. You approve each purchase yourself. Reports say OpenAI has hinted at spending caps and category limits later. OpenAI itself warns that some shops may block these purchases and that fraud systems may flag them. Coverage notes that refunds and agent mistakes are not fully explained. <strong>Context:</strong> a day earlier, United Airlines banned agent bookings (covered yesterday). In Visa’s own benchmark from 5 November, 22 models failed 42.8% of shopping tasks, and in many failed runs they still bought something.</p>
+    <p class="src"><a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/">TechCrunch</a>, 13 Nov · <a href="https://www.androidauthority.com/chatgpt-wallet-3735154/">Android Authority</a> · <a href="https://decrypt.co/383278/openai-chatgpt-wallet-ai-agents-shop-without-crypto">Decrypt</a> · <a href="https://thenextweb.com/news/visa-ai-shopping-benchmark-agentic-commerce-ai-models-fail">TNW on Visa’s benchmark</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Agents &amp; tools · released 12–13 November</span>
+    <h3>Cloudflare open-sources Kitesurf, a lightweight browser engine built for AI agents rather than people</h3>
+    <p>Kitesurf loads pages, runs JavaScript and lets agents click and type, using less memory and CPU than a full Chromium browser. It is built from open-source Rust parts (Blitz for layout, Stylo for CSS) and runs each page in its own isolated Cloudflare Worker. It speaks the Chrome DevTools Protocol, so existing Puppeteer scripts connect without rewrites. It is now on GitHub under Apache 2.0. Two catches: it needs a paid Workers plan, and Unite.AI notes it ships without authentication and exposes a public URL, so a careless self-hosted setup is open to anyone. Cloudflare calls it experimental and still under heavy development. For web builders, it is a sign that agents are becoming their own kind of browser, one your site will increasingly serve.</p>
+    <p class="src"><a href="https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/">Cloudflare changelog</a>, 12 Nov · <a href="https://www.phoronix.com/news/Cloudflare-Kitesurf-Open-Source">Phoronix</a> · <a href="https://www.unite.ai/cloudflare-open-sources-kitesurf-browser-engine-for-ai-agents/">Unite.AI</a> · <a href="https://linuxiac.com/cloudflare-open-sources-kitesurf-its-lightweight-browser-engine-for-ai-agents/">Linuxiac</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Companies &amp; markets · the week ahead</span>
+    <h3>Nvidia reports on Tuesday under an interim CEO, and Anthropic is due to price its IPO on Wednesday</h3>
+    <p>Nvidia’s quarterly results are scheduled for Tuesday 17 November, around 22:20 Amsterdam time. It is the first report since Jensen Huang resigned on 12 November. Colette Kress is interim CEO while staying CFO. Options prices imply a move of about 10% either way in the share price, according to MarketPulse. Anthropic expects to price its IPO on Wednesday 18 November and start trading on Nasdaq as “ANT” on Thursday. The indicated range is $70–78 per share for 825 million shares. Bloomberg reported orders of about six times the shares on offer (covered 13 November). Nothing new was announced on either during this window. We include this because the two events will shape how markets judge AI spending.</p>
+    <p class="src"><a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition">Nvidia: CEO transition</a>, 12 Nov · <a href="https://www.marketpulse.com/markets/nvidia-nvda-q3-earnings-preview-ai-spending-risks-and-governance-concerns-threaten-major-uptrend/">MarketPulse preview</a>, 11 Nov · <a href="https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap">Renaissance Capital</a> · <a href="https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx?type=bn">RTTNews</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Robotics · open release, about 11 November</span>
+    <h3>Runway, known for AI video, has released an open robot-control model that learned how the world moves by watching video</h3>
+    <p>Praxis-1 starts from a video model that predicts the next few moments of a scene. A small “action expert” reads that model’s internal picture of what is about to happen and turns it into robot movements. The idea is that a model which can imagine how objects move can also learn how to move them. Runway says Praxis-1 has 27 billion parameters and scores 46.2% on NVIDIA’s RoboLab-120 test, against 28.0% for the well-known π0.5. Those are Runway’s own numbers. The weights are on Hugging Face under Apache 2.0, and developers can adapt it to their own robot and cameras with a small add-on (LoRA) instead of retraining the whole model. It is a good example of creative-AI technology moving into the physical world. The release date comes from a third-party write-up; Runway first previewed the model in September.</p>
+    <p class="src"><a href="https://runway.com/news/praxis-1-is-now-available">Runway: Praxis-1 is now available</a> · <a href="https://runway.com/research/introducing-praxis-1">Runway research post</a> · <a href="https://www.therobotreport.com/runway-introduces-praxis-1-world-action-model-robotics/">The Robot Report</a></p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">The agent story right now is less about smarter models than about who lets agents act, and how fast an agent acting against you can move.</p>
+  <p><strong>Deserves attention:</strong> the ARTEX alert. It is confirmed misuse, documented by the FBI, and it uses the same agent techniques the industry is selling for productivity. The defence it calls for is unexciting: fewer exposed admin panels, rotated keys, faster response.</p>
+  <p><strong>Overstated:</strong> “your AI agent can now shop for you.” Wallet still needs your fingerprint for every purchase, shops may block it, and Visa’s own test shows agents getting the purchase wrong about four times in ten.</p>
+  <p><strong>Uncertain:</strong> the FBI’s full mitigation list, which we could not read directly, and how markets react to Nvidia on Tuesday and Anthropic’s pricing on Wednesday.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Saturday 14 November 2026, 07:00 CET to Sunday 15 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>FBI alert on ARTEX: <a href="https://therecord.media/artex-ai-tool-fbi-flash-alert">The Record, 13 Nov</a>; <a href="https://gbhackers.com/fbi-warns-artex-ai-framework/">GBHackers</a>; <a href="https://cyberpress.org/fbi-artex-ai-agents-breach-networks/">Cyberpress</a>; <a href="https://www.secnews.gr/en/751262/fbi-flash-artex-1600-consoles/">SecNews</a>; <a href="https://oodaloop.com/analysis/ooda-original/fbi-flash-on-artex-agentic-ai-hacking-frameworks-move-from-pen-testing-tool-to-mainstream-threat/">OODA Loop</a>; <a href="https://casrai.org/news/fbi-artex-ai-attack-framework-warning-2026">CASRAI</a>; <a href="https://securityboulevard.com/2026/11/artex-ai-attack-framework-safebreach-coverage-for-fbi-flash-alert-flash-20261113-001/">Security Boulevard (SafeBreach)</a>; <a href="https://www.redtigersecurity.com/advisory/fbi-flash-artex-ai-attack-framework">Red Tiger Security</a></li>
+    <li>ChatGPT Wallet: <a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/">TechCrunch, 13 Nov</a>; <a href="https://www.androidauthority.com/chatgpt-wallet-3735154/">Android Authority</a>; <a href="https://decrypt.co/383278/openai-chatgpt-wallet-ai-agents-shop-without-crypto">Decrypt</a>; <a href="https://www.gsmarena.com/chatgpt_wallet_lets_openais_agents_buy_things_for_you-news-75481.php">GSMArena</a>; <a href="https://www.webpronews.com/openai-chatgpt-wallet-dots-agents-payments">WebProNews</a>; Visa benchmark: <a href="https://thenextweb.com/news/visa-ai-shopping-benchmark-agentic-commerce-ai-models-fail">TNW</a>, <a href="https://chainstoreage.com/visa-tested-ai-shopping-agents-heres-how-they-performed">Chain Store Age</a></li>
+    <li>Kitesurf: <a href="https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/">Cloudflare changelog, 12 Nov</a>; <a href="https://www.phoronix.com/news/Cloudflare-Kitesurf-Open-Source">Phoronix</a>; <a href="https://www.unite.ai/cloudflare-open-sources-kitesurf-browser-engine-for-ai-agents/">Unite.AI</a>; <a href="https://linuxiac.com/cloudflare-open-sources-kitesurf-its-lightweight-browser-engine-for-ai-agents/">Linuxiac</a>; <a href="https://www.technobezz.com/news/cloudflare-makes-kitesurf-open-source">Technobezz</a></li>
+    <li>Week ahead: <a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition">Nvidia newsroom</a>; <a href="https://www.npr.org/2026/11/13/nx-s1-6038889/colette-kress-becomes-nvidias-interim-ceo-after-jensen-huang-resigns">NPR</a>; <a href="https://www.marketpulse.com/markets/nvidia-nvda-q3-earnings-preview-ai-spending-risks-and-governance-concerns-threaten-major-uptrend/">MarketPulse</a>; <a href="https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap">Renaissance Capital</a>; <a href="https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx?type=bn">RTTNews</a></li>
+    <li>Worth a Look: <a href="https://runway.com/news/praxis-1-is-now-available">Runway</a>; <a href="https://runway.com/research/introducing-praxis-1">Runway research</a>; <a href="https://www.therobotreport.com/runway-introduces-praxis-1-world-action-model-robotics/">The Robot Report</a>; <a href="https://fourweekmba.com/ai-runway-open-sources-praxis-1-at-1-65x-pi0-5-on-nvidias-test/">FourWeekMBA (release date)</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>Quiet window: Saturday produced little new AI news. The FBI alert, ChatGPT Wallet and Kitesurf were published on 12–13 November, after or around the close of earlier editions’ research, and had not been covered here. This edition is shorter as a result.</li>
+    <li>This brief is written by an Anthropic model. Anthropic’s IPO appears in the week-ahead item, and Claude is among the models ARTEX can plug into; both are reported as sourced, without comment.</li>
+    <li>As in recent editions, the network blocked direct page fetching, including the FBI document and TechCrunch. Facts come from search-indexed reporting, cross-checked across outlets where possible. No source images are embedded.</li>
+    <li>Left out: a reported $300 million LangChain round at a $3 billion valuation (still not confirmed by the company or a primary source); a reported 52% cut in nursing documentation time at Corewell Health (we could not find the figure in any primary source); a claimed llama.cpp 1.0 release (only a release-script dry run found); Adobe’s MAX “Sneaks” creative-tool previews (11 November, experimental demos only).</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-14/">Saturday 14 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>

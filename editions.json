@@ -164,5 +164,19 @@
       "United Airlines now bans AI agents from buying or changing its tickets, even when the customer approves every step",
       "Nvidia’s board has approached Arm chief Rene Haas about replacing Jensen Huang, the Financial Times reports"
     ]
+  },
+  {
+    "date": "2026-11-15",
+    "label": "Sunday 15 November 2026",
+    "headline": "The FBI warns that criminals and state hackers are using ARTEX, an open-source AI attack tool, sometimes reaching admin access in under three hours",
+    "category": "Agents & security",
+    "minutes": 4,
+    "window_end": "2026-11-15T07:00+01:00",
+    "teasers": [
+      "OpenAI’s ChatGPT Wallet lets its agents check out for you, with a Face ID or fingerprint check on every purchase",
+      "Cloudflare open-sources Kitesurf, a lightweight browser engine built for AI agents rather than people",
+      "Nvidia reports on Tuesday under an interim CEO, and Anthropic is due to price its IPO on Wednesday",
+      "Runway, known for AI video, has released an open robot-control model that learned how the world moves by watching video"
+    ]
   }
 ]
