@@ -178,5 +178,19 @@
       "Nvidia reports on Tuesday under an interim CEO, and Anthropic is due to price its IPO on Wednesday",
       "Runway, known for AI video, has released an open robot-control model that learned how the world moves by watching video"
     ]
+  },
+  {
+    "date": "2026-11-16",
+    "label": "Monday 16 November 2026",
+    "headline": "AI agents started acting in the real world this week, in attacks and in purchases, and companies began deciding where to stop them",
+    "category": "Agents & security",
+    "minutes": 7,
+    "window_end": "2026-11-16T07:00+01:00",
+    "teasers": [
+      "Nvidia went from an investigation to a resignation to talk of a comeback in six days, just before its results",
+      "Top-level capability got cheaper all week, and the price of a model became its main selling point",
+      "Anthropic set its IPO terms and OpenAI’s losses leaked, so investors can now compare the two big labs",
+      "Governments drew lines around chips and frontier labs, ending with a US-led AI supply-chain pact signed in San Francisco"
+    ]
   }
 ]

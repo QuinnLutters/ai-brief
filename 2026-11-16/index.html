@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 16 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Monday 16 November 2026 · Weekly edition · Window: Mon 9 Nov 07:00 – Mon 16 Nov 07:00 CET · 7 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">The week’s main development · Agents &amp; security</span>
+  <h1>AI agents started acting in the real world this week, in attacks and in purchases, and companies began deciding where to stop them</h1>
+  <p class="stand">The FBI warned about an AI attack tool in active use. Two breaches went through AI infrastructure. OpenAI gave its agents a way to pay. An airline banned agents from booking. All of these turn on one question: who controls what an agent may do.</p>
+
+  <p>For two years, “agentic AI” mostly meant demos and products in testing. This week the evidence came from incident reports, legal terms and checkout pages. Together they show agents moving from showing what they could do to doing it, with consequences.</p>
+
+  <figure class="num" aria-label="Key figures from this week’s agent security incidents">
+    <div><strong>&lt;3 h</strong><em>from first targeting to admin access in some ARTEX intrusions, per the FBI</em></div>
+    <div><strong>2 weeks</strong><em>a jailbroken DeepSeek agent reportedly spent inside a European telecom</em></div>
+    <div><strong>18</strong><em>hosted AI agents reached by attackers at NEAR AI through a flaw in the SGLang engine</em></div>
+    <figcaption>Sources: FBI alert FLASH-20261113-001 via <a href="https://therecord.media/artex-ai-tool-fbi-flash-alert">The Record</a>, 13 Nov; Malbear Labs via <a href="https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/">Infosecurity Magazine</a>, 9 Nov; NEAR AI via <a href="https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents">Decrypt</a>, 10 Nov.</figcaption>
+  </figure>
+
+  <p><strong>On the attack side,</strong> the FBI’s flash alert of 13 November is confirmed misuse, not a lab demonstration. ARTEX, an open-source penetration-testing framework, turns a plain-language goal into a team of agents that scan, break in and copy data out, using outside models. Attackers mostly plug in cheap Chinese models. The telecom case, reported by one security firm from the attacker’s own leaked files, follows the same pattern: the operator typed little more than “Go on”, and the agent chose which flaws to use. In both cases the way in was old and already patched: a Cisco BroadWorks flaw fixed in August, exposed admin panels, keys that were never rotated. What changed is speed. Problems that once took weeks to exploit now take hours.</p>
+
+  <p><strong>The infrastructure underneath is also a target.</strong> NEAR AI says attackers came in through a remote-code-execution flaw in SGLang, a popular open-source engine for running models. Fireworks AI said its October breach reached customer training data and unfinished model weights. Both are confirmed by the companies. The supported mitigation is basic: update, keep control endpoints off the internet, and rotate keys.</p>
+
+  <p><strong>On the commerce side,</strong> OpenAI launched ChatGPT Wallet on 13 November. It lets its agents pay with a stand-in card number, but only for US Pro subscribers, with a fingerprint or Face ID check on every purchase. A day earlier, United Airlines had changed its contract to ban agents from buying or changing tickets, even with the customer’s approval. Cloudflare open-sourced Kitesurf, a browser engine built for agents rather than people.</p>
+
+  <p><strong>Why it matters:</strong> the bottleneck is no longer whether an agent <em>can</em> act, but who allows it to: banks, airlines, browser makers and security teams. For anyone building on the web, “is this visitor an agent, and what may it do?” is becoming an ordinary design question.</p>
+  <p class="src">Sources: <a href="https://therecord.media/artex-ai-tool-fbi-flash-alert">The Record</a>, 13 Nov · <a href="https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/">Infosecurity Magazine</a>, 9 Nov · <a href="https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents">Decrypt</a> · <a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update">Fireworks bulletin</a> · <a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/">TechCrunch</a>, 13 Nov · <a href="https://www.technology.org/2026/11/12/united-airlines-bans-ai-agents-booking-tickets/">Technology.org</a>, 12 Nov · <a href="https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/">Cloudflare changelog</a>, 12 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://securityboulevard.com/2026/11/artex-ai-attack-framework-safebreach-coverage-for-fbi-flash-alert-flash-20261113-001/">SafeBreach on ARTEX: no new exploits, just speed</a></li>
+    <li><a href="https://github.com/advisories/GHSA-rgq9-fqf5-fv58">GitHub advisory for an SGLang flaw (CVE-2026-3059)</a>. NEAR did not say which SGLang flaw was used.</li>
+    <li><a href="https://thenextweb.com/news/visa-ai-shopping-benchmark-agentic-commerce-ai-models-fail">Visa’s 5 November benchmark: agents failed 42.8% of shopping tasks</a></li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">Four changes that mattered</h2>
+
+  <article class="item">
+    <span class="label">Companies &amp; markets · new on Sunday</span>
+    <h3>Nvidia went from an investigation to a resignation to talk of a comeback in six days, just before its results</h3>
+    <p>On 9 November Nvidia’s board opened an investigation into reports that CEO Jensen Huang had been targeted by a foreign intelligence effort. On 12 November he resigned. CFO Colette Kress became interim CEO, and director Harvey Jones became board chair. On 13 November the Financial Times reported that the board had approached Arm’s Rene Haas. <strong>New since our last edition:</strong> on Sunday the FT reported that Huang has discussed returning with people close to him. Forbes and Fox Business, citing the same reporting, describe allies lobbying the board. Reported futures tied to Nvidia rose more than 3%. Nvidia and Huang have made no statement. The underlying claims, including a link to Chinese intelligence, are still unconfirmed, and Huang has not been charged. The question for Tuesday is whether investors trust Nvidia without him.</p>
+    <p class="src"><a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvda-20261111.htm">Nvidia 8-K</a> · <a href="https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/">TechCrunch</a>, 12 Nov · <a href="https://www.koreatimes.co.kr/world/20261114/nvidia-approached-arm-ceo-haas-to-succeed-huang-ft-reports">Reuters via Korea Times</a>, 14 Nov · <a href="https://www.forbes.com/sites/zacharyfolk/2026/11/15/jensen-huang-is-already-considering-returning-to-nvidia-report-says/">Forbes</a>, 15 Nov · <a href="https://www.foxbusiness.com/technology/jensen-huang-weighs-nvidia-ceo-comeback-ally-plans-war-room-report">Fox Business</a> · <a href="https://www.rappler.com/technology/jensen-huang-discusses-comeback-nvidia-ceo/">Rappler</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Models &amp; pricing</span>
+    <h3>Top-level capability got cheaper all week, and the price of a model became its main selling point</h3>
+    <p>Anthropic’s Claude Fable 5.2 (9 Nov) costs $8 / $40 per million input / output tokens, 20% below its predecessor. Anthropic says it matches its previous top model at about half the cost. Meta’s Muse Ember costs $0.10 per million input tokens and, on Artificial Analysis’s index, scores level with Claude Haiku 5.5. Google’s Gemini 4 Hydrogen (12 Nov) costs $1.50 per million input tokens and independently scores level with Google’s flagship Argon. Meanwhile Google’s top model, Gemini 4 Carbon, is open to all paying developers at an introductory price that doubles on 1 December. <strong>What became clearer:</strong> agents make many calls per task, so cost per useful answer now decides which model wins, more than a few benchmark points. Most of these benchmark figures are the companies’ own.</p>
+    <p class="src"><a href="https://thenextweb.com/news/claude-fable-5-2-mythos-5-2-anthropic-launch-price">TNW on Fable 5.2</a>, 9 Nov · <a href="https://mlq.ai/news/meta-releases-muse-ember-a-10-cent-per-million-token-model-for-high-volume-agent-work/">MLQ on Muse Ember</a>, 9 Nov · <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Google on Hydrogen</a>, 12 Nov · <a href="https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/">The Decoder</a> · <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/">Google on Carbon</a>, 10 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Companies · IPO</span>
+    <h3>Anthropic set its IPO terms and OpenAI’s losses leaked, so investors can now compare the two big labs</h3>
+    <p>Anthropic’s amended filing (10 Nov) sets 825 million shares at $70–78, up to about $1.4 trillion fully diluted, trading on Nasdaq as “ANT”. Bloomberg reported orders of about six times the shares on offer. Separately, documents seen by the Wall Street Journal show OpenAI earned about $10 billion in July–September and lost about $10.9 billion on an adjusted basis. Anthropic’s filing shows $16.96 billion in revenue and a $567 million operating loss for the same quarter. The comparison is rough: an SEC filing against leaked adjusted figures. <strong>What changed:</strong> until now, the AI labs’ finances were mostly guesswork. From Thursday, one of them gets a daily public price.</p>
+    <p class="src"><a href="https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/">TechCrunch</a>, 10 Nov · <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm">SEC S-1/A</a> · <a href="https://in.investing.com/news/stock-market-news/anthropic-ipo-demand-jumps-to-six-times-available-shares-5700920">Bloomberg via Investing.com</a>, 12 Nov · <a href="https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353">Reuters on the WSJ report</a>, 11 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Policy · new on Saturday</span>
+    <h3>Governments drew lines around chips and frontier labs, ending with a US-led AI supply-chain pact signed in San Francisco</h3>
+    <p><strong>New since our last edition:</strong> on 15 November the US and eight partners signed what is reported as the San Francisco Declaration. It is a non-binding pledge to build a shared list of critical AI technologies and supply chains that need protection from Chinese influence. It falls under the State Department’s Pax Silica initiative. Reported signatories include Japan, Australia, the UK, South Korea, India, Israel, Qatar and the UAE. Reports say Germany, Sweden, the Netherlands and the European Commission are expected to follow. The text has not been published. Earlier in the week, OpenAI told lawmakers it supports bills tightening chip exports to China (12 Nov), and Australia announced a regulator for frontier AI labs (10 Nov, a plan rather than law). Four nonprofits also sued in California to freeze frontier development at five companies (12 Nov, no ruling yet).</p>
+    <p class="src"><a href="https://www.bloomberg.com/news/articles/2026-11-16/us-partners-agree-to-safeguard-key-ai-tech-infrastructure">Bloomberg</a>, 16 Nov · <a href="https://aninews.in/news/world/us/india-signs-us-led-declaration-to-safeguard-ai-supply-chains-report20261116061901/">ANI</a>, 16 Nov · <a href="https://fourweekmba.com/ai-us-8-partners-sign-ai-supply-pact-before-trump-xi-talks/">FourWeekMBA</a> · <a href="https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures">Bloomberg on OpenAI</a>, 12 Nov · <a href="https://au.news.yahoo.com/ai-regulator-announced-government-considers-045832015.html">Yahoo News Australia</a> · <a href="https://www.justsecurity.org/164494/nonprofits-lawsuit-freeze-frontier-ai-development/">Just Security</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Research · announced 10 November</span>
+    <h3>Machines checked their own maths this week: DeepMind’s agents proved Signal’s encryption correct down to the code a phone runs</h3>
+    <p>Proving mathematically that software does exactly what it should is called <strong>formal verification</strong>. It usually takes expert teams years. Google DeepMind says its multi-agent system, AlphaProof Code, verified the core of Signal’s encryption in four weeks. That covers the quantum-resistant key exchange and the “Triple Ratchet” that keeps changing keys during a chat. It checked the compiled Arm machine code, not the source, so a compiler could not have slipped in a flaw unnoticed. The proofs are in Lean, a language in which a computer checks every step, and are public on GitHub. The limits: this is not the whole app, timing and power attacks were out of scope, and no new bugs were found. In the same week, the startup PSI published a Lean-checked proof of an 18-year-old quantum-computing conjecture made with an Anthropic model. A computer checks the logic, but people still need to confirm that the proof states the right question.</p>
+    <p class="src"><a href="https://deepmind.google/blog/introducing-alphaproof-code/">Google DeepMind blog</a>, 10 Nov · <a href="https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/">The Decoder</a> · <a href="https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/">TechCrunch on PSI</a>, 10 Nov</p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check: what to watch next week</h2>
+  <p class="pq">This week capability got cheaper and agents moved into real use. The decisions that matter now are about money and permission: who funds AI, and who lets it act.</p>
+  <ul>
+    <li><strong>Tuesday 17 Nov, about 22:20 CET:</strong> Nvidia’s quarterly results, presented by an interim CEO. Options pricing implied a move of about 10% either way. Watch the forecast for next quarter more than the past quarter, and any word on leadership.</li>
+    <li><strong>Wednesday 18 / Thursday 19 Nov:</strong> Anthropic’s IPO pricing and first trading day. Pricing above the range would signal that markets still pay up for AI labs, and weak trading would say the opposite.</li>
+    <li><strong>18–19 Nov:</strong> the APEC summit in Shenzhen, where Trump and Xi are expected to meet, per one report. Watch whether the Netherlands, Germany, Sweden and the European Commission sign the San Francisco Declaration, and whether its text is published.</li>
+    <li><strong>Open questions:</strong> whether Nvidia’s board considers Huang’s return; whether other airlines or merchants follow United or accept agents with wallets; the date of Huang’s House testimony (the Senate Banking Committee wants him on 3 December). Gemini 4 Carbon’s price doubles on 1 December.</li>
+  </ul>
+  <p><strong>Deserves attention:</strong> the ARTEX alert and the two breaches. They are confirmed, and the fixes are known and unexciting. <strong>Overstated:</strong> “agents can now shop for you.” Every purchase still needs your fingerprint, and some sellers have started refusing agents. <strong>Uncertain:</strong> almost every Nvidia leadership claim since Sunday rests on anonymous sources.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Monday 9 November 2026, 07:00 CET to Monday 16 November 2026, 07:00 CET (weekly edition, including the weekend).</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Agents in the real world: <a href="https://therecord.media/artex-ai-tool-fbi-flash-alert">The Record, 13 Nov</a>; <a href="https://gbhackers.com/fbi-warns-artex-ai-framework/">GBHackers</a>; <a href="https://securityboulevard.com/2026/11/artex-ai-attack-framework-safebreach-coverage-for-fbi-flash-alert-flash-20261113-001/">Security Boulevard (SafeBreach)</a>; <a href="https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/">Infosecurity Magazine, 9 Nov</a>; <a href="https://gbhackers.com/operation-snowball-campaign/">GBHackers on the telecom case</a>; <a href="https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents">Decrypt</a>; <a href="https://www.cryptotimes.io/2026/11/10/near-ai-confirms-breach-exposed-user-data-and-access-to-18-ai-agents/">The Crypto Times, 10 Nov</a>; <a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update">Fireworks security bulletin</a>; <a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/">TechCrunch, 13 Nov</a>; <a href="https://www.technology.org/2026/11/12/united-airlines-bans-ai-agents-booking-tickets/">Technology.org, 12 Nov</a>; <a href="https://betanews.com/article/united-airlines-bans-ai-agents-booking-tickets/">BetaNews</a>; <a href="https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/">Cloudflare changelog, 12 Nov</a></li>
+    <li>Nvidia: <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvda-20261111.htm">Nvidia 8-K</a>; <a href="https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-investigation-rcna608148">NBC News</a>; <a href="https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/">TechCrunch, 12 Nov</a>; <a href="https://www.koreatimes.co.kr/world/20261114/nvidia-approached-arm-ceo-haas-to-succeed-huang-ft-reports">Reuters via Korea Times</a>; <a href="https://www.forbes.com/sites/zacharyfolk/2026/11/15/jensen-huang-is-already-considering-returning-to-nvidia-report-says/">Forbes, 15 Nov</a>; <a href="https://www.foxbusiness.com/technology/jensen-huang-weighs-nvidia-ceo-comeback-ally-plans-war-room-report">Fox Business</a>; <a href="https://www.rappler.com/technology/jensen-huang-discusses-comeback-nvidia-ceo/">Rappler</a>; <a href="https://www.newsbytesapp.com/news/business/financial-times-report-lifts-nvidia-futures-on-jensen-huang-return/tldr">NewsBytes (futures move)</a>; <a href="https://www.marketpulse.com/markets/nvidia-nvda-q3-earnings-preview-ai-spending-risks-and-governance-concerns-threaten-major-uptrend/">MarketPulse preview, 11 Nov</a></li>
+    <li>Models and pricing: <a href="https://thenextweb.com/news/claude-fable-5-2-mythos-5-2-anthropic-launch-price">TNW</a>; <a href="https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/">TechCrunch, 9 Nov</a>; <a href="https://mlq.ai/news/meta-releases-muse-ember-a-10-cent-per-million-token-model-for-high-volume-agent-work/">MLQ</a>; <a href="https://alphasignal.ai/news/meta-releases-muse-ember-the-cheapest-agent-model-at-0-14-a-task">AlphaSignal</a>; <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Google blog (Hydrogen)</a>; <a href="https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/">The Decoder</a>; <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/">Google blog (Carbon)</a></li>
+    <li>IPO and lab finances: <a href="https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/">TechCrunch, 10 Nov</a>; <a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html">CNBC</a>; <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm">SEC S-1/A</a>; <a href="https://in.investing.com/news/stock-market-news/anthropic-ipo-demand-jumps-to-six-times-available-shares-5700920">Bloomberg via Investing.com</a>; <a href="https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap">Renaissance Capital</a>; <a href="https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353">Reuters on WSJ</a>; <a href="https://www.forbes.com/sites/gabrielalinzainescu/2026/11/11/openai-revenue-hits-10-billion-as-losses-reach-109-billion/">Forbes</a></li>
+    <li>Policy: <a href="https://www.bloomberg.com/news/articles/2026-11-16/us-partners-agree-to-safeguard-key-ai-tech-infrastructure">Bloomberg, 16 Nov</a>; <a href="https://aninews.in/news/world/us/india-signs-us-led-declaration-to-safeguard-ai-supply-chains-report20261116061901/">ANI, 16 Nov</a>; <a href="https://openthemagazine.com/world/india-joins-us-led-declaration-to-secure-ai-supply-chains-amid-china-competition">Open Magazine</a>; <a href="https://fourweekmba.com/ai-us-8-partners-sign-ai-supply-pact-before-trump-xi-talks/">FourWeekMBA</a>; <a href="https://shiftdelete.net/en/pax-silica">ShiftDelete explainer</a>; <a href="https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures">Bloomberg, 12 Nov</a>; <a href="https://au.news.yahoo.com/ai-regulator-announced-government-considers-045832015.html">Yahoo News Australia</a>; <a href="https://www.justsecurity.org/164494/nonprofits-lawsuit-freeze-frontier-ai-development/">Just Security</a>; APEC date: <a href="https://www.roic.ai/news/trump-sets-november-apec-and-december-g20-meetings-with-xi-as-trade-truce-faces-january-deadline-09-25-2026">ROIC, 25 Sep</a></li>
+    <li>Worth a Look: <a href="https://deepmind.google/blog/introducing-alphaproof-code/">Google DeepMind</a>; <a href="https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/">The Decoder</a>; <a href="https://cyberinsider.com/google-deepmind-signal-encryption-machine-code-verification/">CyberInsider</a>; <a href="https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/">TechCrunch on PSI</a>; <a href="https://thequantuminsider.com/2026/11/06/ai-assisted-proof-settles-longstanding-question-about-quantum-speedups/">The Quantum Insider</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>This weekly edition brings together stories from the daily editions of 10–15 November. Two items are new to this brief: the FT’s Sunday report that Huang is considering a return, and the San Francisco Declaration signed on Saturday. Both rest on reporting, not official texts. The declaration’s text and an official list of signatories were not available, and the country list comes from secondary reports.</li>
+    <li>The Shenzhen APEC dates come from one report of the leaders’ schedule, not an official calendar.</li>
+    <li>This brief is written by an Anthropic model. Anthropic appears in the pricing item (Fable 5.2), the IPO item and Worth a Look (PSI’s proof). Treat that framing accordingly.</li>
+    <li>Direct page fetching was blocked again. Facts come from search-indexed reporting and earlier editions’ sources, cross-checked where possible. No source images are embedded.</li>
+    <li>Left out as unverified: a reported OpenAI robotics team shutdown (only 2021 reporting found), a self-hosted Claude Managed Agents beta (newsletter mention only), and a reported $300 million LangChain round. Also left out for space: Gemini Decision 1, Nvidia’s GR00T 2, Gemini Robotics 2.5 and the FAA ground stop (no evidence linking it to AI).</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-15/">Sunday 15 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>
