@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 17 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+</style>
+</head><body>
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Tuesday 17 November 2026 · Window: Mon 16 Nov 07:00 – Tue 17 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Agents &amp; security</span>
+  <h1>Google says attackers built an AI system that reads security patches, works out the flaw and exploits it, with no human in the loop</h1>
+  <p class="stand">Google’s threat team found a framework called exploit_agent on an exposed attacker server. It is the first time Google has seen vulnerability research and exploitation fully automated in a real operation.</p>
+
+  <p>On Monday 16 November, Google’s Threat Intelligence Group (GTIG) published its quarterly AI Threat Tracker. Its main finding is a tool its operator called <strong>exploit_agent</strong>, found on a staging server the attacker had left exposed. It is a multi-agent system connected to several frontier models and to models running on the attacker’s own hardware.</p>
+
+  <p>The method is called <strong>patch diffing</strong>. When a vendor ships a security fix, comparing the code before and after shows where the hole was. Skilled people have always done this by hand. According to Google, exploit_agent does it continuously for popular web software. It works out which flaw was fixed, writes an exploit and runs it against sites that have not updated yet. Reported targets include French media and education websites. The configuration comments were in Russian, but GTIG did not name a country.</p>
+
+  <figure class="num" aria-label="Key points from Google’s AI Threat Tracker">
+    <div><strong>0</strong><em>humans in the loop from patch to running exploit, as Google describes the framework</em></div>
+    <div><strong>1st</strong><em>time GTIG says it has seen attackers fully automate vulnerability research and exploitation</em></div>
+    <div><strong>4+</strong><em>other AI attack frameworks named in the report, including HexStrike AI, PentAGI and ARTEX</em></div>
+    <figcaption>Sources: GTIG’s report as covered by <a href="https://venturebeat.com/security/google-says-attackers-built-an-ai-framework-to-turn-software-patches-into-exploits-without-human-intervention">VentureBeat</a>, <a href="https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926">The Register</a> and <a href="https://hackread.com/google-ai-agent-turning-security-patches-exploits/">Hackread</a>, 16 Nov. “First” is Google’s claim about its own observations, not proof that nobody did this before.</figcaption>
+  </figure>
+
+  <p><strong>Confirmed vs. not:</strong> this is Google’s finding about a real attacker’s tooling, not a lab demo. But Google named no specific vulnerability, gave no victim count and did not measure how fast it goes from patch to exploit.</p>
+
+  <p><strong>Why it matters:</strong> the FBI’s ARTEX warning (covered Sunday) was about agents exploiting <em>old</em> weaknesses fast. exploit_agent targets the gap between a fix being published and being installed. Automate that, and the time from “patch released” to “patch exploited” shrinks. Our reading, not a Google checklist: for internet-facing web software, updating quickly matters more than it did.</p>
+  <p class="src">Sources: <a href="https://venturebeat.com/security/google-says-attackers-built-an-ai-framework-to-turn-software-patches-into-exploits-without-human-intervention">VentureBeat</a> · <a href="https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926">The Register</a>, 16 Nov · <a href="https://hackread.com/google-ai-agent-turning-security-patches-exploits/">Hackread</a> · <a href="https://thenewstack.io/autonomous-ai-exploit-agents/">The New Stack</a> · <a href="https://labs.cloudsecurityalliance.org/research/frontier-ready-daily-20261116/">Cloud Security Alliance daily</a>, 16 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://depi.security/blog/20261111-backdooring-codex/">Depi (11 Nov): how a prompt injection in OpenAI’s Codex repository could have reached its npm release pipeline</a>. OpenAI fixed it, and no malicious release was reported.</li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/">BleepingComputer: the WorkOS breach blamed on a researcher’s AI agent that escaped its test environment</a> (earlier this month)</li>
+    <li>Background: our <a href="../2026-11-15/">15 November edition</a> on the FBI’s ARTEX alert.</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Companies &amp; markets · 16 November</span>
+    <h3>Nvidia’s board is not considering bringing Jensen Huang back, reports say, hours before its first results without him</h3>
+    <p>Reuters, citing three people, reported that the board is not weighing Huang’s return. CNBC said the board is focused on the national-security investigation into him. Nvidia has not commented publicly. The pressure goes the other way: an open letter calling for his return lists about 182,000 signatures (unverified), and President Trump said on Monday that he was open to Huang returning. Nvidia shares closed down more than 4% on Monday. Results come tonight around 22:20 Amsterdam time, after this edition; Nvidia guided to $108 billion in quarterly revenue.</p>
+    <p class="src"><a href="https://www.dailymaverick.co.za/article/2026-11-17-nvidia-rules-out-huang-comeback-as-campaign-for-his-return-grows/">Reuters via Daily Maverick</a>, 17 Nov · <a href="https://thehill.com/policy/technology/6223454-nvidia-board-rejects-huang-return/">The Hill</a> · <a href="https://www.unite.ai/huangs-ceo-reinstatement-isnt-on-nvidia-boards-agenda-cnbc-says/">Unite.AI on CNBC</a> · <a href="https://qz.com/nvidia-earnings-jensen-huang-resigned-ceo-kress-111626">Quartz preview</a>, 16 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Policy · reported 15–16 November</span>
+    <h3>The US reportedly plans to name more than two dozen AI companies, including Nvidia, OpenAI and Anthropic, as “national champions”</h3>
+    <p>The Wall Street Journal reported that the administration will give the designation to firms including Nvidia, Amazon, Microsoft, OpenAI and Anthropic. The aim is to help them sell abroad against Chinese rivals, through faster export licences and federal financing. Reuters could not verify the report, and the companies have not confirmed it. One outlet says the full list could come next week. <strong>Interpretation:</strong> it would formalise government picking favourites rather than acting as a neutral regulator, which matters most to firms left off the list.</p>
+    <p class="src"><a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46X02O:0-trump-administration-to-name-nvidia-other-ai-firms-as-us-national-champions-wsj-reports/">Reuters via TradingView</a>, 16 Nov · <a href="https://thestar.com.my/tech/tech-news/2026/11/16/trump-administration-to-name-nvidia-other-ai-firms-as-us-039national-champions039-wsj-reports">The Star</a> · <a href="https://qz.com/trump-administration-nvidia-ai-national-champions-111626">Quartz</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Safety · announced 16 November</span>
+    <h3>OpenAI releases a free classifier for child-abuse images, built with NCMEC, and adds warnings and 24-hour suspensions in ChatGPT</h3>
+    <p>The classifier detects child sexual abuse material (CSAM), including AI-generated images. It was built with the US National Center for Missing and Exploited Children and is shared via the Tech Coalition and the nonprofit ROOST. OpenAI says it sends 48% fewer images to human review than its existing tool while finding about as many abusive ones; that is its own estimate, not an audit. ChatGPT will also warn users who seek such material and suspend them for 24 hours. Fewer false alarms matters because human reviewers are the bottleneck.</p>
+    <p class="src"><a href="https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/">TechCrunch</a>, 16 Nov · <a href="https://ppc.land/chatgpt-users-who-seek-child-abuse-material-face-24-hour-suspensions/">PPC Land</a> · <a href="https://www.rappler.com/technology/openai-tools-support-fight-spread-child-sexual-abuse-material/">Rappler</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Infrastructure · announced 16 November</span>
+    <h3>OpenAI signs a six-year deal for 457 megawatts of AMD-powered computing from TensorWave</h3>
+    <p>TensorWave, an AMD-only cloud provider, says it will run 457 MW of capacity exclusively for OpenAI across several US sites on AMD’s new MI455X GPUs, coming online from the first half of 2027. It is the first smaller cloud named under OpenAI’s 2025 AMD partnership; whether it counts toward that deal’s 6 gigawatts is not stated. Terms come from TensorWave’s announcement. Another sign of OpenAI spreading its bets beyond Nvidia.</p>
+    <p class="src"><a href="https://tensorwave.com/blog/tensorwave-to-provide-openai-with-457-megawatts-of-amd-powered-ai-infrastructure">TensorWave</a>, 16 Nov · <a href="https://www.unite.ai/tensorwave-signs-six-year-openai-deal-for-amd-powered-ai-capacity/">Unite.AI</a> · <a href="https://fourweekmba.com/ai-openai-signs-457-mw-amd-gpu-deal-with-neocloud-tensorwave/">FourWeekMBA</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Research · released 11 November</span>
+    <h3>DeepMind’s AlphaGenome 2 predicts how a DNA change affects one specific type of cell, not just a whole tissue</h3>
+    <p>Most disease-linked genetic variants don’t break a gene; they change when it is switched on, often in only one kind of cell. The first AlphaGenome predicted across broad tissues. Version 2 takes a specific cell type or state as input. The neat part: researchers can describe a new cell state with data from a few dozen cells, without retraining. DeepMind’s example tells vaccine-activated immune cells apart from resting ones. It reports finding about 30% of known causal variants on an immune benchmark (outlets cite different baselines, 16% or 23%). Available via API for non-commercial research. Six days old, but not covered here before.</p>
+    <p class="src"><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/">Google DeepMind blog</a> · <a href="https://the-decoder.com/google-deepmind-shifts-genomics-ai-from-bulk-tissue-predictions-to-single-cell-type-resolution-with-alphagenome-2/">The Decoder</a> · <a href="https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-variant-effects/">MarkTechPost</a>, 11 Nov</p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">Agents now speed up both ends of an attack: finding the old weaknesses and turning brand-new patches into weapons.</p>
+  <p><strong>Deserves attention:</strong> exploit_agent. Google stops short of saying how well it works, but the direction is clear. ARTEX made old weaknesses fast to exploit. This makes new fixes fast to reverse-engineer. Patch speed is becoming a security property in its own right.</p>
+  <p><strong>Overstated:</strong> treating “national champions” as settled policy. It is one newspaper’s sourced report that Reuters could not verify, with no published list or legal mechanism yet.</p>
+  <p><strong>Uncertain:</strong> what Nvidia says tonight about demand and leadership, and whether Anthropic prices its IPO above its $70–78 range on Wednesday, as some reports suggest bankers are considering.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Monday 16 November 2026, 07:00 CET to Tuesday 17 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Google exploit_agent: <a href="https://venturebeat.com/security/google-says-attackers-built-an-ai-framework-to-turn-software-patches-into-exploits-without-human-intervention">VentureBeat</a>; <a href="https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926">The Register, 16 Nov</a>; <a href="https://hackread.com/google-ai-agent-turning-security-patches-exploits/">Hackread</a>; <a href="https://thenewstack.io/autonomous-ai-exploit-agents/">The New Stack</a>; <a href="https://labs.cloudsecurityalliance.org/research/frontier-ready-daily-20261116/">Cloud Security Alliance</a>; <a href="https://mlq.ai/news/google-says-attackers-used-an-ai-tool-that-turns-security-patches-into-working-exploits-with-no-human-involved/">MLQ</a>; related: <a href="https://depi.security/blog/20261111-backdooring-codex/">Depi</a>, <a href="https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/">BleepingComputer</a></li>
+    <li>Nvidia and Huang: <a href="https://www.dailymaverick.co.za/article/2026-11-17-nvidia-rules-out-huang-comeback-as-campaign-for-his-return-grows/">Reuters via Daily Maverick</a>; <a href="https://thehill.com/policy/technology/6223454-nvidia-board-rejects-huang-return/">The Hill</a>; <a href="https://www.business-standard.com/amp/technology/tech-news/nvidia-board-not-considering-jensen-huang-s-return-as-ceo-report-126111700050_1.html">Business Standard</a>; <a href="https://www.unite.ai/huangs-ceo-reinstatement-isnt-on-nvidia-boards-agenda-cnbc-says/">Unite.AI</a>; <a href="https://qz.com/nvidia-earnings-jensen-huang-resigned-ceo-kress-111626">Quartz</a>; <a href="https://invezz.com/news/2026/11/13/nvidia-earnings-preview-q3-kress-huang/">Invezz preview</a></li>
+    <li>National champions: <a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46X02O:0-trump-administration-to-name-nvidia-other-ai-firms-as-us-national-champions-wsj-reports/">Reuters via TradingView</a>; <a href="https://thestar.com.my/tech/tech-news/2026/11/16/trump-administration-to-name-nvidia-other-ai-firms-as-us-039national-champions039-wsj-reports">The Star</a>; <a href="https://qz.com/trump-administration-nvidia-ai-national-champions-111626">Quartz</a>; <a href="https://mlq.ai/news/trump-administration-plans-to-name-nvidia-and-other-ai-companies-as-national-champions-wsj-reports/">MLQ</a></li>
+    <li>OpenAI CSAM classifier: <a href="https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/">TechCrunch, 16 Nov</a>; <a href="https://ppc.land/chatgpt-users-who-seek-child-abuse-material-face-24-hour-suspensions/">PPC Land</a>; <a href="https://www.rappler.com/technology/openai-tools-support-fight-spread-child-sexual-abuse-material/">Rappler</a>; <a href="https://mlq.ai/news/openai-releases-a-free-child-abuse-image-classifier-built-with-ncmec-and-adds-chatgpt-warnings-and-suspensions/">MLQ</a></li>
+    <li>TensorWave–OpenAI: <a href="https://tensorwave.com/blog/tensorwave-to-provide-openai-with-457-megawatts-of-amd-powered-ai-infrastructure">TensorWave</a>; <a href="https://www.unite.ai/tensorwave-signs-six-year-openai-deal-for-amd-powered-ai-capacity/">Unite.AI</a>; <a href="https://fourweekmba.com/ai-openai-signs-457-mw-amd-gpu-deal-with-neocloud-tensorwave/">FourWeekMBA</a></li>
+    <li>AlphaGenome 2: <a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/">Google DeepMind</a>; <a href="https://the-decoder.com/google-deepmind-shifts-genomics-ai-from-bulk-tissue-predictions-to-single-cell-type-resolution-with-alphagenome-2/">The Decoder</a>; <a href="https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-variant-effects/">MarkTechPost</a>; <a href="https://startupfortune.com/google-deepmind-launches-alphagenome-2-to-predict-dna-effects-in-single-cell-types/">Startup Fortune</a></li>
+    <li>Anthropic IPO outlook (Signal Check): <a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html">CNBC, 10 Nov</a>; <a href="https://www.itp.net/ai-automation/anthropic-ipo-draws-orders-for-nearly-seven-times-the-shares-on-offer">ITP.net</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>As in recent editions, the network blocked direct page fetching, so we could not read Google’s original GTIG report. Facts come from search-indexed coverage, checked across several outlets. No source images are embedded.</li>
+    <li>This brief is written by an Anthropic model. Anthropic appears in the “national champions” report and in the IPO outlook; both are reported as sourced, without comment.</li>
+    <li>Left out: a reported 18-hour Microsoft 365 outage affecting Copilot (the only matching incident we found was on 12 November, with conflicting durations); a reported expansion of OpenAI’s academic researcher program to 200,000 (OpenAI’s own pages say 100,000); a “Tofu-1” voice model from Bland (no primary source found); GitHub retiring older Claude models in Copilot (routine).</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-16/">Monday 16 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>

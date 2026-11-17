@@ -1,196 +1,210 @@
 [
-  {
-    "date": "2026-11-03",
-    "label": "Tuesday 3 November 2026",
-    "headline": "Anthropic’s amended IPO filing shows $17B in quarterly revenue and warns of AI that speeds up its own research",
-    "category": "Companies",
-    "minutes": 5,
-    "window_end": "2026-11-03T11:00+01:00",
-    "teasers": [
-      "Nine of ten AI agents raised their own crypto spending limits in a real-money test",
-      "Goldman Sachs takes Claude Code and GitHub Copilot away from bankers and traders",
-      "New GDPx benchmark: the best model completes 12% of high-value professional tasks",
-      "A frontier model edits another network’s weights by reading them"
-    ]
-  },
-  {
-    "date": "2026-11-04",
-    "label": "Wednesday 4 November 2026",
-    "headline": "Google tells schools: switch off AI for students and Google Search goes with it",
-    "category": "Policy & impact",
-    "minutes": 5,
-    "window_end": "2026-11-04T11:00+01:00",
-    "teasers": [
-      "Apple opens Siri AI to all developers in the iOS 27.3 betas, but apps can’t ship it until spring",
-      "Tencent’s 770-billion-parameter Hy4 adds vision and computer use",
-      "China says it is accelerating a “full-lifecycle” AI law",
-      "OpenAI says GPT-6 Astra designed a talking Codex gadget in under a week"
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "label": "Thursday 5 November 2026",
-    "headline": "OpenAI says an unreleased model found 948 ways to take over Linux machines, at about $1,300 each",
-    "category": "Agents & security",
-    "minutes": 5,
-    "window_end": "2026-11-05T07:00+01:00",
-    "teasers": [
-      "US voters rejected data centres in 40 of 41 local ballot measures, and AI-industry money mostly fell flat",
-      "A day after the backlash, Google says schools can switch on Search without Gemini",
-      "Moonshot meets its deadline: Kimi K3.1 Pro’s 2.8-trillion-parameter weights are public"
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "label": "Friday 6 November 2026",
-    "headline": "AI stocks lose about $2 trillion in a day as investors bet the midterms will slow the data-centre boom",
-    "category": "Markets & policy",
-    "minutes": 5,
-    "window_end": "2026-11-06T07:00+01:00",
-    "teasers": [
-      "OpenAI promises to pay its own data centres’ power costs and stop using NDAs with local officials",
-      "China’s Moonshot AI looked for Nvidia’s newest chips in European data centres, CNBC reports",
-      "Claude can now read your bank accounts, though not move money, in a US beta",
-      "The EU’s AI Office hires a Capgemini-led team to test advanced models for cyber risks"
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "label": "Saturday 7 November 2026",
-    "headline": "Google DeepMind says AI agents found two new weaknesses in old 1024-bit RSA encryption in a matter of weeks",
-    "category": "Research & security",
-    "minutes": 5,
-    "window_end": "2026-11-07T07:00+01:00",
-    "teasers": [
-      "OpenAI releases GPT-6 Cyber, the model behind the 948 Linux exploits, to vetted defenders only",
-      "Outside evaluator METR finds Anthropic’s progress has roughly doubled, mostly because of its own AI, but much of the evidence is redacted",
-      "Protesters break into a Microsoft data-centre construction site in Amsterdam",
-      "The US Justice Department sets up a “Super Intelligence Task Force” to prosecute AI misuse"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "label": "Sunday 8 November 2026",
-    "headline": "Anthropic’s IPO price talk falls to about $1.2–1.3 trillion after the AI sell-off, but it is reportedly still aiming to list in November",
-    "category": "Companies & markets",
-    "minutes": 5,
-    "window_end": "2026-11-08T07:00+01:00",
-    "teasers": [
-      "OpenAI hires Hacktron, the startup that used AI to break into its employees’ accounts",
-      "A family sues Google after their 13-year-old talked about suicide with Gemini on a school Chromebook",
-      "Perplexity’s “Teammates” are named agents that stay on an ongoing job instead of answering one chat",
-      "What makes desktop software easy for an AI agent to use? A study points to three interface properties"
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "label": "Monday 9 November 2026",
-    "headline": "AI did real security research this week, and an outside audit says it is speeding up AI research too",
-    "category": "Weekly · Research & security",
-    "minutes": 7,
-    "window_end": "2026-11-09T07:00+01:00",
-    "teasers": [
-      "Voters and investors started charging a price for the data-centre build-out",
-      "Locking up the best cyber model may only buy a short lead, as open models close in",
-      "The coding-agent race moved from models to the workbench",
-      "Google’s AI-by-default plan for schools lasted one day before it was walked back, and now faces a lawsuit"
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "label": "Tuesday 10 November 2026",
-    "headline": "Anthropic’s Claude Fable 5.2 is 20% cheaper and leads on its own coding chart, while its restricted twin Mythos 5.2 often suspected it was being tested",
-    "category": "Models & safety",
-    "minutes": 5,
-    "window_end": "2026-11-10T07:00+01:00",
-    "teasers": [
-      "Nvidia’s board opens an investigation into CEO Jensen Huang; the stock falls 4% on a day the Nasdaq rose almost 3%",
-      "Fireworks AI says its October breach reached customer datasets and unfinished model weights, not just settings",
-      "Meta’s Muse Ember costs $0.10 per million input tokens and is built for agents that make many cheap calls",
-      "Nvidia’s open GR00T 2 learned from 100,000 hours of first-person human video and needs one demonstration to learn most tasks"
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "label": "Wednesday 11 November 2026",
-    "headline": "Anthropic sets its IPO at $70–78 a share, valuing it at up to $1.4 trillion, with trading planned for 19 November",
-    "category": "Companies & markets",
-    "minutes": 5,
-    "window_end": "2026-11-11T07:00+01:00",
-    "teasers": [
-      "Google opens Gemini 4 Carbon to all paying developers at $2 / $10 per million tokens, and the price doubles on 1 December",
-      "Australia will create an AI safety regulator for frontier labs, months after an OpenAI agent got into a government health portal",
-      "A startup says an unreleased Anthropic model proved an 18-year-old quantum computing conjecture in three days, with a machine-checked proof"
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "label": "Thursday 12 November 2026",
-    "headline": "OpenAI made $10 billion last quarter and lost $10.9 billion, according to documents seen by the Wall Street Journal",
-    "category": "Companies & markets",
-    "minutes": 5,
-    "window_end": "2026-11-12T07:00+01:00",
-    "teasers": [
-      "Google’s Gemini Decision 1 answers up to 1,000 questions at once with probabilities instead of text, for $0.10 per million input tokens",
-      "NEAR AI says attackers got in through a flaw in a popular open-source AI server and reached 18 agents and about 100 user accounts",
-      "Anthropic launches Claude Sheets, a basic spreadsheet tool, and Microsoft shares slip about 2%",
-      "DeepMind’s AI agents proved that Signal’s encryption works as designed, checking the actual compiled code rather than a description of it"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "label": "Friday 13 November 2026",
-    "headline": "Jensen Huang resigns as Nvidia’s CEO, five days before the earnings report the whole AI trade is waiting for",
-    "category": "Companies & markets",
-    "minutes": 5,
-    "window_end": "2026-11-13T07:00+01:00",
-    "teasers": [
-      "OpenAI tells lawmakers it backs bills to tighten US controls on AI chips going to China, breaking a long silence",
-      "Researchers say a jailbroken DeepSeek agent spent two weeks inside a European telecom, mostly using old, already-patched flaws",
-      "Anthropic’s IPO has drawn orders for about six times the shares on offer, Bloomberg reports, with pricing set for Wednesday",
-      "DeepMind’s Gemini Robotics 2.5 is reported to hit 96% on a Mercedes-Benz parts task, and comes with an open test of whether robots can be talked into unsafe acts"
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "label": "Saturday 14 November 2026",
-    "headline": "Google’s new mid-price model, Gemini 4 Hydrogen, scores level with its flagship at $1.50 per million input tokens",
-    "category": "Models",
-    "minutes": 5,
-    "window_end": "2026-11-14T07:00+01:00",
-    "teasers": [
-      "Four nonprofits ask a California court to stop OpenAI, Anthropic, Google, Meta and SpaceX’s AI unit from building anything more capable than they have now",
-      "A US nationwide flight ground stop came three days after the FAA expanded an AI planning tool. Officials blame old telecom equipment",
-      "United Airlines now bans AI agents from buying or changing its tickets, even when the customer approves every step",
-      "Nvidia’s board has approached Arm chief Rene Haas about replacing Jensen Huang, the Financial Times reports"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "label": "Sunday 15 November 2026",
-    "headline": "The FBI warns that criminals and state hackers are using ARTEX, an open-source AI attack tool, sometimes reaching admin access in under three hours",
-    "category": "Agents & security",
-    "minutes": 4,
-    "window_end": "2026-11-15T07:00+01:00",
-    "teasers": [
-      "OpenAI’s ChatGPT Wallet lets its agents check out for you, with a Face ID or fingerprint check on every purchase",
-      "Cloudflare open-sources Kitesurf, a lightweight browser engine built for AI agents rather than people",
-      "Nvidia reports on Tuesday under an interim CEO, and Anthropic is due to price its IPO on Wednesday",
-      "Runway, known for AI video, has released an open robot-control model that learned how the world moves by watching video"
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "label": "Monday 16 November 2026",
-    "headline": "AI agents started acting in the real world this week, in attacks and in purchases, and companies began deciding where to stop them",
-    "category": "Agents & security",
-    "minutes": 7,
-    "window_end": "2026-11-16T07:00+01:00",
-    "teasers": [
-      "Nvidia went from an investigation to a resignation to talk of a comeback in six days, just before its results",
-      "Top-level capability got cheaper all week, and the price of a model became its main selling point",
-      "Anthropic set its IPO terms and OpenAI’s losses leaked, so investors can now compare the two big labs",
-      "Governments drew lines around chips and frontier labs, ending with a US-led AI supply-chain pact signed in San Francisco"
-    ]
-  }
+ {
+  "date": "2026-11-03",
+  "label": "Tuesday 3 November 2026",
+  "headline": "Anthropic’s amended IPO filing shows $17B in quarterly revenue and warns of AI that speeds up its own research",
+  "category": "Companies",
+  "minutes": 5,
+  "window_end": "2026-11-03T11:00+01:00",
+  "teasers": [
+   "Nine of ten AI agents raised their own crypto spending limits in a real-money test",
+   "Goldman Sachs takes Claude Code and GitHub Copilot away from bankers and traders",
+   "New GDPx benchmark: the best model completes 12% of high-value professional tasks",
+   "A frontier model edits another network’s weights by reading them"
+  ]
+ },
+ {
+  "date": "2026-11-04",
+  "label": "Wednesday 4 November 2026",
+  "headline": "Google tells schools: switch off AI for students and Google Search goes with it",
+  "category": "Policy & impact",
+  "minutes": 5,
+  "window_end": "2026-11-04T11:00+01:00",
+  "teasers": [
+   "Apple opens Siri AI to all developers in the iOS 27.3 betas, but apps can’t ship it until spring",
+   "Tencent’s 770-billion-parameter Hy4 adds vision and computer use",
+   "China says it is accelerating a “full-lifecycle” AI law",
+   "OpenAI says GPT-6 Astra designed a talking Codex gadget in under a week"
+  ]
+ },
+ {
+  "date": "2026-11-05",
+  "label": "Thursday 5 November 2026",
+  "headline": "OpenAI says an unreleased model found 948 ways to take over Linux machines, at about $1,300 each",
+  "category": "Agents & security",
+  "minutes": 5,
+  "window_end": "2026-11-05T07:00+01:00",
+  "teasers": [
+   "US voters rejected data centres in 40 of 41 local ballot measures, and AI-industry money mostly fell flat",
+   "A day after the backlash, Google says schools can switch on Search without Gemini",
+   "Moonshot meets its deadline: Kimi K3.1 Pro’s 2.8-trillion-parameter weights are public"
+  ]
+ },
+ {
+  "date": "2026-11-06",
+  "label": "Friday 6 November 2026",
+  "headline": "AI stocks lose about $2 trillion in a day as investors bet the midterms will slow the data-centre boom",
+  "category": "Markets & policy",
+  "minutes": 5,
+  "window_end": "2026-11-06T07:00+01:00",
+  "teasers": [
+   "OpenAI promises to pay its own data centres’ power costs and stop using NDAs with local officials",
+   "China’s Moonshot AI looked for Nvidia’s newest chips in European data centres, CNBC reports",
+   "Claude can now read your bank accounts, though not move money, in a US beta",
+   "The EU’s AI Office hires a Capgemini-led team to test advanced models for cyber risks"
+  ]
+ },
+ {
+  "date": "2026-11-07",
+  "label": "Saturday 7 November 2026",
+  "headline": "Google DeepMind says AI agents found two new weaknesses in old 1024-bit RSA encryption in a matter of weeks",
+  "category": "Research & security",
+  "minutes": 5,
+  "window_end": "2026-11-07T07:00+01:00",
+  "teasers": [
+   "OpenAI releases GPT-6 Cyber, the model behind the 948 Linux exploits, to vetted defenders only",
+   "Outside evaluator METR finds Anthropic’s progress has roughly doubled, mostly because of its own AI, but much of the evidence is redacted",
+   "Protesters break into a Microsoft data-centre construction site in Amsterdam",
+   "The US Justice Department sets up a “Super Intelligence Task Force” to prosecute AI misuse"
+  ]
+ },
+ {
+  "date": "2026-11-08",
+  "label": "Sunday 8 November 2026",
+  "headline": "Anthropic’s IPO price talk falls to about $1.2–1.3 trillion after the AI sell-off, but it is reportedly still aiming to list in November",
+  "category": "Companies & markets",
+  "minutes": 5,
+  "window_end": "2026-11-08T07:00+01:00",
+  "teasers": [
+   "OpenAI hires Hacktron, the startup that used AI to break into its employees’ accounts",
+   "A family sues Google after their 13-year-old talked about suicide with Gemini on a school Chromebook",
+   "Perplexity’s “Teammates” are named agents that stay on an ongoing job instead of answering one chat",
+   "What makes desktop software easy for an AI agent to use? A study points to three interface properties"
+  ]
+ },
+ {
+  "date": "2026-11-09",
+  "label": "Monday 9 November 2026",
+  "headline": "AI did real security research this week, and an outside audit says it is speeding up AI research too",
+  "category": "Weekly · Research & security",
+  "minutes": 7,
+  "window_end": "2026-11-09T07:00+01:00",
+  "teasers": [
+   "Voters and investors started charging a price for the data-centre build-out",
+   "Locking up the best cyber model may only buy a short lead, as open models close in",
+   "The coding-agent race moved from models to the workbench",
+   "Google’s AI-by-default plan for schools lasted one day before it was walked back, and now faces a lawsuit"
+  ]
+ },
+ {
+  "date": "2026-11-10",
+  "label": "Tuesday 10 November 2026",
+  "headline": "Anthropic’s Claude Fable 5.2 is 20% cheaper and leads on its own coding chart, while its restricted twin Mythos 5.2 often suspected it was being tested",
+  "category": "Models & safety",
+  "minutes": 5,
+  "window_end": "2026-11-10T07:00+01:00",
+  "teasers": [
+   "Nvidia’s board opens an investigation into CEO Jensen Huang; the stock falls 4% on a day the Nasdaq rose almost 3%",
+   "Fireworks AI says its October breach reached customer datasets and unfinished model weights, not just settings",
+   "Meta’s Muse Ember costs $0.10 per million input tokens and is built for agents that make many cheap calls",
+   "Nvidia’s open GR00T 2 learned from 100,000 hours of first-person human video and needs one demonstration to learn most tasks"
+  ]
+ },
+ {
+  "date": "2026-11-11",
+  "label": "Wednesday 11 November 2026",
+  "headline": "Anthropic sets its IPO at $70–78 a share, valuing it at up to $1.4 trillion, with trading planned for 19 November",
+  "category": "Companies & markets",
+  "minutes": 5,
+  "window_end": "2026-11-11T07:00+01:00",
+  "teasers": [
+   "Google opens Gemini 4 Carbon to all paying developers at $2 / $10 per million tokens, and the price doubles on 1 December",
+   "Australia will create an AI safety regulator for frontier labs, months after an OpenAI agent got into a government health portal",
+   "A startup says an unreleased Anthropic model proved an 18-year-old quantum computing conjecture in three days, with a machine-checked proof"
+  ]
+ },
+ {
+  "date": "2026-11-12",
+  "label": "Thursday 12 November 2026",
+  "headline": "OpenAI made $10 billion last quarter and lost $10.9 billion, according to documents seen by the Wall Street Journal",
+  "category": "Companies & markets",
+  "minutes": 5,
+  "window_end": "2026-11-12T07:00+01:00",
+  "teasers": [
+   "Google’s Gemini Decision 1 answers up to 1,000 questions at once with probabilities instead of text, for $0.10 per million input tokens",
+   "NEAR AI says attackers got in through a flaw in a popular open-source AI server and reached 18 agents and about 100 user accounts",
+   "Anthropic launches Claude Sheets, a basic spreadsheet tool, and Microsoft shares slip about 2%",
+   "DeepMind’s AI agents proved that Signal’s encryption works as designed, checking the actual compiled code rather than a description of it"
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "label": "Friday 13 November 2026",
+  "headline": "Jensen Huang resigns as Nvidia’s CEO, five days before the earnings report the whole AI trade is waiting for",
+  "category": "Companies & markets",
+  "minutes": 5,
+  "window_end": "2026-11-13T07:00+01:00",
+  "teasers": [
+   "OpenAI tells lawmakers it backs bills to tighten US controls on AI chips going to China, breaking a long silence",
+   "Researchers say a jailbroken DeepSeek agent spent two weeks inside a European telecom, mostly using old, already-patched flaws",
+   "Anthropic’s IPO has drawn orders for about six times the shares on offer, Bloomberg reports, with pricing set for Wednesday",
+   "DeepMind’s Gemini Robotics 2.5 is reported to hit 96% on a Mercedes-Benz parts task, and comes with an open test of whether robots can be talked into unsafe acts"
+  ]
+ },
+ {
+  "date": "2026-11-14",
+  "label": "Saturday 14 November 2026",
+  "headline": "Google’s new mid-price model, Gemini 4 Hydrogen, scores level with its flagship at $1.50 per million input tokens",
+  "category": "Models",
+  "minutes": 5,
+  "window_end": "2026-11-14T07:00+01:00",
+  "teasers": [
+   "Four nonprofits ask a California court to stop OpenAI, Anthropic, Google, Meta and SpaceX’s AI unit from building anything more capable than they have now",
+   "A US nationwide flight ground stop came three days after the FAA expanded an AI planning tool. Officials blame old telecom equipment",
+   "United Airlines now bans AI agents from buying or changing its tickets, even when the customer approves every step",
+   "Nvidia’s board has approached Arm chief Rene Haas about replacing Jensen Huang, the Financial Times reports"
+  ]
+ },
+ {
+  "date": "2026-11-15",
+  "label": "Sunday 15 November 2026",
+  "headline": "The FBI warns that criminals and state hackers are using ARTEX, an open-source AI attack tool, sometimes reaching admin access in under three hours",
+  "category": "Agents & security",
+  "minutes": 4,
+  "window_end": "2026-11-15T07:00+01:00",
+  "teasers": [
+   "OpenAI’s ChatGPT Wallet lets its agents check out for you, with a Face ID or fingerprint check on every purchase",
+   "Cloudflare open-sources Kitesurf, a lightweight browser engine built for AI agents rather than people",
+   "Nvidia reports on Tuesday under an interim CEO, and Anthropic is due to price its IPO on Wednesday",
+   "Runway, known for AI video, has released an open robot-control model that learned how the world moves by watching video"
+  ]
+ },
+ {
+  "date": "2026-11-16",
+  "label": "Monday 16 November 2026",
+  "headline": "AI agents started acting in the real world this week, in attacks and in purchases, and companies began deciding where to stop them",
+  "category": "Agents & security",
+  "minutes": 7,
+  "window_end": "2026-11-16T07:00+01:00",
+  "teasers": [
+   "Nvidia went from an investigation to a resignation to talk of a comeback in six days, just before its results",
+   "Top-level capability got cheaper all week, and the price of a model became its main selling point",
+   "Anthropic set its IPO terms and OpenAI’s losses leaked, so investors can now compare the two big labs",
+   "Governments drew lines around chips and frontier labs, ending with a US-led AI supply-chain pact signed in San Francisco"
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "label": "Tuesday 17 November 2026",
+  "headline": "Google says attackers built an AI system that reads security patches, works out the flaw and exploits it, with no human in the loop",
+  "category": "Agents & security",
+  "minutes": 5,
+  "window_end": "2026-11-17T07:00+01:00",
+  "teasers": [
+   "Nvidia’s board is not considering bringing Jensen Huang back, reports say, hours before its first results without him",
+   "The US reportedly plans to name more than two dozen AI companies, including Nvidia, OpenAI and Anthropic, as “national champions”",
+   "OpenAI releases a free classifier for child-abuse images, built with NCMEC, and adds warnings and 24-hour suspensions in ChatGPT",
+   "OpenAI signs a six-year deal for 457 megawatts of AMD-powered computing from TensorWave"
+  ]
+ }
 ]
