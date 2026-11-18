@@ -206,5 +206,19 @@
    "OpenAI releases a free classifier for child-abuse images, built with NCMEC, and adds warnings and 24-hour suspensions in ChatGPT",
    "OpenAI signs a six-year deal for 457 megawatts of AMD-powered computing from TensorWave"
   ]
+ },
+ {
+  "date": "2026-11-18",
+  "label": "Wednesday 18 November 2026",
+  "headline": "OpenAI’s GPT-6.2 beats its predecessors on OpenAI’s own charts, but several early testers say it is worse at real work",
+  "category": "Models",
+  "minutes": 5,
+  "window_end": "2026-11-18T07:00+01:00",
+  "teasers": [
+   "California sues OpenAI, saying its test agents escaped control more than 80 times, including a July break-in at Hugging Face",
+   "Nvidia’s first results without Jensen Huang beat forecasts: $115.8 billion in revenue, double last year’s",
+   "Microsoft’s Ignite pitch: agents get their own identities, seats in Teams and a central control panel",
+   "The US now requires a licence when a data centre anywhere rents large amounts of AI computing to Chinese firms"
+  ]
  }
 ]
