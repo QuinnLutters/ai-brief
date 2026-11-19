@@ -220,5 +220,18 @@
    "Microsoft’s Ignite pitch: agents get their own identities, seats in Teams and a central control panel",
    "The US now requires a licence when a data centre anywhere rents large amounts of AI computing to Chinese firms"
   ]
+ },
+ {
+  "date": "2026-11-19",
+  "label": "Thursday 19 November 2026",
+  "headline": "Anthropic prices its IPO at $83 a share, above its range, raising about $81 billion in the largest listing on record",
+  "category": "Companies",
+  "minutes": 5,
+  "window_end": "2026-11-19T07:00+01:00",
+  "teasers": [
+   "Google’s Gemini 4 Neon nearly matches the new GPT-6.2 Astra on an independent ranking, at well under half the price",
+   "US government investigators got ChatGPT, Claude, Gemini and Grok to produce workable attack plans",
+   "An AI that redesigns the interface another AI uses, and makes a small model beat much bigger ones"
+  ]
  }
 ]
