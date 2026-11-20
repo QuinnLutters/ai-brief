@@ -233,5 +233,19 @@
    "US government investigators got ChatGPT, Claude, Gemini and Grok to produce workable attack plans",
    "An AI that redesigns the interface another AI uses, and makes a small model beat much bigger ones"
   ]
+ },
+ {
+  "date": "2026-11-20",
+  "label": "Friday 20 November 2026",
+  "headline": "Citi, PNC and Citizens tell customers they bear the losses when an outside AI agent acts in their account, even if the agent is hacked",
+  "category": "Agents & security",
+  "minutes": 5,
+  "window_end": "2026-11-20T07:00+01:00",
+  "teasers": [
+   "Anthropic’s shares close their first day at $97.17, up 17%, after opening at $111.50 and sliding with a falling market",
+   "Arizona opens a criminal investigation into OpenAI and unnamed AI companies over “rogue agents” in banks",
+   "Meta’s Muse assistant read encrypted Signal messages through Android notification access, Reuters tests found",
+   "OpenAI says its coding agents now finish almost half of its multi-hour research tasks alone, with a very uneven record"
+  ]
  }
 ]
