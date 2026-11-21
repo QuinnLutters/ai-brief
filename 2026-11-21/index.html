@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 21 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+.bars{margin:22px 0 18px;font-family:var(--sans);font-size:13px}
+.bars div{margin-bottom:10px}
+.bars span{display:block;color:var(--muted);margin-bottom:4px}
+.bars i{display:block;height:10px;background:var(--accent);border-radius:2px}
+.bars b{font-weight:600;color:var(--fg)}
+</style>
+</head><body>
+
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Saturday 21 November 2026 · Window: Fri 20 Nov 07:00 – Sat 21 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Research</span>
+  <h1>An Anthropic mathematician says he and Claude proved the Riemann hypothesis, releasing only computer-checked code and no readable paper</h1>
+  <p class="stand">The proof checker accepts the code, which is more than past claims had. But no human has read the argument, and the mathematical community has not accepted the result.</p>
+
+  <p>On 20 November Levent Alpöge, a mathematician who works at Anthropic, posted a four-page note on his personal website: <em>“I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis.”</em> The Riemann hypothesis, first stated in 1859, says where the zeros of a particular function (the zeta function) lie. It governs how primes are spread out, is one of the Clay Institute’s million-dollar Millennium Problems, and has defeated every earlier claimed proof. Alpöge says the method also covers the stronger Generalized Riemann Hypothesis (GRH).</p>
+
+  <figure class="num">
+    <div><strong>1859</strong><em>year the hypothesis was posed; no proof accepted since</em></div>
+    <div><strong>0</strong><em>human-readable papers released so far; only Lean code</em></div>
+    <div><strong>250,000+</strong><em>pages in the AI-written draft, per a footnote in the note</em></div>
+    <figcaption>Figures as reported by Scientific American, Quartz and others, 20–21 November.</figcaption>
+  </figure>
+
+  <p><strong>What was released:</strong> not a paper but code in Lean, a “proof assistant” language in which a computer checks every logical step. The files are split into 14 downloads. A footnote says the informal, AI-generated written material ran past 250,000 pages, which is why only the formal version was published.</p>
+
+  <p><strong>What has been checked:</strong> MIT mathematician Andrew Sutherland says he independently compiled the code and that it relies only on Lean’s “three standard axioms”, meaning no extra assumptions were slipped in; Scientific American’s follow-up headline calls the proof “almost certainly true”. Mathematician Elliot Glazer said the formal statement in the release “is in fact GRH”. Not yet settled, according to the reports: whether every formal definition truly matches the hypothesis as mathematicians mean it, and a final run of a standard checking tool. Lean guarantees the steps follow, not that the theorem says what its authors claim.</p>
+
+  <p><strong>What is missing:</strong> any explanation a human can follow, and any statement of which Claude model was used or what it contributed. Anthropic has not issued an official announcement; the claim is Alpöge’s own. Terence Tao called it an “enormous” Lean-only proof and has raised the broader worry that such proofs can be verified without anyone understanding them.</p>
+
+  <p><strong>Why it matters:</strong> if it holds, it is the first problem of this rank to fall with AI doing much of the work. It follows Anthropic’s August result on the share of zeros in the right place (41.6% to about 67%), which Anthropic said would not lead to a full proof, and an October OpenAI-linked proof of a weaker “quasi-Riemann” version. Our reading: the machine check makes this claim far more credible than usual; it also creates a new situation in which mathematics may have to accept a result before anyone can explain it.</p>
+  <p class="src">Sources: <a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Scientific American</a> · <a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/">Scientific American follow-up</a> · <a href="https://qz.com/anthropic-alpoge-claude-riemann-hypothesis-proof-112026">Quartz</a> · <a href="https://www.unite.ai/levent-alpoges-unverified-riemann-claim-puts-claudes-lean-code-in-focus/">Unite.AI</a>, 20–21 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://www.nacionale.com/en/articles/what-is-lean-proof-assistant-riemann-hypothesis-alpoge-claude-explained">Nacionale: what Lean is, and what it can’t check</a>.</li>
+    <li><a href="https://www.nacionale.com/en/articles/when-will-we-know-riemann-hypothesis-proof-verified-alpoge-claude-lean-what-happens-next">What happens next, and how long verification could take</a>.</li>
+    <li><a href="https://officechai.com/ai/how-mathematicians-have-reacted-to-claimed-riemann-hypothesis-proof-by-anthropics-levent-alpoge/">A round-up of mathematicians’ reactions</a> (OfficeChai).</li>
+    <li>Background: <a href="https://www.anthropic.com/research/riemann-zeta">Anthropic’s August zeta-zeros result</a> · <a href="https://quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019">Quanta on the “quasi-Riemann” proof</a>, 19 Oct.</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Companies &amp; markets · 20 November</span>
+    <h3>Nvidia falls about 14% after Reuters reports the SEC is examining its accounting; Anthropic slides 8.5% to $88.91</h3>
+    <p>Reuters, citing two people briefed on the matter, reported that enforcement staff at the US Securities and Exchange Commission are looking at possible accounting issues at Nvidia. Reuters could not say when the inquiry began or what it covers; a Wall Street Journal report three days earlier had first mentioned an SEC investigation. The SEC declined to comment. Reported losses range from 11.5% intraday to a 14% close at $125.53, Nvidia’s worst day since January 2025. An inquiry is not a finding of wrongdoing. The sell-off pulled down AI stocks broadly: Anthropic, in its first full trading day, fell 8.5% to $88.91, still above its $83 offering price.</p>
+    <p class="src"><a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-sink-52-week-203654330.html">Yahoo Finance / Decrypt</a> · <a href="https://www.investing.com/news/stock-market-news/nvidia-shares-fall-10-as-report-of-sec-accounting-probe-adds-to-pressure-5042464">Investing.com</a> · <a href="https://247wallst.com/investing/2026/11/20/nvidia-stock-plunges-12-after-reuters-reports-an-sec-probe-of-its-accounting-its-nvidias-worst-day-since-deepseek-and-it-has-lost-2-7-trillion-since-october/">24/7 Wall St.</a> · <a href="https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html">CNBC</a>, 20 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Agents &amp; security · confirmed 19 November</span>
+    <h3>The European Commission says an “AI-generated cyber campaign” knocked out staff payroll and HR systems for more than 10 days</h3>
+    <p>A Commission spokesperson, Thomas Regnier, said the first signs were detected on 22 October and described the incident as an “AI-generated cyber campaign”. The disruption hit personnel systems for staff, including payroll, leave requests, medical reimbursements and translation services. The Commission says it has found no evidence of a broad breach of staff data and knows of no ransom demand; the investigation is open. It did not name the tool or the attackers. Some outlets link the attack to ARTEX, the AI hacking framework the FBI warned about last week (our 15 November edition), but the Commission has not said so, so treat that link as unconfirmed.</p>
+    <p class="src"><a href="https://therecord.media/european-commission-confirms-cyberattack-using-ai">The Record</a> · <a href="https://en.cryptonomist.ch/2026/11/19/european-commission-cyberattack/">Cryptonomist</a> · <a href="https://www.latintimes.com/ai-artex-framework-european-commission-cyberattack-601595">Latin Times</a>, 19 Nov</p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Agents &amp; security · Google Chrome, 19 November</span>
+    <h3>Google built a sealed-off fake internet, written and run by AI agents, to attack its own browsing agent</h3>
+    <p>Chrome’s “auto browse” agent clicks and types on websites for you, which makes every web page a possible source of hidden instructions (prompt injection). Google’s Chrome Security team describes “Mirror Dimension”: thousands of simulated sites, including shops, social feeds and bank dashboards, in a closed sandbox. Chrome sends the agent’s traffic to these local copies while the agent still sees familiar web addresses, so engineers can plant attacks without touching real sites. According to reports, the sites themselves are built by a team of agents: research agents define what a site needs, builder agents make the pages, critic agents check them.</p>
+    <p>A striking idea for anyone who designs interfaces: a whole web built for a machine user, to see where it gets fooled. Google has not published evidence that agents tested this way are safer on the real web, and a simulation cannot reproduce every quirk of live sites.</p>
+    <p class="src"><a href="https://www.unite.ai/chrome-security-builds-a-synthetic-web-to-test-ai-browsing-agents/">Unite.AI</a> · <a href="https://www.govinfosecurity.com/google-builds-fake-internet-to-test-ai-agent-security-a-33479">GovInfoSecurity</a> · <a href="https://piunikaweb.com/2026/11/20/google-chrome-mirror-dimension-ai-training/">PiunikaWeb</a>, 19–20 Nov</p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">A checked proof and an explained proof are no longer the same thing, and the Riemann claim is where that difference gets tested.</p>
+  <p><strong>Deserves attention:</strong> the Lean result. Independent compilation by a respected mathematician is real evidence, far beyond the usual self-published claim.</p>
+  <p><strong>Overstated:</strong> “AI solved the Riemann hypothesis”. The statement-matching check is not finished, no paper exists, and Claude’s contribution has not been described. Until those arrive, it is a strong claim, not an accepted theorem.</p>
+  <p><strong>Uncertain:</strong> what the SEC is actually looking at in Nvidia’s books, and whether the Commission attack is the first of many. Neither has a confirmed scope yet.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Friday 20 November 2026, 07:00 CET to Saturday 21 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Riemann hypothesis claim: <a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Scientific American</a>; <a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/">Scientific American (follow-up)</a>; <a href="https://qz.com/anthropic-alpoge-claude-riemann-hypothesis-proof-112026">Quartz</a>; <a href="https://www.unite.ai/levent-alpoges-unverified-riemann-claim-puts-claudes-lean-code-in-focus/">Unite.AI</a>; <a href="https://officechai.com/ai/claimed-riemann-hypothesis-proof-made-with-claude-appears-on-anthropic-mathematician-levent-alpoges-website/">OfficeChai</a>; <a href="https://interestingengineering.com/ai-robotics/anthropic-167-year-old-riemann-hypothesis-claude">Interesting Engineering</a>; <a href="https://www.nacionale.com/en/articles/has-riemann-hypothesis-been-proved-levent-alpoge-claude-anthropic-claim-lean">Nacionale</a>; <a href="https://www.anthropic.com/research/riemann-zeta">Anthropic (August result)</a>; <a href="https://quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019">Quanta Magazine</a></li>
+    <li>Nvidia SEC report and Anthropic shares: <a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-sink-52-week-203654330.html">Yahoo Finance</a>; <a href="https://decrypt.co/383744/nvidia-shares-sink-52-week-low-sec-probing-accounting">Decrypt</a>; <a href="https://www.investing.com/news/stock-market-news/nvidia-shares-fall-10-as-report-of-sec-accounting-probe-adds-to-pressure-5042464">Investing.com</a>; <a href="https://247wallst.com/investing/2026/11/20/nvidia-stock-plunges-12-after-reuters-reports-an-sec-probe-of-its-accounting-its-nvidias-worst-day-since-deepseek-and-it-has-lost-2-7-trillion-since-october/">24/7 Wall St.</a>; <a href="https://www.dimsumdaily.hk/nvidia-extends-us2-7-trillion-stock-rout-as-sec-probes-accounting-practices/">Dimsum Daily</a> (closing figure); <a href="https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html">CNBC</a>; <a href="https://www.investing.com/news/stock-market-news/anthropic-opens-34-above-ipo-price-reaches-2-trillion-valuation-in-nasdaq-debut-5039595">Investing.com (Anthropic close)</a>; <a href="https://www.investmentnews.com/equities/anthropic-stock-sinks-85-as-ai-selloff-swamps-record-setting-ipo/269120">InvestmentNews</a></li>
+    <li>European Commission cyberattack: <a href="https://therecord.media/european-commission-confirms-cyberattack-using-ai">The Record</a>; <a href="https://en.cryptonomist.ch/2026/11/19/european-commission-cyberattack/">Cryptonomist</a>; <a href="https://www.latintimes.com/ai-artex-framework-european-commission-cyberattack-601595">Latin Times</a>; <a href="https://news.lavx.hu/article/hackers-use-ai-tool-to-disrupt-european-commission-staff-systems">LavX News</a>; <a href="https://www.theneuron.ai/news/eu-commission-ai-cyberattack-artex/">The Neuron</a></li>
+    <li>Google Mirror Dimension: <a href="https://www.unite.ai/chrome-security-builds-a-synthetic-web-to-test-ai-browsing-agents/">Unite.AI</a>; <a href="https://www.govinfosecurity.com/google-builds-fake-internet-to-test-ai-agent-security-a-33479">GovInfoSecurity</a>; <a href="https://piunikaweb.com/2026/11/20/google-chrome-mirror-dimension-ai-training/">PiunikaWeb</a>; <a href="https://cryptobriefing.com/google-mirror-dimension-chrome-ai-agents/">Crypto Briefing</a>; <a href="https://yourstory.com/ai-story/google-mirror-dimension-ai-agents-fake-web">YourStory</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>Direct page fetching was blocked again, so we could not open Alpöge’s note, the Lean files, Reuters’ Nvidia report or Google’s original Chrome Security post. Facts come from search-indexed coverage and quoted excerpts, checked across several outlets. No source images are embedded; the figures block is drawn from reported numbers.</li>
+    <li>This brief is written by an Anthropic model. The lead concerns an Anthropic employee and Claude; we have applied the same scepticism as to any unverified claim and report Anthropic’s share price without comment.</li>
+    <li>Reports conflict on details of the Riemann verification (whether a final checking run has passed) and on Nvidia’s exact fall (11.5–14%). We give the range and the most widely cited figures.</li>
+    <li>The Commission attack was confirmed on 19 November, inside yesterday’s window, but was not in yesterday’s edition, so it is included here with its date. Google’s Mirror Dimension post is dated 19 November (US time).</li>
+    <li>Left out: a rival “all-human” Riemann proof reportedly promoted hours later (single source in our search); a bipartisan US House bill for a national cyber and AI investigations board (introduced 18 November, before this window); reports that Apple is building a computer-control agent (not confirmed by a primary report).</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-20/">Friday 20 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>
