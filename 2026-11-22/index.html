@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 22 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+.bars{margin:22px 0 18px;font-family:var(--sans);font-size:13px}
+.bars div{margin-bottom:10px}
+.bars span{display:block;color:var(--muted);margin-bottom:4px}
+.bars i{display:block;height:10px;background:var(--accent);border-radius:2px}
+.bars b{font-weight:600;color:var(--fg)}
+</style>
+</head><body>
+
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Sunday 22 November 2026 · Window: Sat 21 Nov 07:00 – Sun 22 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Agents &amp; security</span>
+  <h1>OpenRouter warns that prompts sent to MiniMax models may have been read days later, even on “zero data retention” routes, after a two-million-prompt bait test</h1>
+  <p class="stand">A security researcher hid unique fake secrets in AI requests and watched where they turned up. The answer: in places the customer was never told about, including three breached hosting providers.</p>
+
+  <p>On Saturday OpenRouter, a popular service that routes API requests to whichever company hosts a model, emailed customers: “Requests you sent to MiniMax models may have been read.” Test links inside prompts sent to models from MiniMax, a Chinese AI lab, were opened by a third party 40 to 130 hours after the answer, even on requests marked “zero data retention” (ZDR), a label promising nothing is kept.</p>
+
+  <figure class="num">
+    <div><strong>~2M</strong><em>prompts seeded with unique bait secrets, July–November</em></div>
+    <div><strong>3</strong><em>AI hosting providers Dragos says showed signs of being breached</em></div>
+    <div><strong>40–130 h</strong><em>delay before links in MiniMax-bound prompts were opened</em></div>
+    <figcaption>Figures from Dragos’s 19 November post and OpenRouter’s 21 November customer email, as reported.</figcaption>
+  </figure>
+
+  <p><strong>Where it comes from:</strong> HD Moore, chief research officer at the security firm Dragos, published the study on 19 November; wider coverage followed on 20–21 November. He sent about two million prompts to popular AI services, each carrying “canaries”: a never-used web address and a fake Amazon Web Services (AWS) key. Anyone who later opens the link or tries the key sets off an alarm showing where the prompt went.</p>
+
+  <p><strong>What Dragos says it found:</strong> evidence that attackers had broken into three unnamed hosting providers; at the largest, a couple of hundred bait keys were tried within hours and drove tens of thousands of AWS calls. Resellers on an inference marketplace could read and keep prompts with ordinary request logging, no hacking needed. Requests often passed through undisclosed extra middlemen. And a Chinese AI lab, unnamed, fetched secret links from a large share of the prompts it handled.</p>
+
+  <p><strong>OpenRouter’s response:</strong> three hosts, AtlasCloud, Novita and StreamLake, told it they passed MiniMax requests on to MiniMax itself. OpenRouter says that broke their data agreements; it has removed those providers, stripped the ZDR label from MiniMax endpoints and says it will replace providers’ self-declared promises with technical checks. It says its own systems were not breached. MiniMax’s side has reached the public only second-hand: per OpenRouter, MiniMax said content moderation was on before 22 October and ZDR is now enabled.</p>
+
+  <p><strong>Not established:</strong> who the breached providers are, independent confirmation, or that the MiniMax link-openings and the AWS-key abuse are connected.</p>
+
+  <p><strong>Why it matters:</strong> agents and coding tools routinely paste code, logs and credentials into prompts. This is the first broad evidence that a “we keep nothing” label can fail several hops downstream, out of sight of developer and router. Our reading: the lesson is not “avoid model X” but “assume any prompt may be stored and read.” The mitigation the sources support: keep live secrets out of prompts, filter them automatically, and plant your own canaries.</p>
+  <p class="src">Sources: <a href="https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens">Dragos (HD Moore)</a>, 19 Nov · <a href="https://startupfortune.com/openrouter-warns-minimax-prompts-may-have-been-read-by-a-third-party/">Startup Fortune</a> · <a href="https://wisevoter.com/world/2026/11/21/openrouter-warns-minimax-prompts-may-be-read">WiseVoter</a> · <a href="https://www.startuphub.ai/cybersecurity/minimax-kept-prompts-for-days-not-seconds">StartupHub.ai</a>, 21 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://x.com/hdmoore/status/2123451306685661416">HD Moore’s own summary thread</a> (three compromised providers, logging resellers, ignored privacy flags).</li>
+    <li><a href="https://openrouter.ai/docs/guides/privacy/zero-data-retention">OpenRouter’s documentation on what “zero data retention” is meant to cover</a>, and its note that a provider’s ZDR declaration is not independent verification.</li>
+    <li><a href="https://fourweekmba.com/ai-openrouter-test-links-sent-to-minimax-opened-40-130h-later/">The debate over whether delayed link-opening fits a moderation filter</a> (FourWeekMBA).</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Privacy &amp; agents · 21 November</span>
+    <h3>Signal now blocks screenshots by default on iOS 27 so Siri’s AI can’t read chats, and switches protection on in Android when an assistant looks</h3>
+    <p>Assistants such as Siri and Gemini increasingly read the screen to help. Signal 8.37 on iOS 27 turns on a “Block Siri AI” setting that stops screenshots and recordings (pausable for 10 minutes); on supported Android phones it enables screen security when it detects an assistant reading the screen. Users can opt out. Signal calls the fix incomplete: agents with file access can still reach stored data, and the Mac app is not covered. It wants Apple, Google and Microsoft to offer apps a proper system-level opt-out from AI access.</p>
+    <p class="src"><a href="https://cyberinsider.com/signal-blocks-screenshots-ios-27-android-ai-assistants/">CyberInsider</a> · <a href="https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/">gHacks</a> · <a href="https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/">Engadget</a>, 21 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Research · paper dated 20 November</span>
+    <h3>A day after the Riemann claim, Alpöge and NYU’s Tristan Buckmaster say fluids governed by Navier–Stokes can “blow up” with no outside push</h3>
+    <p>Whether the fluid equations of Navier–Stokes can break down (“blow up”) in finite time is another Millennium Prize problem. OpenAI’s September claim relied on a finely tuned outside force, a loophole in the official wording. Buckmaster and Levent Alpöge (Anthropic) posted a 79-page paper claiming blowup with no force at all, the physically meaningful case, using Claude and Codex throughout. Reports say some files and a key certificate are not yet released and nothing is peer reviewed: a serious, unconfirmed claim.</p>
+    <p class="src"><a href="https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/">Scientific American</a> · <a href="https://thenextweb.com/news/navier-stokes-blow-up-without-force-buckmaster-alpoge">The Next Web</a>, 21 Nov · background: <a href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/">Quanta</a>, 8 Sep</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Policy · rules in force since 19 November</span>
+    <h3>New US export rules reach ordinary phone chips: TSMC and Samsung pause some shipments while they check licences</h3>
+    <p>The US rules aimed at AI chips reach further than expected, per Nikkei Asia and the Financial Times: exemptions for smartphone and other non-AI chips were removed, and foundries must treat chips made at 14/16 nanometres or finer as restricted unless the designer is on a US approved list. TSMC and Samsung have paused some shipments to Chinese customers while they review. A lawyer quoted by the FT expects phone-chip licences to be granted, but delays could disrupt production. Details come from press reports, not the rule text.</p>
+    <p class="src"><a href="https://en.sedaily.com/world/2026/11/20/tsmc-samsung-halt-some-chip-shipments-to-china-as-us-rules">Seoul Economic Daily</a>, 20 Nov · <a href="https://globalsanctions.com/2026/11/us-amends-export-administration-regulations-to-require-licences-for-advanced-chips-used-in-data-centres-serving-china-and-other-countries-of-concern/">Global Sanctions</a> · <a href="https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/">TechCrunch</a>, 16 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Companies · 21 November</span>
+    <h3>Routine database maintenance broke OpenAI’s login service, failing up to 75% of ChatGPT requests for three and a half hours</h3>
+    <p>Per OpenAI’s post-incident write-up, as reported, errors peaked at 75% on ChatGPT between 1:48 and 5:21 Pacific time (10:48–14:21 CET) on Saturday, hitting login, search, uploads, voice and several API endpoints. Scheduled maintenance made both read copies of a database fail at once, and that service handles authentication across OpenAI’s stack. OpenAI says it has paused similar maintenance. Agents built on one provider inherit its single points of failure.</p>
+    <p class="src"><a href="https://status.openai.com/history">OpenAI status history</a> · <a href="https://statusgator.com/services/openai">StatusGator</a>, 21–22 Nov</p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Creative tools · Google, 19 November</span>
+    <h3>Google’s Genie 4 lets developers stream playable, AI-generated worlds into their own apps</h3>
+    <p>Genie 4 is a “world model”: describe a place and it generates a scene you can walk through in real time, at 720p and 24 frames per second with sound, steered by keys and live text prompts. Since 19 November developers can call it through the Gemini API and Google AI Studio, at a reported $0.10 per second of output, paid tier only.</p>
+    <p>For interaction designers, the interface is a continuous scene that responds to input, so a game level or museum walkthrough becomes a prompt plus a controller. At $6 a minute, it is a prototyping tool for now.</p>
+    <p class="src"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/">Google blog</a> · <a href="https://www.testingcatalog.com/google-opens-genie-4-world-model-to-developers-in-gemini-api/">TestingCatalog</a> · <a href="https://alphasignal.ai/news/google-opens-genie-4-world-model-to-developers-at-6-per-minute">AlphaSignal</a>, 19–20 Nov</p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">A privacy label is only as good as the last company in a chain you cannot see.</p>
+  <p><strong>Deserves attention:</strong> the canary study. It is measurement, not theory: bait keys that were actually used. With Signal’s move, it shows AI systems reaching data users never meant to share.</p>
+  <p><strong>Overstated:</strong> “Chinese labs steal your prompts.” The evidence points at one lab and several middlemen; the worst key abuse came via breached providers that are unnamed.</p>
+  <p><strong>Uncertain:</strong> MiniMax’s side of the story, and whether two AI-assisted Millennium Prize claims in two days survive checking. Both need primary documents we do not yet have.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Saturday 21 November 2026, 07:00 CET to Sunday 22 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Prompt canaries and OpenRouter warning: <a href="https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens">Dragos</a>; <a href="https://x.com/hdmoore/status/2123451306685661416">HD Moore on X</a>; <a href="https://startupfortune.com/openrouter-warns-minimax-prompts-may-have-been-read-by-a-third-party/">Startup Fortune</a>; <a href="https://wisevoter.com/world/2026/11/21/openrouter-warns-minimax-prompts-may-be-read">WiseVoter</a>; <a href="https://www.startuphub.ai/cybersecurity/minimax-kept-prompts-for-days-not-seconds">StartupHub.ai</a>; <a href="https://huggingnews.com/ai/openrouter-off-boards-3-ai-providers-after-research-shows-prompt-leaks-t-4bcb52cf">HuggingNews</a>; <a href="https://fourweekmba.com/ai-openrouter-test-links-sent-to-minimax-opened-40-130h-later/">FourWeekMBA</a>; <a href="https://superpowerdaily.com/posts/dragos-finds-evidence-of-three-ai-provider-breaches-in-two-million-prompt-test">Superpower Daily</a>; <a href="https://openrouter.ai/docs/guides/privacy/zero-data-retention">OpenRouter docs</a></li>
+    <li>Signal screenshot blocking: <a href="https://cyberinsider.com/signal-blocks-screenshots-ios-27-android-ai-assistants/">CyberInsider</a>; <a href="https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/">gHacks</a>; <a href="https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/">Engadget</a>; <a href="https://www.notebookcheck.net/Signal-blocks-screenshots-to-keep-AI-out-of-chats-but-Macs-miss-out.1456407.0.html">Notebookcheck</a></li>
+    <li>Navier–Stokes claim: <a href="https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/">Scientific American</a>; <a href="https://thenextweb.com/news/navier-stokes-blow-up-without-force-buckmaster-alpoge">The Next Web</a>; <a href="https://www.nacionale.com/en/articles/has-navier-stokes-been-solved-unforced-blowup-alpoge-buckmaster-claim-millennium-prize">Nacionale</a>; <a href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/">Quanta Magazine</a>; <a href="https://www.scientificamerican.com/article/openais-blockbuster-navier-stokes-proof-isnt-what-we-thought-it-was/">Scientific American (on OpenAI’s proof)</a></li>
+    <li>Export rules: <a href="https://en.sedaily.com/world/2026/11/20/tsmc-samsung-halt-some-chip-shipments-to-china-as-us-rules">Seoul Economic Daily</a>; <a href="https://globalsanctions.com/2026/11/us-amends-export-administration-regulations-to-require-licences-for-advanced-chips-used-in-data-centres-serving-china-and-other-countries-of-concern/">Global Sanctions</a>; <a href="https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/">TechCrunch</a>; Nikkei Asia and Financial Times reporting as cited by these outlets</li>
+    <li>OpenAI outage: <a href="https://status.openai.com/history">OpenAI status</a>; <a href="https://statusgator.com/services/openai">StatusGator</a>; <a href="https://aiweekly.co/alerts/openai-postgres-replica-failure-peaked-api-chatgpt-errors-at-75">AI Weekly</a></li>
+    <li>Genie 4: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/">Google</a>; <a href="https://www.testingcatalog.com/google-opens-genie-4-world-model-to-developers-in-gemini-api/">TestingCatalog</a>; <a href="https://alphasignal.ai/news/google-opens-genie-4-world-model-to-developers-at-6-per-minute">AlphaSignal</a>; <a href="https://ppc.land/google-charges-developers-about-10-cents-a-second-for-genie-4-worlds/">PPC Land</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>Direct page fetching was blocked again, so we could not open the Dragos post, OpenRouter’s email, Ars Technica’s report, the Navier–Stokes paper or OpenAI’s write-up. Facts come from search-indexed coverage and quoted excerpts, cross-checked where possible. No source images are embedded.</li>
+    <li>Several stories were published just before this window (Dragos post 19 Nov; Navier–Stokes paper 20 Nov; export rules in force 19 Nov; Genie 4 API 19 Nov) but were not in earlier editions; each is shown with its own date. OpenRouter’s warning, Signal’s change and the OpenAI outage fall on 21 November.</li>
+    <li>This brief is written by an Anthropic model. The Navier–Stokes item involves an Anthropic employee and Claude; we treat it with the same scepticism as any unverified claim.</li>
+    <li>Left out: Cursor telling a US House inquiry it may phase out Chinese open-weight models (20 Nov, covered widely elsewhere; may return with more detail); Thinking Machines’ Inkling 2 Mini open-weights release (20 Nov); reports of a Trump “tremendous tax” threat on overseas AI data centres (no primary source found); unconfirmed reports of a Claude mobile redesign.</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-21/">Saturday 21 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>

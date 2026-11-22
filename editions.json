@@ -260,5 +260,19 @@
       "The European Commission says an “AI-generated cyber campaign” knocked out staff payroll and HR systems for more than 10 days",
       "Google built a sealed-off fake internet, written and run by AI agents, to attack its own browsing agent"
     ]
+  },
+  {
+    "date": "2026-11-22",
+    "label": "Sunday 22 November 2026",
+    "headline": "OpenRouter warns that prompts sent to MiniMax models may have been read days later, even on “zero data retention” routes, after a two-million-prompt bait test",
+    "category": "Agents & security",
+    "minutes": 5,
+    "window_end": "2026-11-22T07:00+01:00",
+    "teasers": [
+      "Signal now blocks screenshots by default on iOS 27 so Siri’s AI can’t read chats, and switches protection on in Android when an assistant looks",
+      "A day after the Riemann claim, Alpöge and NYU’s Tristan Buckmaster say fluids governed by Navier–Stokes can “blow up” with no outside push",
+      "New US export rules reach ordinary phone chips: TSMC and Samsung pause some shipments while they check licences",
+      "Routine database maintenance broke OpenAI’s login service, failing up to 75% of ChatGPT requests for three and a half hours"
+    ]
   }
 ]
