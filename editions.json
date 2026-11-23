@@ -274,5 +274,19 @@
       "New US export rules reach ordinary phone chips: TSMC and Samsung pause some shipments while they check licences",
       "Routine database maintenance broke OpenAI’s login service, failing up to 75% of ChatGPT requests for three and a half hours"
     ]
+  },
+  {
+    "date": "2026-11-23",
+    "label": "Monday 23 November 2026",
+    "headline": "AI produced frontier research all week, and on Sunday OpenAI’s chief scientist proposed a shared limit on how far labs should push",
+    "category": "Research",
+    "minutes": 7,
+    "window_end": "2026-11-23T07:00+01:00",
+    "teasers": [
+      "Banks, prosecutors and a state court case began deciding who answers when an AI agent goes wrong, before any regulator did",
+      "The plumbing around AI leaked at several points: prompt routes, an official Microsoft agent package and phone notifications",
+      "Anthropic’s record IPO and Nvidia’s record quarter were both overtaken within days by a sell-off",
+      "New models narrowed the gap at lower prices, while governments reached for harder powers"
+    ]
   }
 ]
