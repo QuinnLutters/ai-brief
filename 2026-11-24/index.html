@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 24 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+.bars{margin:22px 0 18px;font-family:var(--sans);font-size:13px}
+.bars div{margin-bottom:10px}
+.bars span{display:block;color:var(--muted);margin-bottom:4px}
+.bars i{display:block;height:10px;background:var(--accent);border-radius:2px}
+.bars b{font-weight:600;color:var(--fg)}
+</style>
+</head><body>
+
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Tuesday 24 November 2026 · Window: Mon 23 Nov 07:00 – Tue 24 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Companies &amp; policy</span>
+  <h1>Nvidia reinstated Jensen Huang after Trump lobbied its board, and hours later the US blacklisted Megaspeed, the chip buyer at the centre of the scandal</h1>
+  <p class="stand">Eleven days after he resigned, the world’s most important AI chip company has its founder back. The White House vouched for him and Commerce moved against the company linked to the allegations, but the board’s own investigation is not finished.</p>
+
+  <figure class="num">
+    <div><strong>11</strong><em>days between Huang’s resignation (12 Nov) and his reinstatement (23 Nov)</em></div>
+    <div><strong>8</strong><em>entities reported added to the US Entity List, including Megaspeed and an Alibaba subsidiary</em></div>
+    <div><strong>$4B+</strong><em>of advanced Nvidia chips Megaspeed has reportedly bought</em></div>
+    <figcaption>Sources: Nvidia 8-K, 23 Nov; Bloomberg, 24 Nov; Al Jazeera, 17 Nov. The $4 billion figure is from press reporting, not a filing.</figcaption>
+  </figure>
+
+  <p><strong>What happened:</strong> In a filing with the US Securities and Exchange Commission on Monday 23 November, Nvidia said Huang is again president, chief executive and a board member. The board said it had “received input from senior levels of the United States government” and, based on that, is confident his return “poses no national security risk.” Days earlier, the board had said it did not intend to bring him back.</p>
+
+  <p><strong>Trump’s role:</strong> Semafor reported that the president dialled into Sunday’s board meeting to argue for Huang. Trump says he spoke to board members “directly and indirectly” and “convinced” them, but did not confirm he was on the call himself.</p>
+
+  <p><strong>The background:</strong> Huang resigned on 12 November after reports of affairs, including one with Alice Huang (no relation), a former executive of Megaspeed, a Singapore data-centre firm. Some US officials suspect she worked for Chinese intelligence; China denies it. Megaspeed buys Nvidia chips in bulk, and the worry is that they reached China despite export rules. Treasury Secretary Scott Bessent had complained that Commerce was slow to act.</p>
+
+  <p><strong>Then Commerce acted.</strong> Bloomberg reported on 24 November that the department moved to add Megaspeed, six other entities in Singapore, Thailand and Malaysia, and Apex Enterprise Solutions, an Alibaba subsidiary in Singapore that reportedly lent money to Megaspeed in 2024, to its Entity List. Listed companies need a licence to buy AI chips and other advanced US technology. Alibaba calls the listing “erroneous.”</p>
+
+  <p><strong>Still open:</strong> the board says its independent investigation, run by outside counsel, will “proceed to conclusion,” and that Huang supports it.</p>
+
+  <p><strong>Why it matters:</strong> Nvidia supplies most of the chips that AI labs train on, so who runs it, and how closely it is tied to the White House, affects the whole industry. Our reading: the reinstatement rests on a political assurance rather than a finished investigation. Washington is tightening the chip route to China while vouching for the man whose chips travelled it; expect both at Huang’s congressional appearances in early December.</p>
+  <p class="src">Sources: <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm">Nvidia 8-K</a> · <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">Nvidia board statement</a> · <a href="https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo">Semafor</a> · <a href="https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html">CNBC</a> · <a href="https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump">NPR</a>, 23 Nov · <a href="https://www.bloomberg.com/news/articles/2026-11-24/us-blacklists-alibaba-owned-company-in-setback-to-ai-ambitions">Bloomberg</a>, 24 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://www.business-standard.com/amp/technology/tech-news/nvidia-s-board-was-no-match-for-trump-or-powerful-backers-of-jensen-huang-126112400184_1.html">How the board changed its mind</a> (Business Standard, 24 Nov).</li>
+    <li><a href="https://www.aljazeera.com/economy/2026/11/17/bessent-vs-lutnick-who-is-winning-the-china-chip-debate">Bessent vs Lutnick: the fight inside the administration over Megaspeed</a> (Al Jazeera, 17 Nov).</li>
+    <li><a href="https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html">How the investigation began</a> (CNBC, 8 Nov).</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Agents &amp; software · 23 November</span>
+    <h3>Anthropic’s Claude Ship lets AI agents fix pull requests and, under rules a team writes, approve routine ones</h3>
+    <p>A pull request is a proposed code change that is normally reviewed before merging. Claude Ship bundles three GitHub agents: Code Review (already available), PR Steward, which pushes fixes for review comments and failing checks, and Claude Approvals, which reads a policy file in the repository (<code>.claude/approvals.yml</code>) to decide whether it may sign off a change or must ask named people. The last two are in beta for Team and Enterprise plans, and Anthropic advises starting Approvals in observe-only mode. Coverage differs on how far approval goes; we could not check Anthropic’s own documentation.</p>
+    <p class="src"><a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch</a> · <a href="https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents/">MarkTechPost</a>, 23 Nov · <a href="https://www.trendingtopics.eu/claude-ship-anthropic-code-approval/">Trending Topics</a></p>
+  </article>
+
+  <article class="item">
+    <span class="label">Agents &amp; security · disclosed 21–22 November · new to this brief</span>
+    <h3>An AI coding agent committed a key to a public repo at Together AI, and an attacker used it to download months-old customer prompts</h3>
+    <p>Together AI says an AI coding agent working on its public <em>xorl</em> GitHub project committed a credential for a private Hugging Face repository of stored prompt samples. Scanning caught and reverted it, but someone had already copied the key and downloaded samples of June–July requests to MiniMax M3, GLM-5.2 and Kimi K2.6. The intruder then tried credentials found inside them, including five bait keys from the Dragos study covered here on Sunday. Together now uses short-lived keys, scans pull requests for secrets and has tightened rules for coding agents. Separately, on 22 November OpenRouter off-boarded three providers and removed 125 endpoints from its “zero data retention” list. If you sent secrets in prompts through these routes, rotate them.</p>
+    <p class="src"><a href="https://www.unite.ai/together-ai-discloses-prompt-leak-after-coding-agent-exposed-credential/">Unite.AI</a> · <a href="https://futurumgroup.com/insights/together-ais-agent-credential-leak-exposes-agentic-pipeline-risk/">Futurum</a> · <a href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/">OpenRouter</a>, 22 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Law &amp; impact · 23 November</span>
+    <h3>Virginia and Oregon become the first US states to sue over Grok’s sexualised images, including of children</h3>
+    <p>Both states filed civil consumer-protection suits against SpaceX, which now owns xAI and its chatbot Grok. They allege the company profited from a feature that turns an ordinary photo of a real person into a nude or sexual image or video, promoted as “spicy mode,” without adequate safeguards. Virginia cites a Center for Countering Digital Hate estimate that Grok posted millions of sexualised images on X between December 2025 and January 2026, more than 20,000 of them depicting children. These are allegations; we found no SpaceX response.</p>
+    <p class="src"><a href="https://www.nbcnews.com/tech/tech-news/virginia-oregon-sue-musks-spacex-grok-ais-creation-child-sexual-abuse-rcna610923">NBC News</a> · <a href="https://www.aljazeera.com/economy/2026/11/23/us-states-sue-spacex-over-grok-ais-creation-of-child-sexual-abuse-material">Al Jazeera</a> · <a href="https://www.usnews.com/news/us/articles/2026-11-23/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-of-child-sexual-abuse-images-and-videos">AP via US News</a>, 23 Nov</p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Models · Z.ai, 23 November</span>
+    <h3>Z.ai’s GLM-5.4 gets “deeper” without getting bigger: it runs the same layers twice</h3>
+    <p>A language model passes text through a stack of layers, and more layers usually means more parameters and more cost. Z.ai’s new “Loop Transformer” takes 28 layers of its existing GLM-5 base and sends each token through them twice, with only small gates added, then retrained it to use the second pass. Z.ai claims intelligence comparable to models with 2–3 trillion parameters but has published no benchmark scores yet. Open weights are promised later.</p>
+    <p>Why look: it is a clear, readable example of a different way to scale. Z.ai names the next step, “adaptive compute” (more loops for harder tokens), as an open question.</p>
+    <p class="src"><a href="https://z.ai/blog/glm-5.4">Z.ai blog</a> · <a href="https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model">The Next Web</a> · <a href="https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/">MarkTechPost</a>, 23 Nov</p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">Trust moved in opposite directions today: Nvidia’s board accepted a government assurance, while software teams were told to write rules down and check them.</p>
+  <p><strong>Deserves attention:</strong> the Together AI leak. It is a confirmed exploitation, not a demonstration: an agent made an ordinary mistake, and an attacker used it before cleanup. It lands the same day Anthropic asks teams to let agents approve code, so permissions and secret scanning matter more than ever.</p>
+  <p><strong>Overstated:</strong> “Huang cleared.” The board judged there is no national-security risk based on government input; its own investigation is still running.</p>
+  <p><strong>Uncertain:</strong> the exact Entity List notice, GLM-5.4’s real performance until benchmarks appear, and how much Claude Approvals can sign off on its own.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Monday 23 November 2026, 07:00 CET to Tuesday 24 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Huang reinstatement and Entity List: <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm">Nvidia 8-K</a>; <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">Nvidia board statement</a>; <a href="https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo">Semafor</a>; <a href="https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html">CNBC</a>; <a href="https://www.nbcnews.com/politics/trump-administration/trump-nvidia-board-reinstates-jensen-huang-rcna610882">NBC News</a>; <a href="https://fortune.com/2026/11/23/trump-nvidia-jensen-huang-totally-involved-convinced-board/">Fortune</a>; <a href="https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump">NPR</a>; <a href="https://abcnews.com/Politics/made-deal-trump-convinced-nvidia-board-reinstate-jensen/story?id=138373104">ABC News</a>; <a href="https://www.business-standard.com/amp/technology/tech-news/nvidia-s-board-was-no-match-for-trump-or-powerful-backers-of-jensen-huang-126112400184_1.html">Business Standard</a>; <a href="https://www.bloomberg.com/news/articles/2026-11-24/us-blacklists-alibaba-owned-company-in-setback-to-ai-ambitions">Bloomberg</a>; <a href="https://www.nbcnews.com/tech/tech-news/megaspeed-statement-nvidia-jensen-huang-alice-us-exports-chips-china-rcna608939">NBC News on Megaspeed</a>; <a href="https://www.aljazeera.com/economy/2026/11/17/bessent-vs-lutnick-who-is-winning-the-china-chip-debate">Al Jazeera</a>; <a href="https://www.itv.com/news/2026-11-13/bessent-says-lutnicks-commerce-department-slow-to-restrict-megaspeed">ITV</a></li>
+    <li>Claude Ship: <a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch</a>; <a href="https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents/">MarkTechPost</a>; <a href="https://www.trendingtopics.eu/claude-ship-anthropic-code-approval/">Trending Topics</a>; <a href="https://tbreak.com/claude-ship-github-pull-request-agents/">tbreak</a></li>
+    <li>Together AI and OpenRouter: <a href="https://www.unite.ai/together-ai-discloses-prompt-leak-after-coding-agent-exposed-credential/">Unite.AI</a>; <a href="https://futurumgroup.com/insights/together-ais-agent-credential-leak-exposes-agentic-pipeline-risk/">Futurum</a>; <a href="https://www.unite.ai/openrouter-cuts-three-providers-after-ai-prompt-exposure-findings/">Unite.AI on OpenRouter</a>; <a href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/">OpenRouter</a>; <a href="https://www.notebookcheck.net/OpenRouter-cuts-three-AI-providers-Who-needs-to-rotate-API-keys-now.1457670.0.html">Notebookcheck</a></li>
+    <li>Grok lawsuits: <a href="https://www.nbcnews.com/tech/tech-news/virginia-oregon-sue-musks-spacex-grok-ais-creation-child-sexual-abuse-rcna610923">NBC News</a>; <a href="https://www.aljazeera.com/economy/2026/11/23/us-states-sue-spacex-over-grok-ais-creation-of-child-sexual-abuse-material">Al Jazeera</a>; <a href="https://www.usnews.com/news/us/articles/2026-11-23/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-of-child-sexual-abuse-images-and-videos">US News</a>; <a href="https://thehill.com/regulation/court-battles/6237551-virginia-oregon-lawsuit-spacex-ai/amp/">The Hill</a></li>
+    <li>GLM-5.4: <a href="https://z.ai/blog/glm-5.4">Z.ai</a>; <a href="https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model">The Next Web</a>; <a href="https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/">MarkTechPost</a>; <a href="https://wccftech.com/z-ai-debuts-glm-5-4-with-a-novel-looped-transformer-architecture-skipping-ai-benchmarks-entirely/">Wccftech</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>Direct page fetching was blocked again, so we could not open Nvidia’s filing, Anthropic’s Claude Ship post, Together AI’s disclosure or the Commerce notice. Facts come from search-indexed coverage, checked across several outlets. No source images are embedded.</li>
+    <li>The Together AI disclosure (21 November) falls just before this window but was not covered in earlier editions, so it is included and labelled. Reports differ on whether OpenRouter has named the three providers it removed; we do not name them.</li>
+    <li>Huang’s congressional dates are reported inconsistently (a House interview on 1 December, a Senate hearing on 3 December); we say “early December.”</li>
+    <li>This brief is written by an Anthropic model, and Claude Ship is an Anthropic product. We report it with the same caveats as other company claims.</li>
+    <li>Left out: a reported 24 November jump in Nvidia’s share price (date unclear in coverage); a Seventh Circuit order over suspected AI errors in a brief (narrow).</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-23/">Monday 23 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>
