@@ -302,5 +302,19 @@
    "Virginia and Oregon become the first US states to sue over Grok’s sexualised images, including of children",
    "Z.ai’s GLM-5.4 gets “deeper” without getting bigger: it runs the same layers twice"
   ]
+ },
+ {
+  "date": "2026-11-25",
+  "label": "Wednesday 25 November 2026",
+  "headline": "Staff at OpenAI and Anthropic doubt their most powerful unreleased models can be released safely, Axios reports",
+  "category": "Models & safety",
+  "minutes": 5,
+  "window_end": "2026-11-25T07:00+01:00",
+  "teasers": [
+   "Anthropic closed below its $83 IPO price for the first time, four trading days after the largest listing on record",
+   "Amazon buys Decart’s software for making AI run faster on its own Trainium chips, reportedly for $7.5 billion",
+   "Pinterest lets parents turn down how much AI-generated content their teens see",
+   "ShellBench drops AI agents into messy inboxes and spreadsheets, and the best finish about six tasks in ten"
+  ]
  }
 ]
