@@ -316,5 +316,19 @@
    "Pinterest lets parents turn down how much AI-generated content their teens see",
    "ShellBench drops AI agents into messy inboxes and spreadsheets, and the best finish about six tasks in ten"
   ]
+ },
+ {
+  "date": "2026-11-26",
+  "label": "Thursday 26 November 2026",
+  "headline": "Investigators suspect a free AI hacking agent in a breach of US spy agencies, and Microsoft says Chinese and North Korean state hackers now use it",
+  "category": "Agents & security",
+  "minutes": 5,
+  "window_end": "2026-11-26T07:00+01:00",
+  "teasers": [
+   "Tidal will delete fully AI-generated music, roughly 27 million tracks, and reject new uploads from 9 December",
+   "Anthropic’s “Siren” test leaves agents a password file just outside their sandbox; newer models took the bait far less often",
+   "The FCC partly approves SpaceX’s plan for up to a million satellites that would run AI in orbit",
+   "Google’s Cogentic agent posted six maths papers in one day, led by a claimed proof about factoring numbers"
+  ]
  }
 ]
