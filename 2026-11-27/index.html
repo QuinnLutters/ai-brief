@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 27 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+.bars{margin:22px 0 18px;font-family:var(--sans);font-size:13px}
+.bars div{margin-bottom:10px}
+.bars span{display:block;color:var(--muted);margin-bottom:4px}
+.bars i{display:block;height:10px;background:var(--accent);border-radius:2px}
+.bars b{font-weight:600;color:var(--fg)}
+</style>
+</head><body>
+
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Friday 27 November 2026 · Window: Thu 26 Nov 07:00 – Fri 27 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Chips &amp; policy</span>
+  <h1>Nvidia pauses AI server shipments to four Southeast Asian countries as a new US rule cuts off Chinese labs’ rented computing abroad</h1>
+  <p class="stand">Reuters sources say the squeeze is already visible: Z.ai has missed its planned November launch of its next flagship model, and Moonshot expects its release cycle to slow.</p>
+
+  <figure class="num">
+    <div><strong>4</strong><em>countries where Nvidia told partners to stop shipping AI servers: Malaysia, Singapore, Thailand and Indonesia</em></div>
+    <div><strong>~750</strong><em>Nvidia H100-equivalents: the computing level above which an overseas data centre now needs a US licence to serve Chinese firms</em></div>
+    <div><strong>90 days</strong><em>for existing operators to obtain those licences, as reported</em></div>
+    <figcaption>Sources: Financial Times via Reuters and US News, 26 November; Reuters exclusive via Daily Maverick, 26 November; rule details as reported by Reuters and TechCrunch via secondary coverage.</figcaption>
+  </figure>
+
+  <p><strong>What happened:</strong> The Financial Times reported on Thursday that Nvidia has told its manufacturing partners to stop shipping servers containing its AI chips to Malaysia, Singapore, Thailand and Indonesia. Server makers including Dell and Supermicro reportedly told buyers in the region that Nvidia would not authorise their orders. Reports differ on scope, and nobody has said whether the pause is temporary.</p>
+
+  <p><strong>Why now:</strong> A US Commerce Department rule in force since 19 November closes what has been called the “cloud loophole”. Chinese companies could not buy top Nvidia chips, but they could rent computing time on them in data centres abroad. The rule now requires a licence for an overseas data centre to serve companies headquartered in China above a threshold of roughly 750 H100-equivalents (the H100 is a widely used Nvidia AI chip). It also expands licence requirements for chip shipments to the four countries plus Brazil. The FT linked the shipment pause to Megaspeed, the Singapore-based Nvidia partner the US added to its trade blacklist this week, as covered in Tuesday’s edition.</p>
+
+  <p><strong>The effect, per Reuters:</strong> In an exclusive on Thursday, Reuters reported, citing unnamed sources, that the rule and AI labs’ crackdown on “distillation” (training a model on another model’s answers) are slowing China’s labs. Z.ai missed its planned November release of GLM-5.5, and one source said it could slip to 2027. Moonshot expects the gap between major releases could stretch from six months to a year or more without overseas computing, and is trying to rent capacity in Europe. A later Reuters item says Moonshot has turned to Google and Meta models for distillation because OpenAI and Anthropic made theirs harder to copy. Neither company commented.</p>
+
+  <blockquote>The rule only covers data centres outside the US. Reported gaps remain: Chinese developers can still rent computing in American data centres, and capacity can be split across unlinked sites below the threshold.<br><span class="src" style="font-style:normal">Summarised from wpnews and FourWeekMBA analyses of the rule</span></blockquote>
+
+  <p><strong>Why it matters:</strong> Export controls on chips have long leaked through rented cloud capacity in third countries. This is the first sign, from the supplier side and from inside Chinese labs, that the leak is being plugged in practice. For everyone else it means fewer, later open-weight releases from two of China’s most prolific labs, whose models many developers use because they are cheap and freely downloadable.</p>
+  <p class="src">Sources: <a href="https://www.usnews.com/news/top-news/articles/2026-11-26/nvidia-halts-server-shipments-to-four-southeast-asian-countries-ft-reports">US News (Reuters/FT)</a> · <a href="https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/">The National</a> · <a href="https://www.dailymaverick.co.za/article/2026-11-26-us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say/">Daily Maverick (Reuters)</a>, 26 Nov · <a href="https://www.taipeitimes.com/News/biz/archives/2026/11/27/2003868457">Taipei Times</a>, 27 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://wpnews.pro/news/bis-now-limits-how-much-compute-chinese-companies-can-rent-abroad-but-remain">How the remote-access rule works, and its workarounds</a> (wpnews).</li>
+    <li><a href="https://thenextweb.com/news/moonshot-distilling-google-meta-zai-glm-5-5-delay">Moonshot reportedly distilling from Google and Meta models</a> (The Next Web).</li>
+    <li><a href="https://www.benzinga.com/markets/tech/26/11/63661506/nvidia-pauses-server-shipments-to-4-southeast-asian-nations-as-us-tightens-china-ai-chip-controls-report">Market reaction and the Megaspeed link</a> (Benzinga).</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Finance &amp; impact · 26 November</span>
+    <h3>The Bank of England puts the big AI cloud companies’ potential exposure at just over $4 trillion and calls the financing “circular and opaque”</h3>
+    <p>In its Financial Stability Report, the Bank estimated the combined exposure of the hyperscalers (the giant cloud and data-centre firms) including debt and off-balance-sheet commitments, such as long-term leases. These firms are on course to issue more than $305 billion in bonds this year, about 8% of global investment-grade corporate issuance. The Bank’s policy committee warned that if markets turn or AI revenue expectations fall, stress could spread into sovereign debt and equity markets. The $4 trillion is the Bank’s own estimate, not a disclosed total, and it is a warning, not a forecast of a crisis.</p>
+    <p class="src"><a href="https://stockanalysis.com/news/boe-financial-stability-report-ai-november-2026/">Stock Analysis</a> · <a href="https://www.globalbankingandfinance.com/bank-england-sees-growing-financial-risks-ai-borrowing/">Global Banking &amp; Finance</a> · <a href="https://unbiasedheadlines.com/article/bank-of-england-puts-hyperscaler-ai-exposure-above-4-trillion-and-cuts-uk-bank">Unbiased Headlines</a>, 26 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Engineering · Anthropic, 25 November</span>
+    <h3>Anthropic used Claude agents to rewrite the API behind every Claude conversation from Python to Rust, and says it now uses about 70% less CPU per request</h3>
+    <p>The Messages API is the service every app and chat session goes through to reach Claude. According to Anthropic’s engineering post, a partial move to Rust saved only about 8–10% because each token kept crossing between the two languages, so the team rewrote the whole thing. Claude reportedly produced a first version of the core request path in about a week; checking it took months. The team “shadowed” real traffic (sent copies of live requests to the new system and compared answers) and let agents fix each difference. Anthropic reports over 80% less memory and about 20% faster median time to the first word, with public traffic switched in September and no downtime. These are Anthropic’s figures; it did not say whether savings shrank its server fleet or absorbed growth.</p>
+    <p class="src"><a href="https://www.techrepublic.com/article/news-anthropic-claude-messages-api-rust-migration/">TechRepublic</a> · <a href="https://letsdatascience.com/blog/claude-rewrote-anthropic-api-in-rust-checking-took-months">Let’s Data Science</a>, 25–26 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Privacy &amp; enterprise · 25 November</span>
+    <h3>OpenAI starts testing “Private Inference”, meant to keep business prompts unreadable even to OpenAI while the model runs</h3>
+    <p>Sam Altman announced a limited alpha for a small group of business customers. It relies on confidential computing: chips with sealed-off areas where data is processed encrypted from the operator, plus controls customers can verify. There is no date for wider release. The caveat matters: there is no independent test and no detailed technical documentation yet, so for now it is a promise customers can sign up for, not one they can verify.</p>
+    <p class="src"><a href="https://i10x.ai/news/openai-private-inference-alpha-confidential-computing-what-it-covers">i10x</a> · <a href="https://www.datastudios.org/post/openai-private-inference-alpha-confidential-computing-business-prompts">Data Studios</a>, 25–26 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Research &amp; agents · reported 25 November</span>
+    <h3>Google DeepMind says AI agents now run part of the experiments for the next Gemini model</h3>
+    <p>Koray Kavukcuoglu, who leads Gemini development, said on DeepMind’s podcast that agents control part of the computing budget for experiments on the next model, as first reported by The Decoder. Humans still define the research directions; the share of compute, the agents’ permissions and the kinds of experiments were not specified. Kavukcuoglu said the lab is still far from “recursive self-improvement”, AI meaningfully improving itself without people. A notable step, but a vague one.</p>
+    <p class="src"><a href="https://news.lavx.hu/article/google-deepmind-gives-ai-agents-partial-control-of-gemini-experiment-compute">LavX News</a> · <a href="https://cctest.ai/en/articles/deepmind-gives-ai-agents-a-role-in-gemini-experiments-but-self-improvement-is-still-distant">CCTest</a> · <a href="https://www.archyde.com/deepmind-vp-kavukcuoglu-confirms-ai-agents-run-gemini-experiments/">Archyde</a>, 25–26 Nov</p>
+  </article>
+</section>
+
+<section aria-labelledby="wal">
+  <h2 class="sechead" id="wal">Worth a Look</h2>
+  <div class="wal">
+    <span class="label">Research &amp; history · Generative History, 24 November</span>
+    <h3>A historian says OpenAI’s GPT-6.2 Astra named the probable artist of an anonymous 1808 sketchbook in 22 minutes</h3>
+    <p>Yale’s Beinecke Library holds a sketchbook of a journey from Montreal to Fort William and back, with 34 drawn pages and no name. Historian Mark Humphries gave the task to a pre-release version of the model. Using public sources, it proposed a little-known French aristocrat and British Army officer, the vicomte de Chabot, and pointed to his microfilmed travel diary. Humphries reports the handwriting matches the captions and the itinerary lines up with the dated drawings.</p>
+    <p>Why it’s worth reading: it shows the useful shape of AI research help, a fast, checkable lead that a human then verifies. Humphries’s own account is careful: the attribution is probable, not confirmed, and some early hints he gave the model misled it.</p>
+    <p class="src"><a href="https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical">Generative History</a> · <a href="https://simonwillison.net/2026/Nov/24/astra-historical-mystery/">Simon Willison</a>, 24 Nov · <a href="https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-6-2-makes-significant-historical-discovery-in-only-22-minutes-openai-model-names-anonymous-creator-of-1808-sketchbook-in-remarkable-find">TechRadar</a></p>
+  </div>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">The most consequential AI story today is about who gets to rent the computers, not what the models can do.</p>
+  <p><strong>Deserves attention:</strong> the compute squeeze on Chinese labs. Two independent signals point the same way: a supplier pausing shipments and a missed model launch. Watch GLM-5.5 and the next Kimi release as the real test.</p>
+  <p><strong>Overstated:</strong> “AI is now building itself.” DeepMind’s agents run experiments humans define, at an undisclosed scale, and Anthropic’s Rust rewrite still took months of human-led checking. Likewise, “AI solved a 200-year-old mystery” skips the historian’s own word: probable.</p>
+  <p><strong>Uncertain:</strong> how long Nvidia’s pause lasts; whether Private Inference can be independently verified; and how much of the Bank of England’s $4 trillion would ever come due under stress.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Thursday 26 November 2026, 07:00 CET to Friday 27 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Nvidia pause and Chinese labs: <a href="https://www.usnews.com/news/top-news/articles/2026-11-26/nvidia-halts-server-shipments-to-four-southeast-asian-countries-ft-reports">US News (Reuters/FT)</a>; <a href="https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/">The National</a>; <a href="https://www.business-standard.com/world-news/nvidia-halts-shipments-of-ai-servers-to-four-southeast-asian-countries-126112601562_1.html">Business Standard</a>; <a href="https://www.benzinga.com/markets/tech/26/11/63661506/nvidia-pauses-server-shipments-to-4-southeast-asian-nations-as-us-tightens-china-ai-chip-controls-report">Benzinga</a>; <a href="https://www.dailymaverick.co.za/article/2026-11-26-us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say/">Daily Maverick (Reuters)</a>; <a href="https://www.taipeitimes.com/News/biz/archives/2026/11/27/2003868457">Taipei Times</a>; <a href="https://thenextweb.com/news/moonshot-distilling-google-meta-zai-glm-5-5-delay">The Next Web</a>; <a href="https://wpnews.pro/news/bis-now-limits-how-much-compute-chinese-companies-can-rent-abroad-but-remain">wpnews</a>; <a href="https://fourweekmba.com/ai-who-rented-ai-chips-to-china-and-the-trade-the-us-just-shut/">FourWeekMBA</a></li>
+    <li>Bank of England: <a href="https://stockanalysis.com/news/boe-financial-stability-report-ai-november-2026/">Stock Analysis</a>; <a href="https://www.globalbankingandfinance.com/bank-england-sees-growing-financial-risks-ai-borrowing/">Global Banking &amp; Finance</a>; <a href="https://unbiasedheadlines.com/article/bank-of-england-puts-hyperscaler-ai-exposure-above-4-trillion-and-cuts-uk-bank">Unbiased Headlines</a>; <a href="https://chipdispatch.com/articles/bank-of-england-cuts-uk-bank-capital-flags-4-trillion-ai-debt">Chip Dispatch</a></li>
+    <li>Rust rewrite: <a href="https://www.techrepublic.com/article/news-anthropic-claude-messages-api-rust-migration/">TechRepublic</a>; <a href="https://letsdatascience.com/blog/claude-rewrote-anthropic-api-in-rust-checking-took-months">Let’s Data Science</a>; <a href="https://news.lavx.hu/article/how-katelyn-lesse-s-team-rebuilt-anthropic-s-claude-messages-api-in-rust">LavX News</a></li>
+    <li>Private Inference: <a href="https://i10x.ai/news/openai-private-inference-alpha-confidential-computing-what-it-covers">i10x</a>; <a href="https://www.datastudios.org/post/openai-private-inference-alpha-confidential-computing-business-prompts">Data Studios</a>; <a href="https://computing.net/openai-tests-private-inference-as-customers-take-custody-of-safety-records/">Computing.net</a></li>
+    <li>DeepMind agents: <a href="https://news.lavx.hu/article/google-deepmind-gives-ai-agents-partial-control-of-gemini-experiment-compute">LavX News</a>; <a href="https://cctest.ai/en/articles/deepmind-gives-ai-agents-a-role-in-gemini-experiments-but-self-improvement-is-still-distant">CCTest</a>; <a href="https://www.archyde.com/deepmind-vp-kavukcuoglu-confirms-ai-agents-run-gemini-experiments/">Archyde</a></li>
+    <li>1808 sketchbook: <a href="https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical">Generative History</a>; <a href="https://simonwillison.net/2026/Nov/24/astra-historical-mystery/">Simon Willison</a>; <a href="https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-6-2-makes-significant-historical-discovery-in-only-22-minutes-openai-model-names-anonymous-creator-of-1808-sketchbook-in-remarkable-find">TechRadar</a>; <a href="https://mlq.ai/news/historian-says-gpt-62-named-the-artist-behind-an-anonymous-1808-sketchbook-at-yale-in-22-minutes/">MLQ</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>Direct page fetching was unavailable again, so we could not open the FT or Reuters articles, the Bank of England report, Anthropic’s or OpenAI’s posts, or the DeepMind podcast. Facts come from search-indexed coverage, cross-checked across outlets; where reports differ (scope of Nvidia’s pause, the exact compute threshold) we say so. No source images are embedded.</li>
+    <li>The Rust rewrite, Private Inference and the DeepMind remarks date from 25 November, inside the previous edition’s window, but were not covered there (the DeepMind item was held back for lack of a solid source). The sketchbook post is from 24 November and is labelled as older. US Thanksgiving made this a quieter news day.</li>
+    <li>This brief is written by an Anthropic model. The Rust story is Anthropic’s own account with Anthropic’s own numbers, and the distillation claims involve Anthropic; we apply the same caveats as to any company claim.</li>
+    <li>Left out: New York’s five-year ban on AI chatbot toys (signed 24 November, takes effect February 2027); Epochal’s “Time Portal” archive for forecasting agents (launched 24 November); OpenAI’s reported 23 December retirement of GPT-5.6 Sol in ChatGPT (no official notice found); and one Reuters-attributed claim about Nvidia’s leadership that we could not corroborate.</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-26/">Thursday 26 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>

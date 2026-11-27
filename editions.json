@@ -330,5 +330,19 @@
    "The FCC partly approves SpaceX’s plan for up to a million satellites that would run AI in orbit",
    "Google’s Cogentic agent posted six maths papers in one day, led by a claimed proof about factoring numbers"
   ]
+ },
+ {
+  "date": "2026-11-27",
+  "label": "Friday 27 November 2026",
+  "headline": "Nvidia pauses AI server shipments to four Southeast Asian countries as a new US rule cuts off Chinese labs’ rented computing abroad",
+  "category": "Chips & policy",
+  "minutes": 5,
+  "window_end": "2026-11-27T07:00+01:00",
+  "teasers": [
+   "The Bank of England puts the big AI cloud companies’ potential exposure at just over $4 trillion and calls the financing “circular and opaque”",
+   "Anthropic used Claude agents to rewrite the API behind every Claude conversation from Python to Rust, and says it now uses about 70% less CPU per request",
+   "OpenAI starts testing “Private Inference”, meant to keep business prompts unreadable even to OpenAI while the model runs",
+   "A historian says OpenAI’s GPT-6.2 Astra named the probable artist of an anonymous 1808 sketchbook in 22 minutes"
+  ]
  }
 ]
