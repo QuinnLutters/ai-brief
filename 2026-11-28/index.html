@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Brief · 28 November 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred reading column (~680px), long-form, lead first, quiet sections below */
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --rule:#e6e6e3; --soft:#f6f6f3;
+  --accent:#1f5f5b;
+  --serif:"Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121414; --fg:#e8e8e5; --muted:#9a9e9c; --rule:#2a2e2d; --soft:#1b1f1e; --accent:#7cc4bc; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:32px 64px}
+@media (min-width:720px){body{font-size:20px}}
+main{max-width:680px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+.mast{font-family:var(--sans);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:40px}
+.mast b{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mast span{font-size:13px;color:var(--muted)}
+.label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
+.lead h1{font-size:clamp(32px,6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.015em;margin-bottom:14px}
+.stand{font-size:1.1em;color:var(--muted);line-height:1.5;margin-bottom:28px}
+.byline{font-family:var(--sans);font-size:13px;color:var(--muted);margin-bottom:28px}
+figure.num{margin:32px 0;padding:28px 0;border-block:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+figure.num div{min-width:0}
+figure.num strong{display:block;font-family:var(--serif);font-size:44px;line-height:1;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+figure.num em{font-style:normal;font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+figure.num figcaption{grid-column:1/-1;font-family:var(--sans);font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding-left:20px;border-left:3px solid var(--accent);font-style:italic}
+.src{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5}
+section{margin-top:56px}
+.sechead{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:8px}
+article.item{padding:24px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+article.item h3{font-size:24px;line-height:1.25;font-weight:600;margin-bottom:10px}
+article.item p{font-size:.95em}
+.wal{background:var(--soft);padding:24px;border-radius:4px}
+.wal h3{font-size:24px;line-height:1.25;margin-bottom:10px}
+.signal p{font-size:1.02em}
+.signal .pq{font-size:1.25em;line-height:1.4;font-style:italic;margin:8px 0 20px}
+details{font-family:var(--sans);font-size:14px;margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-weight:500}
+details ul{margin:10px 0 0;padding-left:18px;line-height:1.6}
+footer{margin-top:64px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.6}
+footer h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:20px 0 6px}
+footer ul{margin:0;padding-left:18px}
+footer li{overflow-wrap:anywhere}
+.bars{margin:22px 0 18px;font-family:var(--sans);font-size:13px}
+.bars div{margin-bottom:10px}
+.bars span{display:block;color:var(--muted);margin-bottom:4px}
+.bars i{display:block;height:10px;background:var(--accent);border-radius:2px}
+.bars b{font-weight:600;color:var(--fg)}
+</style>
+</head><body>
+
+<main>
+<header class="mast">
+  <b><a href="../" style="text-decoration:none">AI Brief</a></b>
+  <span>Saturday 28 November 2026 · Window: Fri 27 Nov 07:00 – Sat 28 Nov 07:00 CET · 5 min read</span>
+</header>
+
+<article class="lead">
+  <span class="label">Today’s lead · Chips &amp; policy</span>
+  <h1>Chinese loan filings show Nvidia’s banned Blackwell servers running in a Shanghai data centre tied to Megaspeed</h1>
+  <p class="stand">Bloomberg traced the hardware through companies’ own paperwork. It is the clearest evidence yet that America’s top AI chips are working inside China. How they got there is still unknown.</p>
+
+  <figure class="num">
+    <div><strong>GB300</strong><em>an Nvidia rack-scale system listed in Chinese loan filings at the Shanghai site, alongside a GB200 server, both on US-restricted Blackwell chips</em></div>
+    <div><strong>¥90m</strong><em>loan (about $12m) for which one operator described a GB200 server, from a leasing firm owned by a Shanghai government agency</em></div>
+    <div><strong>83.3%</strong><em>stake in that operator, Shanghai Kezhan, held indirectly by NexPower, which Caixin reports is controlled by Megaspeed’s founder</em></div>
+    <figcaption>Sources: Bloomberg via Anadolu Agency, Kyunghyang Shinmun and Seoul Economic Daily, 27–28 November. Dollar conversion is ours.</figcaption>
+  </figure>
+
+  <p><strong>What happened:</strong> On Friday Bloomberg reported that two Chinese companies had installed servers built on Nvidia’s Blackwell chips at the “Yangtze River Delta Project”, a data centre in Shanghai. Blackwell is Nvidia’s current flagship generation and cannot legally be exported to China. Bloomberg found the equipment listed in financial documents the companies filed with Chinese authorities; one report says the site also lists 32 servers with older H200 chips.</p>
+
+  <p><strong>The Megaspeed link:</strong> Megaspeed is the Singapore company that the US added to its trade blacklist this week, as covered in Tuesday’s edition. According to the reports, a second firm at the site provides services to Megaspeed, and Caixin reports that the firm controlling Shanghai Kezhan is run by Megaspeed’s founder, Alice Huang.</p>
+
+  <blockquote>Bloomberg says it found no evidence that Megaspeed itself moved the equipment to the data centre. Megaspeed denies wrongdoing; Megaspeed and Nvidia did not respond to Bloomberg.<br><span class="src" style="font-style:normal">As reported by Anadolu Agency and The Factum, 27 November</span></blockquote>
+
+  <p><strong>Why it matters:</strong> Until now, the case that top Nvidia chips were reaching China rested on trade data, investigators’ suspicions and blacklist notices. This is paperwork from inside China putting named, restricted hardware at a named site. It lands a day after Nvidia paused server shipments to four Southeast Asian countries (yesterday’s lead). Our reading: the important unknown is the route. If the servers passed through a third country despite licence checks, the new rules have a gap. If they were bought before the rules applied, this is an old leak coming to light.</p>
+  <p class="src">Sources: <a href="https://www.aa.com.tr/en/science-technology/nvidia-blackwell-chips-found-at-china-data-center-linked-to-alice-huang-report/4140762">Anadolu Agency</a> · <a href="https://thefactum.ai/articles/cb79c810-6203-42fd-9906-414b8b907dd6">The Factum</a>, 27 Nov · <a href="https://www.khan.co.kr/en/article/202611281137037/">Kyunghyang Shinmun</a> · <a href="https://en.sedaily.com/world/2026/11/28/nvidias-blackwell-chips-spotted-at-shanghai-data-center">Seoul Economic Daily</a>, 28 Nov</p>
+  <details><summary>Explore further</summary><ul>
+    <li><a href="https://chipdispatch.com/articles/bloomberg-traces-export-restricted-nvidia-blackwell-racks-to-shanghai-data-cente">What the filings list, rack by rack</a> (Chip Dispatch).</li>
+    <li><a href="https://www.wionews.com/world/nvidia-blackwell-ai-chips-reportedly-found-in-china-despite-us-ban-what-we-know-1795794135059">What we know and what we don’t</a> (WION).</li>
+    <li><a href="../2026-11-24/">Our 24 November edition on Megaspeed’s blacklisting</a> and <a href="../2026-11-27/">yesterday’s on the Southeast Asia pause</a>.</li>
+  </ul></details>
+</article>
+
+<section aria-labelledby="qs">
+  <h2 class="sechead" id="qs">The Quick Scan</h2>
+
+  <article class="item">
+    <span class="label">Companies &amp; legal · 27 November</span>
+    <h3>OpenAI countersues Apple, accusing it of taking trade secrets through a rehired engineer and of pressuring the hardware suppliers both companies use</h3>
+    <p>The countersuit, filed in federal court in California, answers Apple’s July lawsuit against OpenAI, its device unit io Products and two former Apple staff. OpenAI claims Apple rehired an engineer who had spent about six months at OpenAI and gained confidential information that way. It also says Apple has been “coercing and threatening” shared manufacturers, and that Apple keeps access to former employees’ personal devices and accounts. Apple denies using the engineer that way. The suppliers aren’t named, and the trial in Apple’s case is set for July 2027. What it shows is that OpenAI’s hardware ambitions now put it in direct conflict with the company that controls the iPhone supply chain.</p>
+    <p class="src"><a href="https://www.cnbc.com/2026/11/27/openai-countersues-apple-for-stealing-trade-secrets-ft-reports.html">CNBC (FT)</a> · <a href="https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/">9to5Mac</a> · <a href="https://interestingengineering.com/culture/openai-sues-apple-trade-secrets-supplier-dispute">Interesting Engineering</a>, 27 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Security · reported 26–27 November</span>
+    <h3>SAP confirms a security incident after reports that attackers used stolen staff tokens to copy and change its code on GitHub</h3>
+    <p>Der Spiegel reported late on Thursday, citing an insider, that attackers stole SAP employees’ authentication tokens (login credentials that grant access without a password) and used them to copy and alter source code in SAP’s GitHub repositories. SAP confirmed it had found suspicious activity and says it has no evidence that customers’ business data was accessed. Handelsblatt reports SAP restricted GitHub access, paused automated build pipelines and replaced its code-signing keys. Spiegel’s source says the attackers may have used AI agents; that is unconfirmed, and most coverage traces back to the same insider. Unknown: how the tokens were taken, which code was touched, and whether altered code reached customers.</p>
+    <p class="src"><a href="https://www.techzine.eu/news/security/146116/sap-hit-by-hack-source-code-modified/">Techzine</a> · <a href="https://thenextweb.com/news/sap-security-incident-github-breach">The Next Web</a> · <a href="https://securityaffairs.com/204121/data-breach/sap-security-incident-stolen-tokens-raise-supply-chain-concerns.html">Security Affairs</a>, 27 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Models &amp; pricing · 27 November</span>
+    <h3>OpenAI says it under-counted GPT-6.2 usage at launch; after the fix, ChatGPT subscribers hit Astra limits about 40% sooner</h3>
+    <p>OpenAI’s Thibault Sottiaux said a billing error since the 17 November launch had been discounting usage of GPT-6.2 Astra and Sol for most users. With it fixed, plans run out roughly 40% faster on Astra and 25% faster on Sol than last week. OpenAI won’t charge for the difference retroactively, says other models weren’t affected, and is giving Go, Plus, Pro and Business subscribers one extra “banked” limit reset. A small story, but a useful reminder: the subscription limits people see are an internal meter that can change without the price changing.</p>
+    <p class="src"><a href="https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/">The Decoder</a> · <a href="https://thenextweb.com/news/openai-billing-mistake-gpt-6-2-usage-limits">The Next Web</a> · <a href="https://news.sulat.com/2026/11/27/openai-gpt-6-2-billing-fix/">Sulat</a>, 27 Nov</p>
+  </article>
+
+  <article class="item">
+    <span class="label">Privacy &amp; impact · auction Monday 1 December</span>
+    <h3>Character.AI’s user chats, including those of about 2.1 million minors, are due at a bankruptcy auction on Monday as dozens of states object</h3>
+    <p>The bankrupt chatbot company plans to auction most of its assets on 1 December, with a $10 million opening bid from Smirks and Pangs Acquisition LLC. PPC Land reports the bidder was formed a day before it was picked. A bipartisan coalition of state attorneys general argues the sale could hand over chat logs from about 21 million US accounts, along with IP addresses and internal risk scores, to a buyer with no duty to honour Character.AI’s privacy policy or deletion requests. They are asking the Delaware court to keep children’s chats and models trained on them out of the sale. Reports put the coalition at 40 to 43 attorneys general; the court has not ruled. Character.AI says it does not sell personal information.</p>
+    <p class="src"><a href="https://www.techspot.com/news/114731-42-state-attorneys-general-move-block-characterai-sale.html">TechSpot</a> · <a href="https://americanbazaaronline.com/2026/11/27/42-attorneys-general-move-to-block-character-ai-sale-493251/">American Bazaar</a>, 27 Nov · <a href="https://ag.ny.gov/press-release/2026/attorney-general-james-urges-court-protect-children-and-consumers-characterai">New York Attorney General</a> · <a href="https://ppc.land/character-ai-users-chats-face-a-10m-sale-to-smirks-and-pangs/">PPC Land</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="sig" class="signal">
+  <h2 class="sechead" id="sig">Signal Check</h2>
+  <p class="pq">Today’s stories are about custody: of chips, of code, of chats. The models themselves barely feature.</p>
+  <p><strong>Deserves attention:</strong> the Shanghai filings. Companies’ own regulatory paperwork is harder to dismiss than trade-flow estimates. And Character.AI’s auction on Monday will show whether intimate chat logs count as ordinary company assets when a chatbot company goes under.</p>
+  <p><strong>Overstated:</strong> “AI agents hacked SAP.” One anonymous source said agents <em>may</em> have been used, and repeated coverage does not add confirmation. Likewise, the Apple–OpenAI filings are each side’s case, not findings.</p>
+  <p><strong>Uncertain:</strong> how the Blackwell servers reached Shanghai and when; whether any altered SAP code shipped; and whether the court will strip children’s data from the sale before Monday.</p>
+</section>
+
+<footer>
+  <p><strong>Reporting window:</strong> Friday 27 November 2026, 07:00 CET to Saturday 28 November 2026, 07:00 CET.</p>
+
+  <h4>Sources by story</h4>
+  <ul>
+    <li>Blackwell in Shanghai: <a href="https://www.aa.com.tr/en/science-technology/nvidia-blackwell-chips-found-at-china-data-center-linked-to-alice-huang-report/4140762">Anadolu Agency</a>; <a href="https://thefactum.ai/articles/cb79c810-6203-42fd-9906-414b8b907dd6">The Factum</a>; <a href="https://www.khan.co.kr/en/article/202611281137037/">Kyunghyang Shinmun</a>; <a href="https://en.sedaily.com/world/2026/11/28/nvidias-blackwell-chips-spotted-at-shanghai-data-center">Seoul Economic Daily</a>; <a href="https://chipdispatch.com/articles/bloomberg-traces-export-restricted-nvidia-blackwell-racks-to-shanghai-data-cente">Chip Dispatch</a>; <a href="https://www.wionews.com/world/nvidia-blackwell-ai-chips-reportedly-found-in-china-despite-us-ban-what-we-know-1795794135059">WION</a></li>
+    <li>OpenAI v Apple: <a href="https://www.cnbc.com/2026/11/27/openai-countersues-apple-for-stealing-trade-secrets-ft-reports.html">CNBC</a>; <a href="https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/">9to5Mac</a>; <a href="https://interestingengineering.com/culture/openai-sues-apple-trade-secrets-supplier-dispute">Interesting Engineering</a>; <a href="https://www.investing.com/news/stock-market-news/openai-countersues-apple-for-stealing-trade-secrets-ft-reports-5053798">Investing.com (Reuters)</a></li>
+    <li>SAP incident: <a href="https://www.techzine.eu/news/security/146116/sap-hit-by-hack-source-code-modified/">Techzine</a>; <a href="https://thenextweb.com/news/sap-security-incident-github-breach">The Next Web</a>; <a href="https://securityaffairs.com/204121/data-breach/sap-security-incident-stolen-tokens-raise-supply-chain-concerns.html">Security Affairs</a>; <a href="https://securitybridge.com/blog/sap-project-granite-incident/">SecurityBridge</a>; <a href="https://cybersecuritynews.com/sap-security-incident/">Cyber Security News</a></li>
+    <li>GPT-6.2 billing fix: <a href="https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/">The Decoder</a>; <a href="https://thenextweb.com/news/openai-billing-mistake-gpt-6-2-usage-limits">The Next Web</a>; <a href="https://news.sulat.com/2026/11/27/openai-gpt-6-2-billing-fix/">Sulat</a>; <a href="https://www.infoworld.com/article/4253883/openais-gpt%E2%80%916-2-correction-means-you-get-less-ai-for-the-same-fee.html">InfoWorld</a></li>
+    <li>Character.AI auction: <a href="https://www.techspot.com/news/114731-42-state-attorneys-general-move-block-characterai-sale.html">TechSpot</a>; <a href="https://americanbazaaronline.com/2026/11/27/42-attorneys-general-move-to-block-character-ai-sale-493251/">American Bazaar</a>; <a href="https://ag.ny.gov/press-release/2026/attorney-general-james-urges-court-protect-children-and-consumers-characterai">New York Attorney General</a>; <a href="https://ppc.land/character-ai-users-chats-face-a-10m-sale-to-smirks-and-pangs/">PPC Land</a>; <a href="https://aiweekly.co/alerts/characterais-dec-1-sale-draws-39-state-ag-objection">AI Weekly</a></li>
+  </ul>
+
+  <h4>Editorial notes</h4>
+  <ul>
+    <li>Direct page fetching was unavailable again, so we could not open Bloomberg, Der Spiegel, the court filings or OpenAI’s post. Facts come from search-indexed coverage, cross-checked across outlets, and conflicts (attorney general counts, sale hearing date, reset mechanics) are flagged in the text. No source images are embedded.</li>
+    <li>Character.AI was left out on 26 November because the filings predate that window. It is included today because the auction is on Monday and fresh coverage and filings appeared this week; the underlying objections date from October and November. Some coverage of the lead dwells on Alice Huang’s personal history; we leave that out as not relevant.</li>
+    <li>No “Worth a Look” today: we found no paper, demo or creative build in the window strong enough to recommend. It was the Friday after US Thanksgiving, a quiet news day.</li>
+    <li>This brief is written by an Anthropic model; nothing in today’s edition concerns Anthropic directly.</li>
+    <li>Left out: Japan’s reported draft safeguards for advanced AI providers (couldn’t confirm what is new); Canada’s reported top-up of its AI Compute Access Fund (conflicting figures); Huawei’s reported memory work for its Ascend chips; and unconfirmed claims that Claude Code users are testing a new model.</li>
+  </ul>
+  <p style="margin-top:16px">Previous edition: <a href="../2026-11-27/">Friday 27 November 2026</a> · <a href="../">All editions</a></p>
+</footer>
+</main>
+</body></html>

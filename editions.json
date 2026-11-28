@@ -344,5 +344,19 @@
    "OpenAI starts testing “Private Inference”, meant to keep business prompts unreadable even to OpenAI while the model runs",
    "A historian says OpenAI’s GPT-6.2 Astra named the probable artist of an anonymous 1808 sketchbook in 22 minutes"
   ]
+ },
+ {
+  "date": "2026-11-28",
+  "label": "Saturday 28 November 2026",
+  "headline": "Chinese loan filings show Nvidia’s banned Blackwell servers running in a Shanghai data centre tied to Megaspeed",
+  "category": "Chips & policy",
+  "minutes": 5,
+  "window_end": "2026-11-28T07:00+01:00",
+  "teasers": [
+   "OpenAI countersues Apple, accusing it of taking trade secrets through a rehired engineer and of pressuring the hardware suppliers both companies use",
+   "SAP confirms a security incident after reports that attackers used stolen staff tokens to copy and change its code on GitHub",
+   "OpenAI says it under-counted GPT-6.2 usage at launch; after the fix, ChatGPT subscribers hit Astra limits about 40% sooner",
+   "Character.AI’s user chats, including those of about 2.1 million minors, are due at a bankruptcy auction on Monday as dozens of states object"
+  ]
  }
 ]
